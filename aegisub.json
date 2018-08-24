@@ -26,5 +26,14 @@
                 ]
             ]
         }
-    }
+    },
+    "persist": [
+        "log",
+        "autoback",
+        "autosave",
+        "config.json",
+        "hotkey.json",
+        "mru.json",
+        "shift_history.json"
+    ]
 }
