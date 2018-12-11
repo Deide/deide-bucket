@@ -1,19 +1,14 @@
 {
-    "homepage": "https://github.com/Atelier-Shiori/Nekomata/",
-    "version": "0.0.2",
-    "url": "https://github.com/Atelier-Shiori/Nekomata/releases/download/0.0.2/Nekomata-0.0.2-alpha.zip",
-    "extract_dir": "Nekomata-0.0.2-alpha",
-    "hash": "md5:bddf9d6cad9f3380bca3477f9574d522",
-    "bin": "Nekomata.exe",
-    "shortcuts": [
-        [
-            "Nekomata.exe",
-            "Nekomata AniList Backup"
-        ]
-    ],
-    "checkver": "github",
-    "autoupdate": {
-        "url": "https://github.com/Atelier-Shiori/Nekomata/releases/download/$version/Nekomata-$version-alpha.zip",
-        "extract_dir": "Nekomata-$version-alpha"
-    }
+  "homepage": "https://github.com/Atelier-Shiori/Nekomata/",
+  "version": "1.0",
+  "url": "https://github.com/Atelier-Shiori/Nekomata/releases/download/1.0/Nekomata-1.0-win.zip",
+  "extract_dir": "Nekomata-1.0",
+  "hash": "md5:f3adaadb0a4b93eb3aac615ced80b06b",
+  "bin": "Nekomata.exe",
+  "shortcuts": [["Nekomata.exe", "Nekomata AniList Backup"]],
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://github.com/Atelier-Shiori/Nekomata/releases/download/$version/Nekomata-$version-win.exe",
+    "extract_dir": "Nekomata-$version"
+  }
 }
