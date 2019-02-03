@@ -1,8 +1,8 @@
 {
     "homepage": "https://github.com/Torrunt/vimage",
-    "version": "14",
-    "url": "https://github.com/Torrunt/vimage/releases/download/v14/vimage_version14.zip",
-    "hash": "md5:ba9ff8dd9eac617ecef73f3de7cd85d6",
+    "version": "15",
+    "url": "https://github.com/Torrunt/vimage/releases/download/v15/vimage_version15.zip",
+    "hash": "b54e093fcdfc5cf2bf7a880abaaad8bce98d589e24736883544776c8d3c22dac",
     "bin": "vimage.exe",
     "checkver": "github",
     "autoupdate": {
