@@ -1,0 +1,32 @@
+{
+  "homepage": "https://ci.appveyor.com/project/zeromus/desmume",
+  "version": "0.0.0.589",
+  "architecture": {
+    "64bit": {
+      "url": [
+        "https://ci.appveyor.com/api/buildjobs/fxrfdxm93lnv56gm/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-x64-Release.exe"
+      ],
+      "hash": "md5:42b1504f0b994d54050a493793db362f"
+    },
+    "32bit": {
+      "url": [
+        "https://ci.appveyor.com/api/buildjobs/2jbg732mrh4v7hp8/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-Release.exe"
+      ],
+      "hash": "md5:30e69b491c5ca1fc3263ccb4fc8a88aa"
+    }
+  },
+  "bin": "desmume.exe",
+  "persist": ["Battery", "Cheats", "States", "StateSlots", "desmume.ini"],
+  "shortcuts": [["desmume.exe", "NDS"]],
+  "checkver": "\\<div class=\"project-build-version ng-binding\" title=\".\"\\>(?<version>\\d+\\.\\d+\\.\\d+\\.\\d+)\\<\\/div\\>.href=\"\\/project\\/zeromus\\/desmume\\/build\\/job\\/(?<x86Hash>[\\d\\w]+)\"\\>\\<span\\>\\<\\/span\\> Platform: x86\\<\\/a\\>.href=\"\\/project\\/zeromus\\/desmume\\/build\\/job\\/(?<x64Hash>[\\d\\w]+)\"\\>\\<span\\>\\<\\/span\\> Platform: x64\\<\\/a\\>",
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://ci.appveyor.com/api/buildjobs/$x64Hash/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-x64-Release.exe"
+      },
+      "32bit": {
+        "url": "https://ci.appveyor.com/api/buildjobs/$x86Hash/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-Release.exe"
+      }
+    }
+  }
+}
