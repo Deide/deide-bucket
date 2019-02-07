@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ci.appveyor.com/project/zeromus/desmume",
+  "homepage": "https://desmume.org",
   "version": "0.0.0.589",
   "architecture": {
     "64bit": {
@@ -20,7 +20,10 @@
     }
   },
   "persist": ["Battery", "Cheats", "States", "StateSlots", "desmume.ini"],
-  "checkver": "\\<div class=\"project-build-version ng-binding\" title=\".\"\\>(?<version>\\d+\\.\\d+\\.\\d+\\.\\d+)\\<\\/div\\>.href=\"\\/project\\/zeromus\\/desmume\\/build\\/job\\/(?<x86Hash>[\\d\\w]+)\"\\>\\<span\\>\\<\\/span\\> Platform: x86\\<\\/a\\>.href=\"\\/project\\/zeromus\\/desmume\\/build\\/job\\/(?<x64Hash>[\\d\\w]+)\"\\>\\<span\\>\\<\\/span\\> Platform: x64\\<\\/a\\>",
+  "checkver": {
+    "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
+    "jp": "$.build.version"
+  },
   "autoupdate": {
     "architecture": {
       "64bit": {
