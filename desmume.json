@@ -7,19 +7,19 @@
         "https://ci.appveyor.com/api/buildjobs/fxrfdxm93lnv56gm/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe"
       ],
       "hash": "md5:42b1504f0b994d54050a493793db362f",
-      "pre_install": "Rename-Item DeSmuME-VS2015-x64-Release.exe -NewName desmume.exe"
+      "bin": ["DeSmuME-VS2015-x64-Release.exe", "desmume"],
+      "shortcuts": [["DeSmuME-VS2015-x64-Release.exe", "NDS"]]
     },
     "32bit": {
       "url": [
         "https://ci.appveyor.com/api/buildjobs/2jbg732mrh4v7hp8/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
       ],
       "hash": "md5:30e69b491c5ca1fc3263ccb4fc8a88aa",
-      "pre_install": "Rename-Item DeSmuME-VS2015-Release.exe -NewName desmume.exe"
+      "bin": ["DeSmuME-VS2015-Release.exe", "desmume"],
+      "shortcuts": [["DeSmuME-VS2015-Release.exe", "NDS"]]
     }
   },
-  "bin": "desmume.exe",
   "persist": ["Battery", "Cheats", "States", "StateSlots", "desmume.ini"],
-  "shortcuts": [["desmume.exe", "NDS"]],
   "checkver": "\\<div class=\"project-build-version ng-binding\" title=\".\"\\>(?<version>\\d+\\.\\d+\\.\\d+\\.\\d+)\\<\\/div\\>.href=\"\\/project\\/zeromus\\/desmume\\/build\\/job\\/(?<x86Hash>[\\d\\w]+)\"\\>\\<span\\>\\<\\/span\\> Platform: x86\\<\\/a\\>.href=\"\\/project\\/zeromus\\/desmume\\/build\\/job\\/(?<x64Hash>[\\d\\w]+)\"\\>\\<span\\>\\<\\/span\\> Platform: x64\\<\\/a\\>",
   "autoupdate": {
     "architecture": {
