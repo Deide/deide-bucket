@@ -4,14 +4,14 @@
   "architecture": {
     "64bit": {
       "url": [
-        "https://ci.appveyor.com/api/buildjobs/fxrfdxm93lnv56gm/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-x64-Release.exe"
+        "https://ci.appveyor.com/api/buildjobs/7pof36adrlmrvyrt/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe"
       ],
       "hash": "md5:42b1504f0b994d54050a493793db362f",
       "pre_install": "Rename-Item DeSmuME-VS2015-x64-Release.exe -NewName desmume.exe"
     },
     "32bit": {
       "url": [
-        "https://ci.appveyor.com/api/buildjobs/2jbg732mrh4v7hp8/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-Release.exe"
+        "https://ci.appveyor.com/api/buildjobs/2jbg732mrh4v7hp8/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
       ],
       "hash": "md5:30e69b491c5ca1fc3263ccb4fc8a88aa",
       "pre_install": "Rename-Item DeSmuME-VS2015-Release.exe -NewName desmume.exe"
@@ -24,10 +24,10 @@
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://ci.appveyor.com/api/buildjobs/$x64Hash/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-x64-Release.exe"
+        "url": "https://ci.appveyor.com/api/buildjobs/$x64Hash/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exee"
       },
       "32bit": {
-        "url": "https://ci.appveyor.com/api/buildjobs/$x86Hash/artifacts/desmume%2Fsrc%2Ffrontend%2Fwindows%2F__bins%2FDeSmuME-VS2015-Release.exe"
+        "url": "https://ci.appveyor.com/api/buildjobs/$x86Hash/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
       }
     }
   }
