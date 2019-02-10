@@ -1,7 +1,7 @@
 {
   "homepage": "https://pcsx2.net",
   "version": "1.5.0.2948",
-  "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-2948-gdabc99f46&platform=windows-x86",
+  "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-2948-gdabc99f46&platform=windows-x86#pcsx2.7z",
   "hash": "md5:ee6cd10fa27c9bbf612279c04f45fd46",
   "extract_dir": "pcsx2-v1.5.0-dev-2948-gdabc99f46-windows-x86",
   "bin": ["pcsx2.exe"],
