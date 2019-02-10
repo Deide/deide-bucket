@@ -6,6 +6,7 @@
   "bin": ["rpcs3.exe"],
   "shortcuts": [["rpcs3.exe", "PS3"]],
   "persist": [
+    "rpcs3.VisualElementsManifest.xml",
     "config.yml",
     "config_input.yml",
     "games.yml",
@@ -13,7 +14,10 @@
     "dev_hdd1"
   ],
   "checkver": {
-    "github": "https://github.com/RPCS3/rpcs3-binaries-win"
+    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/latest",
+    "regex": "\\/releases\\/tag\\/(?:build)-(?<commitLong>(?<commitShort>[a-z0-9]{8})[a-z0-9]+)\">(?<version>[\\d.]+\\-\\d+)<\\/a>"
   },
-  "autoupdate": "github"
+  "autoupdate": {
+    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommitLong/rpcs3-v$version-$matchCommitShort_win64.7z"
+  }
 }
