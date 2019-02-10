@@ -6,13 +6,5 @@
   "extract_dir": "pcsx2-v1.5.0-dev-2948-gdabc99f46-windows-x86",
   "bin": ["pcsx2.exe"],
   "shortcuts": [["pcsx2.exe", "PS2"]],
-  "persist": [
-    "memcards",
-    "logs",
-    "snaps",
-    "sstates",
-    "bios",
-    "inis",
-    "portable.ini"
-  ]
+  "persist": ["portable.ini", "memcards", "snaps", "sstates", "bios", "inis"]
 }

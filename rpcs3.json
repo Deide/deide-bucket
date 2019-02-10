@@ -1,0 +1,19 @@
+{
+  "homepage": "https://rpcs3.net/",
+  "version": "0.0.6-7793",
+  "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-84d42ecb655ef7ed302e7522db29050b613d30e5/rpcs3-v0.0.6-7793-84d42ecb_win64.7z",
+  "hash": "213DA0B47DBE25197087B2BB2CFA2E219033E8F5D8C8FB5DB21ACF63C550D4BB",
+  "bin": ["rpcs3.exe"],
+  "shortcuts": [["rpcs3.exe", "PS3"]],
+  "persist": [
+    "config.yml",
+    "config_input.yml",
+    "games.yml",
+    "GuiConfigs",
+    "dev_hdd1"
+  ],
+  "checkver": {
+    "github": "https://github.com/RPCS3/rpcs3-binaries-win"
+  },
+  "autoupdate": "github"
+}

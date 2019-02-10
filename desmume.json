@@ -23,7 +23,7 @@
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://ci.appveyor.com/api/buildjobs/$x64Hash/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exee"
+        "url": "https://ci.appveyor.com/api/buildjobs/$x64Hash/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe"
       },
       "32bit": {
         "url": "https://ci.appveyor.com/api/buildjobs/$x86Hash/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
