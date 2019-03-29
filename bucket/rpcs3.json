@@ -1,0 +1,28 @@
+{
+    "homepage": "https://rpcs3.net/",
+    "version": "0.0.6-7909",
+    "description": "Playstation 3 Emulator",
+    "url": [
+        "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-a254a203bb9d9c41e21e755287389de4043a2206/rpcs3-v0.0.6-7909-a254a203_win64.7z",
+        "https://raw.githubusercontent.com/deide/deide-bucket/master/defaults/rpcs3/rpcs3_VE.7z"
+    ],
+    "hash": "f849cf41e4dd6f3466cc0e6654088b2fac9d9ce12154d5001f04c65f3b5c1abb",
+    "bin": "rpcs3.exe",
+    "shortcuts": [["rpcs3.exe", "PS3"]],
+    "persist": [
+        "rpcs3.VisualElementsManifest.xml",
+        "VisualElements",
+        "config.yml",
+        "config_input.yml",
+        "games.yml",
+        "GuiConfigs",
+        "dev_hdd1"
+    ],
+    "checkver": {
+        "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/latest",
+        "regex": "\\/releases\\/tag\\/build-(?<commitlong>(?<commitshort>[a-z0-9]{8})[a-z0-9]+)\">(?<version>[\\d.]+\\-\\d+)<\\/a>"
+    },
+    "autoupdate": {
+        "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommitlong/rpcs3-v$version-$matchCommitshort_win64.7z"
+    }
+}

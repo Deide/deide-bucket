@@ -1,0 +1,43 @@
+{
+    "homepage": "https://www.openttd.org",
+    "version": "1.8.0",
+    "description": "OpenTTD is an open source simulation game based upon Transport Tycoon Deluxe.",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://binaries.openttd.org/releases/1.8.0/openttd-1.8.0-windows-win64.zip",
+                "https://raw.githubusercontent.com/deide/deide-bucket/master/defaults/openttd/openttd.cfg"
+            ],
+            "hash": "f3e333d7597309b432d7f6529d746923ffd4339dffca43bb024d37db7beddc91"
+        },
+        "32bit": {
+            "url": [
+                "https://binaries.openttd.org/releases/1.8.0/openttd-1.8.0-windows-win32.zip",
+                "https://raw.githubusercontent.com/deide/deide-bucket/master/defaults/openttd/openttd.cfg"
+            ],
+            "hash": "415a518557d5a15ebcf578d21c0c6a7c67727680ca677707989af5c1818c9c63"
+        }
+    },
+    "bin": "openttd.exe",
+    "persist": [
+        "content_download",
+        "screenshot",
+        "save",
+        "newgrf",
+        "scenario",
+        "openttd.cfg"
+    ],
+    "notes": "Requires Transport Tycoon Deluxe Data Files,\n or open alternatives: OpenGFX (graphics), OpenSFX (sound) and OpenMSX (music) which can be downloaded in-game.",
+    "shortcuts": [["openttd.exe", "OpenTTD"]],
+    "checkver": "Download stable \\((\\d.+\\d)\\)<\\/a>",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://binaries.openttd.org/releases/$version/openttd-$version-windows-win64.zip"
+            },
+            "32bit": {
+                "url": "https://binaries.openttd.org/releases/$version/openttd-$version-windows-win32.zip"
+            }
+        }
+    }
+}
