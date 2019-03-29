@@ -2,6 +2,10 @@
     "homepage": "https://rpcs3.net/",
     "version": "0.0.6-7909",
     "description": "Playstation 3 Emulator",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "https://github.com/RPCS3/rpcs3/blob/master/LICENSE"
+    },
     "url": [
         "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-a254a203bb9d9c41e21e755287389de4043a2206/rpcs3-v0.0.6-7909-a254a203_win64.7z",
         "https://raw.githubusercontent.com/deide/deide-bucket/master/defaults/rpcs3/rpcs3_VE.7z"
