@@ -33,10 +33,16 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://binaries.openttd.org/releases/$version/openttd-$version-windows-win64.zip"
+                "url": "https://proxy.binaries.openttd.org/openttd-releases/$version/openttd-$version-windows-win64.zip",
+                "hash": {
+                    "regex": "checksum-openttd-$version-windows-win64\\.zip\"[\\s\\w=\":;><&\\/]+  sha256sum: ([a-zA-Z0-9]{64})"
+                }
             },
             "32bit": {
-                "url": "https://binaries.openttd.org/releases/$version/openttd-$version-windows-win32.zip"
+                "url": "https://proxy.binaries.openttd.org/openttd-releases/$version/openttd-$version-windows-win32.zip",
+                "hash": {
+                    "regex": "checksum-openttd-$version-windows-win32\\.zip\"[\\s\\w=\":;><&\\/]+  sha256sum: ([a-zA-Z0-9]{64})"
+                }
             }
         }
     }
