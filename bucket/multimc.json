@@ -5,14 +5,10 @@
     "url": "https://github.com/MultiMC/MultiMC5/releases/download/0.6.5/mmc-stable-win32.zip",
     "extract_dir": "MultiMC",
     "bin": "MultiMC.exe",
-    "shortcuts": [
-        [
-            "MultiMC.exe",
-            "MultiMC"
-        ]
-    ],
+    "shortcuts": [["MultiMC.exe", "MultiMC"]],
     "persist": [
         "multimc.cfg",
+        "accounts.json",
         "accounts",
         "mods",
         "versions",
