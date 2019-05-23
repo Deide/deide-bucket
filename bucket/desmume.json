@@ -4,10 +4,7 @@
     "description": "Nintendo DS Emulator",
     "architecture": {
         "64bit": {
-            "url": [
-                "https://ci.appveyor.com/api/buildjobs/fxrfdxm93lnv56gm/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe",
-                "https://raw.githubusercontent.com/deide/deide-bucket/master/defaults/desmume/desmume_VE.7z"
-            ],
+            "url": "https://ci.appveyor.com/api/buildjobs/fxrfdxm93lnv56gm/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe",
             "hash": "md5:42b1504f0b994d54050a493793db362f",
             "bin": [["DeSmuME-VS2015-x64-Release.exe", "desmume"]],
             "shortcuts": [["DeSmuME-VS2015-x64-Release.exe", "NDS"]]
@@ -30,7 +27,11 @@
     ],
     "checkver": {
         "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
-        "jp": "$.build.version"
+        "jp": {
+            "version": "$.build.version",
+            "jobId32": "$.build.jobs[0]",
+            "jobId64": "$.build.jobs[1]"
+        }
     },
     "autoupdate": {
         "architecture": {

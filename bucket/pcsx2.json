@@ -1,15 +1,17 @@
 {
     "homepage": "https://pcsx2.net",
-    "version": "1.5.0-dev-3022",
+    "version": "1.5.0-dev-3121",
     "description": "Playstation 2 Emulator",
-    "url": [
-        "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-3022-g55112938a&platform=windows-x86#/pcsx2-1.5.0-dev-3022.7z",
-        "https://raw.githubusercontent.com/deide/deide-bucket/master/defaults/pcsx2/pcsx2_VE.7z"
-    ],
-    "hash": "174d80e36f209153de58a376fbd5d8ea28055e1941d8f661d4b33a335031e9fb",
-    "extract_dir": "pcsx2-v1.5.0-dev-3022-g55112938a-windows-x86",
+    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-3121-g079baaed9&platform=windows-x86#/pcsx2-1.5.0-dev-3121.7z",
+    "hash": "b8212c15fe17b6dc1f0abda1a0354ccc9ed6e48df3392b18838de5ca2d00dc78",
+    "extract_dir": "pcsx2-v1.5.0-dev-3121-g079baaed9-windows-x86",
     "bin": "pcsx2.exe",
-    "shortcuts": [["pcsx2.exe", "PS2"]],
+    "shortcuts": [
+        [
+            "pcsx2.exe",
+            "PS2"
+        ]
+    ],
     "persist": [
         "pcsx2.VisualElementsManifest.xml",
         "VisualElements",

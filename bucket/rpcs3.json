@@ -1,18 +1,20 @@
 {
     "homepage": "https://rpcs3.net/",
-    "version": "0.0.6-7909",
+    "version": "0.0.6-8071",
     "description": "Playstation 3 Emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/RPCS3/rpcs3/blob/master/LICENSE"
     },
-    "url": [
-        "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-a254a203bb9d9c41e21e755287389de4043a2206/rpcs3-v0.0.6-7909-a254a203_win64.7z",
-        "https://raw.githubusercontent.com/deide/deide-bucket/master/defaults/rpcs3/rpcs3_VE.7z"
-    ],
-    "hash": "f849cf41e4dd6f3466cc0e6654088b2fac9d9ce12154d5001f04c65f3b5c1abb",
+    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-f480ba13c05b421e1632db08297dd4142300f23b/rpcs3-v0.0.6-8071-f480ba13_win64.7z",
+    "hash": "ab4d7ff5ebf295f04ab4fc0d696fc5518046d005f0ef7bf5a8c82c83c3e8ba46",
     "bin": "rpcs3.exe",
-    "shortcuts": [["rpcs3.exe", "PS3"]],
+    "shortcuts": [
+        [
+            "rpcs3.exe",
+            "PS3"
+        ]
+    ],
     "persist": [
         "rpcs3.VisualElementsManifest.xml",
         "VisualElements",
