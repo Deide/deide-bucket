@@ -9,7 +9,7 @@
     "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2121/yuzu-windows-msvc-20190714-4882c05.zip",
     "hash": "9ecd3331b831f7013366706fc3a9e42287129884a0974411b13c50d4ecb6cc7e",
     "extract_dir": ["nightly"],
-    "post_install": ["mkdir $dir/user"],
+    "pre_install": ["mkdir $dir/user"],
     "bin": "yuzu.exe",
     "shortcuts": [["yuzu.exe", "Nintendo Switch"]],
     "persist": ["yuzu.VisualElementsManifest.xml", "VisualElements", "user"],
