@@ -1,0 +1,23 @@
+{
+    "homepage": "https://citra-emu.org",
+    "version": "nightly-1298",
+    "description": "3DS Emulator",
+    "license": {
+        "identifier": "GPL-2.0",
+        "url": "https://github.com/citra-emu/citra-nightly/blob/master/license.txt"
+    },
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1298/citra-windows-mingw-20190713-32f832a.7z",
+    "hash": "8c1e4f4cf244f2523bce15c0d86dd342e6add07799fa82bca2db38da0179f64c",
+    "extract_dir": ["nightly-mingw"],
+    "post_install": ["mkdir $dir/user"],
+    "bin": ["citra.exe", "citra-qt.exe"],
+    "shortcuts": [["citra-qt.exe", "3DS"]],
+    "persist": ["citra.VisualElementsManifest.xml", "VisualElements", "user"],
+    "checkver": {
+        "url": "https://github.com/citra-emu/citra-nightly/releases/latest",
+        "regex": "<a href=\"\\/citra-emu\\/citra-nightly\\/releases\\/download\\/?<version>(nightly\\-[0-9]+)\\/citra\\-windows\\-mingw\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{7})\\.7z\""
+    },
+    "autoupdate": {
+        "url": "https://github.com/citra-emu/citra-nightly/releases/download/$version/citra-windows-mingw-$matchDate-$matchCommitshort.7z"
+    }
+}
