@@ -1,23 +1,32 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "nightly-2121",
+    "version": "nightly-2127",
     "description": "Nintendo Switch Emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/yuzu-emu/yuzu-nightly/blob/master/license.txt"
     },
-    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2121/yuzu-windows-msvc-20190714-4882c05.zip",
-    "hash": "9ecd3331b831f7013366706fc3a9e42287129884a0974411b13c50d4ecb6cc7e",
-    "extract_dir": ["nightly"],
-    "pre_install": ["mkdir $dir/user"],
+    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2127/yuzu-windows-msvc-20190717-223a535.zip",
+    "hash": "4a6e87a53568a25cdaf1852236faa7c097162baed36d688b3ea98b3fa94caea3",
+    "extract_dir": "nightly",
+    "pre_install": "mkdir $dir/user",
     "bin": "yuzu.exe",
-    "shortcuts": [["yuzu.exe", "Nintendo Switch"]],
-    "persist": ["yuzu.VisualElementsManifest.xml", "VisualElements", "user"],
+    "shortcuts": [
+        [
+            "yuzu.exe",
+            "Nintendo Switch"
+        ]
+    ],
+    "persist": [
+        "yuzu.VisualElementsManifest.xml",
+        "VisualElements",
+        "user"
+    ],
     "checkver": {
         "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/latest",
-        "regex": "<a href=\"\\/yuzu-emu\\/yuzu-nightly\\/releases\\/download\\/?<version>(nightly\\-[0-9]+)\\/yuzu\\-windows\\-msvc\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{7})\\.zip\""
+        "regex": "<a href=\"\\/yuzu-emu\\/yuzu-nightly\\/releases\\/download\\/(?<version>nightly\\-[0-9]+)\\/yuzu\\-windows\\-msvc\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{7})\\.zip\""
     },
     "autoupdate": {
-        "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/$version/yuzu-windows-msvc-$matchDate-$matchCommitshort.7z"
+        "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/$version/yuzu-windows-msvc-$matchDate-$matchCommitshort.zip"
     }
 }

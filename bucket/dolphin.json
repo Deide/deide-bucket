@@ -1,24 +1,29 @@
 {
     "homepage": "https://dolphin-emu.org/",
-    "version": "5.0-10621",
+    "version": "5.0-10630",
     "description": "Gamecube & Wii emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/dolphin-emu/dolphin/blob/master/license.txt"
     },
-    "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-10621-x64.7z",
-    "hash": "b9e556fb0b8f1235664d7116e41b9666d0af32736755b28b1612299e8bb6b728",
+    "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-10630-x64.7z",
+    "hash": "4a3238752c09fe3fb4978623ad751e1bd27f8f12eb6179f5ef1d15ca94e8b7f5",
     "extract_dir": "Dolphin-x64",
-    "pre_install": ["New-Item $dir/portable.txt"],
+    "pre_install": "New-Item $dir/portable.txt",
     "bin": "Dolphin.exe",
-    "shortcuts": [["Dolphin.exe", "Gamecube & Wii"]],
+    "shortcuts": [
+        [
+            "Dolphin.exe",
+            "Gamecube & Wii"
+        ]
+    ],
     "persist": [
         "rpcs3.VisualElementsManifest.xml",
         "VisualElements",
         "portable.txt"
     ],
     "checkver": {
-        "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/latest",
+        "url": "https://dolphin-emu.org/",
         "regex": "Download Dolphin (\\d.\\d\\-[\\d]{5}) for Windows, Mac and Linux"
     },
     "autoupdate": {
