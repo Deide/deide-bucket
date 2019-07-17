@@ -1,11 +1,16 @@
 {
     "homepage": "https://github.com/MultiMC/MultiMC5",
-    "version": "0.6.5",
+    "version": "0.6.6",
     "description": "MultiMC is a Qt Minecraft launcher",
-    "url": "https://github.com/MultiMC/MultiMC5/releases/download/0.6.5/mmc-stable-win32.zip",
+    "url": "https://github.com/MultiMC/MultiMC5/releases/download/0.6.6/mmc-stable-win32.zip",
     "extract_dir": "MultiMC",
     "bin": "MultiMC.exe",
-    "shortcuts": [["MultiMC.exe", "MultiMC"]],
+    "shortcuts": [
+        [
+            "MultiMC.exe",
+            "MultiMC"
+        ]
+    ],
     "persist": [
         "multimc.cfg",
         "accounts.json",
@@ -19,5 +24,5 @@
         "url": "https://github.com/MultiMC/MultiMC5/releases/download/$version/mmc-stable-win32.zip",
         "extract_dir": "MultiMC"
     },
-    "hash": "4fa91828aaeb571193397028ce21674b8d4430a4e092e11a18fcc41c770d18b5"
+    "hash": "af52ac2577693a1b4e20293e0b5a3a8062fc5afac839b27cbad0356b85918f2b"
 }
