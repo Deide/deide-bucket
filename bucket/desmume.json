@@ -16,15 +16,7 @@
             "shortcuts": [["DeSmuME-VS2015-Release.exe", "NDS"]]
         }
     },
-    "persist": [
-        "DeSmuME-VS2015-x64-Release.VisualElementsManifest.xml",
-        "VisualElements",
-        "Battery",
-        "Cheats",
-        "States",
-        "StateSlots",
-        "desmume.ini"
-    ],
+    "persist": ["Battery", "Cheats", "States", "StateSlots", "desmume.ini"],
     "checkver": {
         "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
         "jp": {

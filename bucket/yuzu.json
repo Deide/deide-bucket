@@ -11,17 +11,8 @@
     "extract_dir": "nightly",
     "pre_install": "mkdir $dir/user",
     "bin": "yuzu.exe",
-    "shortcuts": [
-        [
-            "yuzu.exe",
-            "Nintendo Switch"
-        ]
-    ],
-    "persist": [
-        "yuzu.VisualElementsManifest.xml",
-        "VisualElements",
-        "user"
-    ],
+    "shortcuts": [["yuzu.exe", "Nintendo Switch"]],
+    "persist": ["user"],
     "checkver": {
         "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/latest",
         "regex": "<a href=\"\\/yuzu-emu\\/yuzu-nightly\\/releases\\/download\\/(?<version>nightly\\-[0-9]+)\\/yuzu\\-windows\\-msvc\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{7})\\.zip\""

@@ -6,22 +6,8 @@
     "hash": "c7a8fcf9ac4a8204b4c24391514fdcc899089ba5c4ac2cacacf9c778b3c16b70",
     "extract_dir": "pcsx2-v1.5.0-dev-3208-g2e4e22f0a-windows-x86",
     "bin": "pcsx2.exe",
-    "shortcuts": [
-        [
-            "pcsx2.exe",
-            "PS2"
-        ]
-    ],
-    "persist": [
-        "pcsx2.VisualElementsManifest.xml",
-        "VisualElements",
-        "portable.ini",
-        "memcards",
-        "snaps",
-        "sstates",
-        "bios",
-        "inis"
-    ],
+    "shortcuts": [["pcsx2.exe", "PS2"]],
+    "persist": ["portable.ini", "memcards", "snaps", "sstates", "bios", "inis"],
     "checkver": {
         "url": "https://buildbot.orphis.net/pcsx2/index.php",
         "regex": "v(?<version>[\\d.]+\\-dev-\\d+)-(?<commit>[a-z0-9]+)"

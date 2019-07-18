@@ -11,17 +11,8 @@
     "extract_dir": "Dolphin-x64",
     "pre_install": "New-Item $dir/portable.txt",
     "bin": "Dolphin.exe",
-    "shortcuts": [
-        [
-            "Dolphin.exe",
-            "Gamecube & Wii"
-        ]
-    ],
-    "persist": [
-        "rpcs3.VisualElementsManifest.xml",
-        "VisualElements",
-        "portable.txt"
-    ],
+    "shortcuts": [["Dolphin.exe", "Gamecube & Wii"]],
+    "persist": ["portable.txt"],
     "checkver": {
         "url": "https://dolphin-emu.org/",
         "regex": "Download Dolphin (\\d.\\d\\-[\\d]{5}) for Windows, Mac and Linux"
