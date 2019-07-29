@@ -7,7 +7,10 @@
     "bin": "EliteLogAgent.exe",
     "shortcuts": [["EliteLogAgent.exe", "Elite Log Agent"]],
     "persist": ["Settings.json", "Log/"],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/DarkWanderer/Elite-Log-Agent/releases/latest",
+        "regex": "releases\\/tag\\/release\\/([\\d.]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/DarkWanderer/Elite-Log-Agent/releases/download/release%2F$version/ELA.Portable.$version.zip"
     }
