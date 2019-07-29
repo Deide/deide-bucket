@@ -1,18 +1,18 @@
 {
     "homepage": "https://citra-emu.org",
-    "version": "nightly-1310",
+    "version": "nightly-1319",
     "description": "3DS Emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/citra-emu/citra-nightly/blob/master/license.txt"
     },
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1310/citra-windows-mingw-20190715-643a396.7z",
-    "hash": "c8efa7eec5b48acfdd701bb7b17befc54a928f026c9ccb5710fd675113f4e46d",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1319/citra-windows-mingw-20190729-76aec4d.7z",
+    "hash": "fca6c5280cbb66672ed00f9b917c53f219506c0226c51f339cee1a8336810222",
     "extract_dir": "nightly-mingw",
     "pre_install": "mkdir $dir/user",
-    "bin": ["citra.exe", "citra-qt.exe"],
+    "bin": ["citra.exe", "citra-qt.exe", "citra-room.exe"],
     "shortcuts": [["citra-qt.exe", "3DS"]],
-    "persist": ["user"],
+    "persist": "user",
     "checkver": {
         "url": "https://github.com/citra-emu/citra-nightly/releases/latest",
         "regex": "<a href=\"\\/citra-emu\\/citra-nightly\\/releases\\/download\\/(?<version>nightly\\-[0-9]+)\\/citra\\-windows\\-mingw\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{7})\\.7z\""

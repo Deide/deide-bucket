@@ -1,13 +1,13 @@
 {
     "homepage": "https://rpcs3.net/",
-    "version": "0.0.6-8392",
+    "version": "0.0.6-8429",
     "description": "Playstation 3 Emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/RPCS3/rpcs3/blob/master/LICENSE"
     },
-    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-a26841512171c258db7146c6059889f838583e67/rpcs3-v0.0.6-8392-a2684151_win64.7z",
-    "hash": "d683694fcc1e5c3059a9900833f4a5db1bbae5c40ec04112f0245925d2306062",
+    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-829047ecdb7f9f6ecb1d0665f73f93af3d68e6d0/rpcs3-v0.0.6-8429-829047ec_win64.7z",
+    "hash": "894614ff8f75befcbc77b0bad2693fd2db4eb3a3cddc961b86074372c5f0ff14",
     "bin": "rpcs3.exe",
     "shortcuts": [["rpcs3.exe", "PS3"]],
     "persist": [
@@ -22,6 +22,10 @@
         "regex": "\\/releases\\/tag\\/build-(?<commitlong>(?<commitshort>[a-z0-9]{8})[a-z0-9]+)\">(?<version>[\\d.]+\\-\\d+)<\\/a>"
     },
     "autoupdate": {
-        "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommitlong/rpcs3-v$version-$matchCommitshort_win64.7z"
+        "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommitlong/rpcs3-v$version-$matchCommitshort_win64.7z",
+        "hash": {
+            "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-$matchCommitlong/",
+            "regex": "($sha256);"
+        }
     }
 }

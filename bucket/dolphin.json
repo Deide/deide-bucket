@@ -1,18 +1,23 @@
 {
     "homepage": "https://dolphin-emu.org/",
-    "version": "5.0-10630",
+    "version": "5.0-10738",
     "description": "Gamecube & Wii emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/dolphin-emu/dolphin/blob/master/license.txt"
     },
-    "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-10630-x64.7z",
-    "hash": "4a3238752c09fe3fb4978623ad751e1bd27f8f12eb6179f5ef1d15ca94e8b7f5",
+    "url": "https://dl.dolphin-emu.org/builds/dolphin-master-5.0-10738-x64.7z",
+    "hash": "4bcf306a8b091b2ff632d90f03b3d824557fc4d09e014712926f8972f8d8bf96",
     "extract_dir": "Dolphin-x64",
     "pre_install": "New-Item $dir/portable.txt",
     "bin": "Dolphin.exe",
-    "shortcuts": [["Dolphin.exe", "Gamecube & Wii"]],
-    "persist": ["portable.txt"],
+    "shortcuts": [
+        [
+            "Dolphin.exe",
+            "Gamecube & Wii"
+        ]
+    ],
+    "persist": "portable.txt",
     "checkver": {
         "url": "https://dolphin-emu.org/",
         "regex": "Download Dolphin (\\d.\\d\\-[\\d]{5}) for Windows, Mac and Linux"

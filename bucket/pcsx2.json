@@ -1,13 +1,25 @@
 {
     "homepage": "https://pcsx2.net",
-    "version": "1.5.0-dev-3208",
+    "version": "1.5.0-dev-3215",
     "description": "Playstation 2 Emulator",
-    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-3208-g2e4e22f0a&platform=windows-x86#/pcsx2-1.5.0-dev-3208.7z",
-    "hash": "c7a8fcf9ac4a8204b4c24391514fdcc899089ba5c4ac2cacacf9c778b3c16b70",
-    "extract_dir": "pcsx2-v1.5.0-dev-3208-g2e4e22f0a-windows-x86",
+    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.5.0-dev-3215-g55d469e7f&platform=windows-x86#/pcsx2-1.5.0-dev-3215.7z",
+    "hash": "51b8e7c89e63d54faa0fd045a617aa3978d8b0e55ba3de2d8f8bb985c2866970",
+    "extract_dir": "pcsx2-v1.5.0-dev-3215-g55d469e7f-windows-x86",
     "bin": "pcsx2.exe",
-    "shortcuts": [["pcsx2.exe", "PS2"]],
-    "persist": ["portable.ini", "memcards", "snaps", "sstates", "bios", "inis"],
+    "shortcuts": [
+        [
+            "pcsx2.exe",
+            "PS2"
+        ]
+    ],
+    "persist": [
+        "portable.ini",
+        "memcards",
+        "snaps",
+        "sstates",
+        "bios",
+        "inis"
+    ],
     "checkver": {
         "url": "https://buildbot.orphis.net/pcsx2/index.php",
         "regex": "v(?<version>[\\d.]+\\-dev-\\d+)-(?<commit>[a-z0-9]+)"
