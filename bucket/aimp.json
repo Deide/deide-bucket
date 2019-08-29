@@ -11,6 +11,15 @@
     "persist": ["Profile"],
     "bin": "aimp.exe",
     "shortcuts": [["aimp.exe", "AIMP"]],
-    "checkver": "os=windows\"\\>\\s+\\<span class=\"button_download_text\"\\>v(\\d+\\.\\d+).+\\<\\/span\\>",
+    "checkver": {
+        "url": "http://www.aimp.ru/?do=download&os=windows",
+        "regex": "http\\:\\/\\/aimp\\.su\\/storage\\/(?<token>[a-z0-9]{32})\\/aimp_(?<version>\\d+\\.\\d+\\.\\d+)\\.exe"
+    },
+    "autoupdate": {
+        "url": "http://aimp.su/storage/$matchToken/aimp_$version.exe",
+        "hash": {
+            "regex": "sha256: {sha256}"
+        }
+    },
     "hash": "md5:acc1353719050e5fa6f28e8d296078a4"
 }
