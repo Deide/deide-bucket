@@ -1,16 +1,25 @@
 {
     "homepage": "http://aimp.ru",
-    "version": "4.51",
+    "version": "4.60.2146",
     "description": "AIMP is a music player and library manager",
-    "url": "http://aimp.su/storage/acc1353719050e5fa6f28e8d296078a4/aimp_4.51.2084.exe",
+    "url": "http://aimp.su/storage/2402daf0915b58f414a95800faa5c315/aimp_4.60.2146.exe",
     "installer": {
         "file": "aimp_4.51.2084.exe",
-        "args": ["/AUTO=$dir", "/PORTABLE", "/SILENT"],
+        "args": [
+            "/AUTO=$dir",
+            "/PORTABLE",
+            "/SILENT"
+        ],
         "keep": false
     },
-    "persist": ["Profile"],
+    "persist": "Profile",
     "bin": "aimp.exe",
-    "shortcuts": [["aimp.exe", "AIMP"]],
+    "shortcuts": [
+        [
+            "aimp.exe",
+            "AIMP"
+        ]
+    ],
     "checkver": {
         "url": "http://www.aimp.ru/?do=download&os=windows",
         "regex": "http\\:\\/\\/aimp\\.su\\/storage\\/(?<token>[a-z0-9]{32})\\/aimp_(?<version>\\d+\\.\\d+\\.\\d+)\\.exe"
@@ -21,5 +30,5 @@
             "regex": "sha256: {sha256}"
         }
     },
-    "hash": "md5:acc1353719050e5fa6f28e8d296078a4"
+    "hash": "19c3465721eef8031a8555df1c122656e76ea43636ac4baa8d441d99b82dbd9b"
 }
