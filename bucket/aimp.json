@@ -27,7 +27,7 @@
     "autoupdate": {
         "url": "http://aimp.su/storage/$matchToken/aimp_$version.exe",
         "hash": {
-            "regex": "sha256: {sha256}"
+            "regex": "SHA256: $sha256"
         }
     },
     "hash": "19c3465721eef8031a8555df1c122656e76ea43636ac4baa8d441d99b82dbd9b"
