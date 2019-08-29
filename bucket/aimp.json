@@ -4,7 +4,6 @@
     "description": "AIMP is a music player and library manager",
     "url": "http://aimp.su/storage/2402daf0915b58f414a95800faa5c315/aimp_4.60.2146.exe",
     "installer": {
-        "file": "aimp_4.51.2084.exe",
         "args": [
             "/AUTO=$dir",
             "/PORTABLE",
