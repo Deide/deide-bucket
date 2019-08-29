@@ -1,12 +1,20 @@
 {
     "homepage": "https://github.com/DarkWanderer/Elite-Log-Agent",
-    "version": "1.2.0.569",
+    "version": "1.3.1.606",
     "description": "Lightweight, non-intrusive data uploader for Elite Dangerous",
-    "url": "https://github.com/DarkWanderer/Elite-Log-Agent/releases/download/release%2F1.2.0.569/ELA.Portable.1.2.0.569.zip",
-    "hash": "34128EED087108F92E96D0F8B5B79FD2D832CDD2273EA94B79D240FBDE194D7B",
+    "url": "https://github.com/DarkWanderer/Elite-Log-Agent/releases/download/release%2F1.3.1.606/ELA.Portable.1.3.1.606.zip",
+    "hash": "8f6563792ab6258af409776b45d8bb0a40ce085cbbff93a476cfb115b476e3c1",
     "bin": "EliteLogAgent.exe",
-    "shortcuts": [["EliteLogAgent.exe", "Elite Log Agent"]],
-    "persist": ["Settings.json", "Log/"],
+    "shortcuts": [
+        [
+            "EliteLogAgent.exe",
+            "Elite Log Agent"
+        ]
+    ],
+    "persist": [
+        "Settings.json",
+        "Log/"
+    ],
     "checkver": {
         "url": "https://github.com/DarkWanderer/Elite-Log-Agent/releases/latest",
         "regex": "releases\\/tag\\/release\\/([\\d.]+)"
