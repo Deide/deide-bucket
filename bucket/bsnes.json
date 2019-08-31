@@ -1,0 +1,17 @@
+{
+    "homepage": "https://github.com/byuu/bsnes",
+    "version": "108",
+    "description": "bsnes is a Super Nintendo / Super Famicom emulator that began development on October 14th, 2004. It is a subset project of higan, and focuses on performance, features, and ease of use.",
+    "license": {
+        "identifier": "GPL-2.0-or-later",
+        "url": "https://github.com/byuu/bsnes/blob/master/LICENSE.txt"
+    },
+    "url": "https://download.byuu.org/bsnes_v108-windows.7z",
+    "hash": "AF60EBC47DDF515712E379E6648A570911AAF1BCA892351D73AFDFAE3A05BB4C",
+    "extract_dir": "bsnes_v108-windows",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://download.byuu.org/bsnes_v$version-windows.7z",
+        "extract_dir": "bsnes_v$version-windows"
+    }
+}
