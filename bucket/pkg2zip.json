@@ -1,0 +1,27 @@
+{
+    "homepage": "https://github.com/mmozeiko/pkg2zip/",
+    "version": "1.8",
+    "description": "Decrypts PlayStation Vita pkg file and packages to zip archive ",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v1.8/pkg2zip_32bit.zip",
+            "hash": "2DB80C0685EDD5F224AA4FF4BCF5AE67F591F688C41BE51C0095470C843CD4A6"
+        },
+        "64bit": {
+            "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v1.8/pkg2zip_64bit.zip",
+            "hash": "EE96867B5E88A417D23BF7F1FA944A670D4B8CE7150B33B889D0C6B8C12E4BB6"
+        }
+    },
+    "bin": ["pkg2zip.exe"],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v$version/pkg2zip_32bit.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v$version/pkg2zip_64bit.zip"
+            }
+        }
+    }
+}
