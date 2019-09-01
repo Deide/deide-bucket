@@ -9,6 +9,9 @@
     "url": "https://download.byuu.org/bsnes_v108-windows.7z",
     "hash": "AF60EBC47DDF515712E379E6648A570911AAF1BCA892351D73AFDFAE3A05BB4C",
     "extract_dir": "bsnes_v108-windows",
+    "bin": ["bsnes.exe"],
+    "shortcuts": [["bsnes.exe", "SNES"]],
+    "persist": ["configuration.bml", "settings.bml", "Firmware", "Shaders"],
     "checkver": "github",
     "autoupdate": {
         "url": "https://download.byuu.org/bsnes_v$version-windows.7z",
