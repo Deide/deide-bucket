@@ -1,13 +1,13 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "nightly-2172",
+    "version": "nightly-2197",
     "description": "Nintendo Switch Emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/yuzu-emu/yuzu-nightly/blob/master/license.txt"
     },
-    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2172/yuzu-windows-msvc-20190830-4d4f9cc.zip",
-    "hash": "2463f4a8cbb22625cc3b96854d174fe782d2205cbf93ec31fc435ff6b6500c56",
+    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2197/yuzu-windows-msvc-20190905-4ee9949.zip",
+    "hash": "7877a8bf50278e4bc4e3b21b4fe08e5fc8baf88195cdf99c7ded70cccc9b3088",
     "extract_dir": "nightly",
     "pre_install": "mkdir $dir/user",
     "bin": "yuzu.exe",
