@@ -1,17 +1,27 @@
 {
     "homepage": "https://github.com/byuu/bsnes",
-    "version": "109",
+    "version": "112",
     "description": "bsnes is a Super Nintendo / Super Famicom emulator that began development on October 14th, 2004. It is a subset project of higan, and focuses on performance, features, and ease of use.",
     "license": {
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/byuu/bsnes/blob/master/LICENSE.txt"
     },
-    "url": "https://download.byuu.org/bsnes_v109-windows.7z",
-    "hash": "4b38c352a656ad0f3945750235d3bd30f2f169a3a84a96c16cd7736c2ec2e3b1",
-    "extract_dir": "bsnes_v109-windows",
+    "url": "https://download.byuu.org/bsnes_v112-windows.zip",
+    "hash": "6d764feaf24e3dab4b5b8963400e49614aac3173bd7af749352d395a921b78ea",
+    "extract_dir": "bsnes_v112-windows",
     "bin": "bsnes.exe",
-    "shortcuts": [["bsnes.exe", "SNES"]],
-    "persist": ["configuration.bml", "settings.bml", "Firmware", "Shaders"],
+    "shortcuts": [
+        [
+            "bsnes.exe",
+            "SNES"
+        ]
+    ],
+    "persist": [
+        "configuration.bml",
+        "settings.bml",
+        "Firmware",
+        "Shaders"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://download.byuu.org/bsnes_v$version-windows.zip",
