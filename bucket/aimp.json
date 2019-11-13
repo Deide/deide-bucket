@@ -13,7 +13,8 @@
     "shortcuts": [["aimp.exe", "AIMP"]],
     "checkver": {
         "url": "http://www.aimp.ru/?do=download&os=windows",
-        "regex": "http\\:\\/\\/aimp\\.su\\/storage\\/(?<token>[a-z0-9]{32})\\/aimp_(?<version>\\d+\\.\\d+\\.\\d+)\\.exe"
+        "regex": "\\<h1\\>AIMP v([\\d.]+), build ([\\d.]+)\\<\\/h1\\>",
+        "replace": "${1}.${2}"
     },
     "autoupdate": {
         "url": "http://aimp.su/storage/$matchToken/aimp_$version.exe",
