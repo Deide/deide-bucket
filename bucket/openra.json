@@ -3,6 +3,14 @@
     "description": "Real-time strategy game engine for early Westwood games such as Command & Conquer: Red Alert",
     "version": "20190314",
     "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20191117/OpenRA-release-20191117-x64.exe#/OpenRA.7z"
+        },
+        "32bit": {
+            "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20191117/OpenRA-release-20191117-x86.exe#/OpenRA.7z"
+        }
+    },
     "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20190314/OpenRA-release-20190314.exe#/OpenRA.7z",
     "hash": "e0d51abd55098e4125b826ad03c092dad620e4a1674a7b75ccc53708a3bee73f",
     "bin": ["Dune2000.exe", "RedAlert.exe", "TiberianDawn.exe"],
