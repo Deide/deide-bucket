@@ -1,18 +1,18 @@
 {
     "homepage": "http://www.openra.net",
     "description": "Real-time strategy game engine for early Westwood games such as Command & Conquer: Red Alert",
-    "version": "20190314",
+    "version": "20191117",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20191117/OpenRA-release-20191117-x64.exe#/OpenRA.7z"
+            "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20191117/OpenRA-release-20191117-x64.exe#/OpenRA.7z",
+            "hash": "B609A9608A77F68B13C700A562FE69374F1C1B4EA260C6FC949D16343A3CA970"
         },
         "32bit": {
-            "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20191117/OpenRA-release-20191117-x86.exe#/OpenRA.7z"
+            "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20191117/OpenRA-release-20191117-x86.exe#/OpenRA.7z",
+            "hash": "304F9F7A758C69F081D85D9AED4A4A1726F1B3FF34A698C5BAE74DA99A881191"
         }
     },
-    "url": "https://github.com/OpenRA/OpenRA/releases/download/release-20190314/OpenRA-release-20190314.exe#/OpenRA.7z",
-    "hash": "e0d51abd55098e4125b826ad03c092dad620e4a1674a7b75ccc53708a3bee73f",
     "bin": ["Dune2000.exe", "RedAlert.exe", "TiberianDawn.exe"],
     "shortcuts": [
         ["Dune2000.exe", "OpenRA - Dune 2000"],
