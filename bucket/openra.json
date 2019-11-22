@@ -16,6 +16,13 @@
         "regex": "Release ([\\d]{8})</a>"
     },
     "autoupdate": {
-        "url": "https://github.com/OpenRA/OpenRA/releases/download/release-$version/OpenRA-release-$version.exe#/OpenRA.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/OpenRA/OpenRA/releases/download/release-$version/OpenRA-release-$version-x64.exe#/OpenRA.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/OpenRA/OpenRA/releases/download/release-$version/OpenRA-release-$version-x86.exe#/OpenRA.7z"
+            }
+        }
     }
 }
