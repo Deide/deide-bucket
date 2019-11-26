@@ -21,17 +21,17 @@
         "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
         "jp": {
             "version": "$.build.version",
-            "jobidtt": "$.build.jobs[0].jobId",
-            "jobidsf": "$.build.jobs[1].jobId"
+            "jobid32": "$.build.jobs[0].jobId",
+            "jobid64": "$.build.jobs[1].jobId"
         }
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ci.appveyor.com/api/buildjobs/$jobidsf/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe"
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid64/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe"
             },
             "32bit": {
-                "url": "https://ci.appveyor.com/api/buildjobs/$jobidtt/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid32/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
             }
         }
     }
