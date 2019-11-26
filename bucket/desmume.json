@@ -31,7 +31,7 @@
                 "url": "https://ci.appveyor.com/api/buildjobs/$jobId64/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe"
             },
             "32bit": {
-                "url": "https://ci.appveyor.com/api/buildjobs/jobId32/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
+                "url": "https://ci.appveyor.com/api/buildjobs/$jobId32/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
             }
         }
     }
