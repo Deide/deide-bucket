@@ -1,22 +1,48 @@
 {
     "homepage": "https://desmume.org",
-    "version": "0.0.0.589",
+    "version": "0.0.0.630",
     "description": "Nintendo DS Emulator",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/fxrfdxm93lnv56gm/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe",
-            "hash": "md5:42b1504f0b994d54050a493793db362f",
-            "bin": [["DeSmuME-VS2015-x64-Release.exe", "desmume"]],
-            "shortcuts": [["DeSmuME-VS2015-x64-Release.exe", "NDS"]]
+            "url": "https://ci.appveyor.com/api/buildjobs/cavlv3higoi3c86n/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe",
+            "hash": "7181dd7f37fd469cf88bdb7550a99d5f560e45072430415de6f19549befa6b90",
+            "bin": [
+                [
+                    "DeSmuME-VS2015-x64-Release.exe",
+                    "desmume"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "DeSmuME-VS2015-x64-Release.exe",
+                    "NDS"
+                ]
+            ]
         },
         "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/2jbg732mrh4v7hp8/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe",
-            "hash": "md5:30e69b491c5ca1fc3263ccb4fc8a88aa",
-            "bin": [["DeSmuME-VS2015-Release.exe", "desmume"]],
-            "shortcuts": [["DeSmuME-VS2015-Release.exe", "NDS"]]
+            "url": "https://ci.appveyor.com/api/buildjobs/6kyw81x5ap22c8n2/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe",
+            "hash": "755e66f0f686f26619f4966b2bfc91574ec573647bbd0530269391b93aefa891",
+            "bin": [
+                [
+                    "DeSmuME-VS2015-Release.exe",
+                    "desmume"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "DeSmuME-VS2015-Release.exe",
+                    "NDS"
+                ]
+            ]
         }
     },
-    "persist": ["Battery", "Cheats", "States", "StateSlots", "desmume.ini"],
+    "persist": [
+        "Battery",
+        "Cheats",
+        "States",
+        "StateSlots",
+        "desmume.ini"
+    ],
     "checkver": {
         "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
         "jp": {
