@@ -11,14 +11,14 @@
         "https://github.com/Anuken/Mindustry/releases/download/v100/server-release.jar"
     ],
     "bin": [
-        ["java.exe", "mindustry", "-jar Mindustry.jar"],
-        ["java.exe", "mindustry-server", "-jar server-release.jar"]
+        ["java.exe", "mindustry", "-jar $dir\\Mindustry.jar"],
+        ["java.exe", "mindustry-server", "-jar $dir\\server-release.jar"]
     ],
     "hash": [
         "7C0BDB6997D66A8EDBF412CD654EF899A2DDEA0708FAE234878A599EA046940E",
         "D18F636069364C0786E7D4253F89A2D68230489302DAE4DCBA40130F2E97C0F8"
     ],
-    "notes": "DLLs are installed",
+    "notes": "Java 8 is recommended",
     "depends": "java/oraclejre8",
     "checkver": "github",
     "autoupdate": {
