@@ -11,8 +11,8 @@
         "https://github.com/Anuken/Mindustry/releases/download/v100/server-release.jar"
     ],
     "bin": [
-        ["java -jar Mindustry.jar", "mindustry"],
-        ["java -jar server-release.jar", "mindustry-server"]
+        ["java.exe", "mindustry", "-jar Mindustry.jar"],
+        ["java.exe", "mindustry-server", "-jar server-release.jar"]
     ],
     "hash": [
         "7C0BDB6997D66A8EDBF412CD654EF899A2DDEA0708FAE234878A599EA046940E",
