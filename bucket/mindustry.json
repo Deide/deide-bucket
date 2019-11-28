@@ -19,7 +19,9 @@
         "D18F636069364C0786E7D4253F89A2D68230489302DAE4DCBA40130F2E97C0F8"
     ],
     "notes": "Java 8 is recommended",
-    "depends": "java/oraclejre8",
+    "suggest": {
+        "JRE8": ["java/oraclejre8", "java/openjdk8"]
+    },
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Anuken/Mindustry/releases/download/v$version/Mindustry.jar"
