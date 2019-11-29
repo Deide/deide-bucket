@@ -8,11 +8,22 @@
     },
     "url": [
         "https://github.com/Anuken/Mindustry/releases/download/v100/Mindustry.jar",
-        "https://github.com/Anuken/Mindustry/releases/download/v100/server-release.jar"
+        "https://github.com/Anuken/Mindustry/releases/download/v100/server-release.jar",
+        "https://i.imgur.com/Y4Q1ECd.png"
     ],
+    "pre_install": ["Rename-Item -Path $dir\\Y4Q1ECd.png -NewName icon.png"],
     "bin": [
         ["java.exe", "mindustry", "-jar $dir\\Mindustry.jar"],
         ["java.exe", "mindustry-server", "-jar $dir\\server-release.jar"]
+    ],
+    "shortcuts": [
+        ["java.exe", "Mindustry", "-jar $dir\\Mindustry.jar", "icon.png"],
+        [
+            "java.exe",
+            "Mindustry Server",
+            "-jar $dir\\server-release.jar",
+            "icon.png"
+        ]
     ],
     "hash": [
         "7C0BDB6997D66A8EDBF412CD654EF899A2DDEA0708FAE234878A599EA046940E",
