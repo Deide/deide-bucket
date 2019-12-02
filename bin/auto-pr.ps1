@@ -1,9 +1,10 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "deide/deide-bucket:master"
+    [String] $Upstream = "deide/deide-bucket:master",
+    [Alias(App)][String[]] $Apps = ("*")
 )
 
 if (!$env:SCOOP_HOME) { $env:SCOOP_HOME = resolve-path (split-path (split-path (scoop which scoop))) }
 $autopr = "$env:SCOOP_HOME/bin/auto-pr.ps1"
 $dir = "$psscriptroot/../bucket" # checks the parent dir
-Invoke-Expression -command "$autopr -dir $dir -upstream $upstream $($args | ForEach-Object { "$_ " })"
+Invoke-Expression -command "$autopr -dir $dir -upstream $Upstream -App $($Apps | ForEach-Object { "$_ " })"
