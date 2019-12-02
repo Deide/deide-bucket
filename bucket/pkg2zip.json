@@ -1,5 +1,5 @@
 {
-    "homepage": "https://github.com/mmozeiko/pkg2zip/",
+    "homepage": "https://github.com/lusid1/pkg2zip",
     "version": "1.8",
     "description": "Decrypts PlayStation Vita pkg file and packages to zip archive ",
     "architecture": {
@@ -17,10 +17,10 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v$version/pkg2zip_32bit.zip"
+                "url": "https://github.com/lusid1/pkg2zip/releases/download/$version/pkg2zip_32bit.zip"
             },
             "64bit": {
-                "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v$version/pkg2zip_64bit.zip"
+                "url": "https://github.com/lusid1/pkg2zip/releases/download/$version/pkg2zip_64bit.zip"
             }
         }
     }
