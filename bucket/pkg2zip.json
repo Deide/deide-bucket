@@ -1,18 +1,18 @@
 {
     "homepage": "https://github.com/lusid1/pkg2zip",
-    "version": "1.8",
+    "version": "2.2",
     "description": "Decrypts PlayStation Vita pkg file and packages to zip archive ",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v1.8/pkg2zip_32bit.zip",
-            "hash": "2DB80C0685EDD5F224AA4FF4BCF5AE67F591F688C41BE51C0095470C843CD4A6"
+            "url": "https://github.com/lusid1/pkg2zip/releases/download/2.2/pkg2zip_32bit.zip",
+            "hash": "f45d462f7eecb7d8593132e647e6541f5f2174f8f8b3794173076260c07cb4a2"
         },
         "64bit": {
-            "url": "https://github.com/mmozeiko/pkg2zip/releases/download/v1.8/pkg2zip_64bit.zip",
-            "hash": "EE96867B5E88A417D23BF7F1FA944A670D4B8CE7150B33B889D0C6B8C12E4BB6"
+            "url": "https://github.com/lusid1/pkg2zip/releases/download/2.2/pkg2zip_64bit.zip",
+            "hash": "ea874bb572b3ac6d0919f98c5acd6a2d53c9c23a6e24d4ac06961d874759b073"
         }
     },
-    "bin": ["pkg2zip.exe"],
+    "bin": "pkg2zip.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
