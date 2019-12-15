@@ -12,7 +12,9 @@
     ],
     "pre_install": ["Rename-Item -Path $dir\\Ozfabsa.png -NewName icon.png"],
     "bin": [["java.exe", "runelite", "-jar $dir\\RuneLite.jar"]],
-    "shortcuts": [["runelite.exe", "Runescape", "", "icon.png"]],
+    "shortcuts": [
+        ["$scoopdir\\shims\\runelite.exe", "Runescape", "", "icon.png"]
+    ],
     "hash": [
         "9f5e072966a616893cc15ce1da972a46b1862c80f248668f741e07f5379440ef"
     ],

@@ -13,26 +13,13 @@
     ],
     "pre_install": "Rename-Item -Path $dir\\Y4Q1ECd.png -NewName icon.png",
     "bin": [
-        [
-            "java.exe",
-            "mindustry",
-            "-jar $dir\\Mindustry.jar"
-        ],
-        [
-            "java.exe",
-            "mindustry-server",
-            "-jar $dir\\server-release.jar"
-        ]
+        ["java.exe", "mindustry", "-jar $dir\\Mindustry.jar"],
+        ["java.exe", "mindustry-server", "-jar $dir\\server-release.jar"]
     ],
     "shortcuts": [
+        ["$scoopdir\\shims\\mindustry.exe", "Mindustry", "", "icon.png"],
         [
-            "mindustry.exe",
-            "Mindustry",
-            "",
-            "icon.png"
-        ],
-        [
-            "mindustry-server.exe",
+            "$scoopdir\\shims\\mindustry-server.exe",
             "Mindustry Server",
             "",
             "icon.png"
@@ -44,10 +31,7 @@
     ],
     "notes": "Java 8 is recommended",
     "suggest": {
-        "JRE8": [
-            "java/oraclejre8",
-            "java/openjdk8"
-        ]
+        "JRE8": ["java/oraclejre8", "java/openjdk8"]
     },
     "checkver": "github",
     "autoupdate": {
