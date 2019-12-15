@@ -1,32 +1,53 @@
 {
     "homepage": "https://github.com/Anuken/Mindustry",
-    "version": "100",
+    "version": "101",
     "description": "A sandbox tower defense game.",
     "license": {
         "identifier": "GPL-3.0-only",
         "url": "https://github.com/Anuken/Mindustry/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/Anuken/Mindustry/releases/download/v100/Mindustry.jar",
+        "https://github.com/Anuken/Mindustry/releases/download/v101/Mindustry.jar",
         "https://github.com/Anuken/Mindustry/releases/download/v100/server-release.jar",
         "https://i.imgur.com/Y4Q1ECd.png"
     ],
-    "pre_install": ["Rename-Item -Path $dir\\Y4Q1ECd.png -NewName icon.png"],
+    "pre_install": "Rename-Item -Path $dir\\Y4Q1ECd.png -NewName icon.png",
     "bin": [
-        ["java.exe", "mindustry", "-jar $dir\\Mindustry.jar"],
-        ["java.exe", "mindustry-server", "-jar $dir\\server-release.jar"]
+        [
+            "java.exe",
+            "mindustry",
+            "-jar $dir\\Mindustry.jar"
+        ],
+        [
+            "java.exe",
+            "mindustry-server",
+            "-jar $dir\\server-release.jar"
+        ]
     ],
     "shortcuts": [
-        ["mindustry.exe", "Mindustry", "", "icon.png"],
-        ["mindustry-server.exe", "Mindustry Server", "", "icon.png"]
+        [
+            "mindustry.exe",
+            "Mindustry",
+            "",
+            "icon.png"
+        ],
+        [
+            "mindustry-server.exe",
+            "Mindustry Server",
+            "",
+            "icon.png"
+        ]
     ],
     "hash": [
-        "7C0BDB6997D66A8EDBF412CD654EF899A2DDEA0708FAE234878A599EA046940E",
+        "ca98b385ce5871ee2acd5fdf578e671e357dc45db1251b14212876e192f9f8c9",
         "D18F636069364C0786E7D4253F89A2D68230489302DAE4DCBA40130F2E97C0F8"
     ],
     "notes": "Java 8 is recommended",
     "suggest": {
-        "JRE8": ["java/oraclejre8", "java/openjdk8"]
+        "JRE8": [
+            "java/oraclejre8",
+            "java/openjdk8"
+        ]
     },
     "checkver": "github",
     "autoupdate": {
