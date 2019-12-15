@@ -5,11 +5,13 @@
     "architecture": {
         "32bit": {
             "url": "https://github.com/lusid1/pkg2zip/releases/download/2.2/pkg2zip_32bit.zip",
-            "hash": "f45d462f7eecb7d8593132e647e6541f5f2174f8f8b3794173076260c07cb4a2"
+            "hash": "f45d462f7eecb7d8593132e647e6541f5f2174f8f8b3794173076260c07cb4a2",
+            "extract_dir": "pkg2zip_32bit"
         },
         "64bit": {
             "url": "https://github.com/lusid1/pkg2zip/releases/download/2.2/pkg2zip_64bit.zip",
-            "hash": "ea874bb572b3ac6d0919f98c5acd6a2d53c9c23a6e24d4ac06961d874759b073"
+            "hash": "ea874bb572b3ac6d0919f98c5acd6a2d53c9c23a6e24d4ac06961d874759b073",
+            "extract_dir": "pkg2zip_64bit"
         }
     },
     "bin": "pkg2zip.exe",
