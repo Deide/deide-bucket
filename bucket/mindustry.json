@@ -24,23 +24,10 @@
             "-jar $dir\\server-release.jar"
         ]
     ],
-    "shortcuts": [
-        [
-            "$scoopdir\\shims\\mindustry.exe",
-            "Mindustry",
-            "",
-            "icon.png"
-        ],
-        [
-            "$scoopdir\\shims\\mindustry-server.exe",
-            "Mindustry Server",
-            "",
-            "icon.png"
-        ]
-    ],
     "hash": [
         "29591be2ad8057c20c132894170bfd739577ad735aa4fed5e6fb7a52788ddbae",
-        "D18F636069364C0786E7D4253F89A2D68230489302DAE4DCBA40130F2E97C0F8"
+        "D18F636069364C0786E7D4253F89A2D68230489302DAE4DCBA40130F2E97C0F8",
+        "c5cdeb2e27cb2d9cc88ebeaab4c374bd68b21daa620f791f68c4a8a9184e9dbb"
     ],
     "notes": "Java 8 is recommended",
     "suggest": {
