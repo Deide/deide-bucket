@@ -1,9 +1,9 @@
 {
     "homepage": "http://aimp.ru",
-    "version": "4.60.2167",
+    "version": "4.60.2169",
     "description": "AIMP is a music player and library manager",
-    "url": "https://www.aimp.ru/?do=download.file&id=8#/aimp_4.60.2167_no-installer.zip",
-    "hash": "8f2427320783cdbe203e9704b67f4343c0396021732100fc5f03c7407faf3cd1",
+    "url": "https://www.aimp.ru/?do=download.file&id=8#/aimp_4.60.2169_no-installer.zip",
+    "hash": "c05a725c35f522cbefb8a2904a2e82a89fb104791491f3a0c02b94b1363a1031",
     "pre_install": "if (-not (Test-Path \"$dir/Persist\")) { New-Item Persist -Type Directory }",
     "extract_dir": "AIMP",
     "persist": "Profile",
