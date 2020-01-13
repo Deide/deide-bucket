@@ -4,16 +4,10 @@
     "description": "AIMP is a music player and library manager",
     "url": "https://www.aimp.ru/?do=download.file&id=8#/aimp_4.60.2169_no-installer.zip",
     "hash": "c05a725c35f522cbefb8a2904a2e82a89fb104791491f3a0c02b94b1363a1031",
-    "pre_install": "if (-not (Test-Path \"$dir/Persist\")) { New-Item Persist -Type Directory }",
     "extract_dir": "AIMP",
     "persist": "Profile",
     "bin": "aimp.exe",
-    "shortcuts": [
-        [
-            "aimp.exe",
-            "AIMP"
-        ]
-    ],
+    "shortcuts": [["aimp.exe", "AIMP"]],
     "checkver": {
         "url": "http://www.aimp.ru/?do=download&os=windows",
         "regex": "\\<h1\\>AIMP v([\\d.]+), build ([\\d.]+) \\(No Installer\\)\\<\\/h1\\>",
