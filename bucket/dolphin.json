@@ -1,13 +1,13 @@
 {
     "homepage": "https://dolphin-emu.org/",
-    "version": "5.0-11452",
+    "version": "5.0-11496",
     "description": "Gamecube & Wii emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/dolphin-emu/dolphin/blob/master/license.txt"
     },
-    "url": "https://dl.dolphin-emu.org/builds/40/18/dolphin-master-5.0-11452-x64.7z",
-    "hash": "1734b6690d43270e02e110b5b1e9d2ab9660dbebbca8b01673edbebec3dcfce9",
+    "url": "https://dl.dolphin-emu.org/builds/6d/ce/dolphin-master-5.0-11496-x64.7z",
+    "hash": "5d5f9d12b605e4863a1e3f484eb9feb7c0f5374eba01b918feff2bbcc848dea5",
     "extract_dir": "Dolphin-x64",
     "pre_install": "New-Item $dir/portable.txt",
     "bin": "Dolphin.exe",
