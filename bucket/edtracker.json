@@ -9,7 +9,7 @@
     "shortcuts": [["EDTrackerPro.exe", "EDTracker Pro"]],
     "checkver": {
         "url": "https://edtrackerpro.mybigcommerce.com/downloads/",
-        "re": "\\(v([\\d.]+\\)"
+        "re": "\\(v([\\d.]+)\\)"
     },
     "autoupdate": {
         "url": "https://edtracker.co.uk/downloads/EDTrackerProUISetup.msi"
