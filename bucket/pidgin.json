@@ -11,7 +11,7 @@
             "[void](New-Item -Type Directory client)",
             "[void](New-Item -Type Directory -Path $dir\\client\\spellcheck\\share\\enchant\\myspell)",
             "[void](New-Item -Type Directory .purple)",
-            "[void](New-Item -Type SymbolicLink -Path GTK -Target $env:SCOOP\\apps\\GTK\\current)",
+            "[void](New-Item -Type SymbolicLink -Path GTK -Target $env:SCOOP\\apps\\gtk-runtime\\current)",
             "[void](Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe)",
             "[void](Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe)",
             "[void](Remove-Item $dir\\client\\plugins\\perl -Recurse)",
