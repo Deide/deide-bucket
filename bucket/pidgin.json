@@ -27,7 +27,7 @@
         "then exctract the dic and aff files to $env:SCOOP/apps/pidgin/current/client/spellcheck/share/enchant/myspell/"
     ],
     "bin": ["client/pidgin-portable.exe"],
-    "shortcuts": [["Pidgin/pidgin-portable.exe", "Pidgin"]],
+    "shortcuts": [["client/pidgin-portable.exe", "Pidgin"]],
     "persist": [".purple", "client/spellcheck/share"],
     "checkver": {
         "url": "https://old.pidgin.im/",
