@@ -4,10 +4,10 @@
     "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously.",
     "url": "https://bitbucket.org/pidgin/main/downloads/pidgin-2.13.0-win32-bin.zip",
     "hash": "7C1DA7DDFD520D8D03DAF7217B0E0127BBA329E9921C2D764711DC2CFE59C70A",
-    "extract_dir": "pidgin-2.13.0-win32bin",
     "depends": ["gtk-runtime"],
     "installer": {
         "script": [
+            "[void](Rename-Item $dir\\pidgin-2.13.0-win32bin client)",
             "[void](New-Item -Type Directory client)",
             "[void](New-Item -Type Directory -Path $dir\\client\\spellcheck\\share\\enchant\\myspell)",
             "[void](New-Item -Type Directory .purple)",
