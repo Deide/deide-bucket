@@ -8,20 +8,20 @@
     "depends": ["gtk-runtime"],
     "installer": {
         "script": [
-            "[void]New-Item -Type Directory client",
-            "[void]New-Item -Type Directory -Path $dir\\client\\spellcheck\\share\\enchant\\myspell",
-            "[void]New-Item -Type Directory .purple",
-            "[void]New-Item -Type SymbolicLink -Path GTK -Target $env:SCOOP\\apps\\GTK\\current",
-            "[void]Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe",
-            "[void]Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe",
-            "[void]Remove-Item $dir\\client\\plugins\\perl",
-            "[void]Remove-Item $dir\\client\\plugins\\perl.dll",
-            "[void]Remove-Item $dir\\client\\plugins\\tcl.dll",
+            "[void](New-Item -Type Directory client)",
+            "[void](New-Item -Type Directory -Path $dir\\client\\spellcheck\\share\\enchant\\myspell)",
+            "[void](New-Item -Type Directory .purple)",
+            "[void](New-Item -Type SymbolicLink -Path GTK -Target $env:SCOOP\\apps\\GTK\\current)",
+            "[void](Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe)",
+            "[void](Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe)",
+            "[void](Remove-Item $dir\\client\\plugins\\perl)",
+            "[void](Remove-Item $dir\\client\\plugins\\perl.dll)",
+            "[void](Remove-Item $dir\\client\\plugins\\tcl.dll)",
             "$localeList = Get-ChildItem $dir\\client\\locale -Type Directory -Name",
             "$localeList | ForEach-Object -Begin {$i = 1} {\"$i.) $_\" ; $i += 1 }",
             "$selectedLocale = Read-Host -Prompt 'Select a locale (input a number)'",
             "$locale = $localeList[$selectedLocale - 1]",
-            "Remove-Item $dir\\client\\locale\\* -Exclude $locale"
+            "[void](Remove-Item $dir\\client\\locale\\* -Exclude $locale)"
         ]
     },
     "notes": [
