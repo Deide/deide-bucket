@@ -10,7 +10,7 @@
             "[void](Rename-Item $dir\\pidgin-2.13.0-win32bin $dir\\client)",
             "[void](New-Item -Type Directory $dir\\client\\spellcheck\\share\\enchant\\myspell)",
             "[void](New-Item -Type Directory $dir\\.purple)",
-            "[void](sudo New-Item -Type SymbolicLink -Path GTK -Target $env:SCOOP\\apps\\gtk-runtime\\current)",
+            "[void](sudo New-Item -Type SymbolicLink -Path $dir\\GTK -Target $env:SCOOP\\apps\\gtk-runtime\\current)",
             "[void](Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe)",
             "[void](Remove-Item $dir\\client\\plugins\\perl -Recurse)",
             "[void](Remove-Item $dir\\client\\plugins\\perl.dll)",
