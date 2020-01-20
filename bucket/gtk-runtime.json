@@ -7,12 +7,12 @@
     "extract_dir": "Gtk",
     "installer": {
         "script": [
-            "[void](Remove-Item $dir\\manifest)",
-            "$localeList = Get-ChildItem $dir\\share\\locale -Type Directory -Name",
+            "[void](Remove-Item $dir\\manifest -Recurse)",
+            "$localeList = Get-ChildItem $dir\\share\\locale -Directory -Name",
             "$localeList | ForEach-Object -Begin {$i = 1} {\"$i.) $_\" ; $i += 1 }",
             "$selectedLocale = Read-Host -Prompt 'Select a locale (input a number)'",
             "$locale = $localeList[$selectedLocale - 1]",
-            "[void](Remove-Item $dir\\share\\locale\\* -Exclude $locale)",
+            "[void](Remove-Item $dir\\share\\locale\\* -Exclude $locale -Recurse)",
             "[void](New-Item -Type File $dir\\gtk-theme.ps1)",
             "'$d = $env:SCOOP/apps/GTK/current; ' >> $dir\\gtk-theme.ps1",
             "'$tsp = $d/share/themes; ' >> $dir\\gtk-theme.ps1",
