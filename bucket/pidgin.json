@@ -18,7 +18,7 @@
             "[void](Remove-Item $dir\\client\\plugins\\perl.dll)",
             "[void](Remove-Item $dir\\client\\plugins\\tcl.dll)",
             "$localeList = Get-ChildItem $dir\\client\\locale -Type Directory -Name",
-            "$localeList | ForEach-Object -Begin {$i = 1} {\\\\\"$i.) $_\\\\\" ; $i += 1 }",
+            "$localeList | ForEach-Object -Begin {$i = 1} {\"$i.) $_\" ; $i += 1 }",
             "$selectedLocale = Read-Host -Prompt 'Select a locale (input a number)'",
             "$locale = $localeList[$selectedLocale - 1]",
             "[void](Remove-Item $dir\\client\\locale\\* -Exclude $locale)"

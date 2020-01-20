@@ -14,13 +14,13 @@
             "$locale = $localeList[$selectedLocale - 1]",
             "[void](Remove-Item $dir\\share\\locale\\* -Exclude $locale)",
             "[void](New-Item -Type File $dir\\gtk-theme.ps1)",
-            "\"$d = $env:SCOOP/apps/GTK/current; \" >> $dir\\gtk-theme.ps1",
-            "\"$tsp = $d/share/themes; \" >> $dir\\gtk-theme.ps1",
-            "\"$ts = gci $env:SCOOP/apps/GTK/current/share/themes; \" >> $dir\\gtk-theme.ps1",
-            "\"$ts | ForEach-Object -Begin {$i = 1} {\\\\\"$i.) $_\\\\\" ; $i += 1 }; \" >> $dir\\gtk-theme.ps1",
-            "\"$selection = Read-Host -Prompt 'Select a theme (input a number)'; \" >> $dir\\gtk-theme.ps1",
-            "\"$theme = $ts[$selection - 1]; \" >> $dir\\gtk-theme.ps1",
-            "\"Copy-Item $tsp/$theme/gtk-2.0/gtkrc $d/etc/gtk-2.0/gtkrc; \" >> $dir\\gtk-theme.ps1"
+            "'$d = $env:SCOOP/apps/GTK/current; ' >> $dir\\gtk-theme.ps1",
+            "'$tsp = $d/share/themes; ' >> $dir\\gtk-theme.ps1",
+            "'$ts = gci $env:SCOOP/apps/GTK/current/share/themes; ' >> $dir\\gtk-theme.ps1",
+            "'$ts | ForEach-Object -Begin {$i = 1} {\"$i.) $_\" ; $i += 1 }; ' >> $dir\\gtk-theme.ps1",
+            "'$selection = Read-Host -Prompt 'Select a theme (input a number)'; ' >> $dir\\gtk-theme.ps1",
+            "'$theme = $ts[$selection - 1]; ' >> $dir\\gtk-theme.ps1",
+            "'Copy-Item $tsp/$theme/gtk-2.0/gtkrc $d/etc/gtk-2.0/gtkrc; ' >> $dir\\gtk-theme.ps1"
         ]
     },
     "persist": ["share/themes", "etc/gtk-2.0/gtkrc"],
