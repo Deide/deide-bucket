@@ -1,0 +1,39 @@
+{
+    "homepage": "https://pidgin.im/",
+    "version": "2.13.0",
+    "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously.",
+    "url": "https://bitbucket.org/pidgin/main/downloads/pidgin-2.13.0-win32-bin.zip",
+    "hash": "7C1DA7DDFD520D8D03DAF7217B0E0127BBA329E9921C2D764711DC2CFE59C70A",
+    "extract_dir": "pidgin-2.13.0-win32bin",
+    "depends": ["gtk-runtime"],
+    "installer": {
+        "script": [
+            "[void]New-Item -Type Directory client",
+            "[void]New-Item -Type Directory -Path $dir\\client\\spellcheck\\share\\enchant\\myspell",
+            "[void]New-Item -Type Directory .purple",
+            "[void]New-Item -Type SymbolicLink -Path GTK -Target $env:SCOOP\\apps\\GTK\\current",
+            "[void]Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe",
+            "[void]Rename-Item $dir\\client\\pidgin.exe $dir\\client\\pidgin-portable.exe",
+            "[void]Remove-Item $dir\\client\\plugins\\perl",
+            "[void]Remove-Item $dir\\client\\plugins\\perl.dll",
+            "[void]Remove-Item $dir\\client\\plugins\\tcl.dll",
+            "$localeList = Get-ChildItem $dir\\client\\locale -Type Directory -Name",
+            "$localeList | ForEach-Object -Begin {$i = 1} {\"$i.) $_\" ; $i += 1 }",
+            "$selectedLocale = Read-Host -Prompt 'Select a locale (input a number)'",
+            "$locale = $localeList[$selectedLocale - 1]",
+            "Remove-Item $dir\\client\\locale\\* -Exclude $locale"
+        ]
+    },
+    "notes": [
+        "Before starting for the first time, grab a dictonary from http://extensions.openoffice.org/en/search?f%5B0%5D=field_project_tags%3A157",
+        "or download English dictionaries straight from https://sourceforge.net/projects/aoo-extensions/files/17102/50/dict-en-20200101.oxt",
+        "then exctract the dic and aff files to $env:SCOOP/apps/pidgin/current/client/spellcheck/share/enchant/myspell/"
+    ],
+    "bin": ["Pidgin/pidgin-portable.exe"],
+    "shortcuts": [["Pidgin/pidgin-portable.exe", "Pidgin"]],
+    "persist": [".purple", "client/spellcheck/share"],
+    "checkver": {
+        "url": "https://old.pidgin.im/",
+        "regex": "([\\d.]+) for Windows"
+    }
+}
