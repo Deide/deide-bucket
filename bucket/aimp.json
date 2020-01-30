@@ -1,9 +1,9 @@
 {
     "homepage": "http://aimp.ru",
-    "version": "4.60.2169",
+    "version": "4.60.2170",
     "description": "AIMP is a music player and library manager",
-    "url": "https://www.aimp.ru/?do=download.file&id=8#/aimp_4.60.2169_no-installer.zip",
-    "hash": "c05a725c35f522cbefb8a2904a2e82a89fb104791491f3a0c02b94b1363a1031",
+    "url": "https://www.aimp.ru/?do=download.file&id=8#/aimp_4.60.2170_no-installer.zip",
+    "hash": "7f09814a57d3f530efc07c76fb2b895f4bd8a50deed847639070fb9bb351e853",
     "extract_dir": "AIMP",
     "persist": "Profile",
     "bin": [
@@ -12,9 +12,18 @@
         "aimpate.exe"
     ],
     "shortcuts": [
-        ["aimp.exe", "AIMP"],
-        ["aimpac.exe", "AIMP Audio Converter"],
-        ["aimpate.exe", "AIMP Advanced Tag Editor"]
+        [
+            "aimp.exe",
+            "AIMP"
+        ],
+        [
+            "aimpac.exe",
+            "AIMP Audio Converter"
+        ],
+        [
+            "aimpate.exe",
+            "AIMP Advanced Tag Editor"
+        ]
     ],
     "checkver": {
         "url": "http://aimp.su/update.php?id=1234&b=2169&p=aimp&lng=english&u=1",
