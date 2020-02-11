@@ -11,6 +11,11 @@
     "installer": {
         "args": ["/S", "/D=$dir"]
     },
+    "post_install": [
+        "Write-Host 'Renaming the persistent directory to Profile from Settings'",
+        "$text = Get-Content $dir\\paths.ini",
+        "$text -Replace 'Settings','Profile' | Set-Content $dir\\paths.ini"
+    ],
     "bin": "winamp.exe",
     "shortcuts": [["winamp.exe", "Winamp"]],
     "persist": ["Profile"]
