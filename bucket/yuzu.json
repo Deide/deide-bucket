@@ -1,14 +1,14 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "nightly-2431",
+    "version": "174",
     "description": "Nintendo Switch Emulator",
     "license": {
         "identifier": "GPL-2.0",
-        "url": "https://github.com/yuzu-emu/yuzu-nightly/blob/master/license.txt"
+        "url": "https://github.com/yuzu-emu/yuzu-mainline/blob/master/license.txt"
     },
-    "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/nightly-2431/yuzu-windows-msvc-20191214-3d51153.zip",
+    "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-174/yuzu-windows-msvc-20200223-1c35c9f6c.zip",
     "hash": "d79aee6806a7f126cc981c3f0b5a5588a7a1a242a5af62a7c16934930bbc6b41",
-    "extract_dir": "nightly",
+    "extract_dir": "yuzu-windows-msvc",
     "pre_install": "mkdir $dir/user",
     "bin": "yuzu.exe",
     "shortcuts": [
@@ -19,10 +19,10 @@
     ],
     "persist": "user",
     "checkver": {
-        "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/latest",
-        "regex": "<a href=\"\\/yuzu-emu\\/yuzu-nightly\\/releases\\/download\\/(?<version>nightly\\-[0-9]+)\\/yuzu\\-windows\\-msvc\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{7})\\.zip\""
+        "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/latest",
+        "regex": "href=\"\\/yuzu-emu\\/yuzu-mainline\\/releases\\/download\\/mainline\\-0\\-(?<version>\\d+)\\/yuzu\\-windows\\-msvc\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{9})\\.zip\""
     },
     "autoupdate": {
-        "url": "https://github.com/yuzu-emu/yuzu-nightly/releases/download/$version/yuzu-windows-msvc-$matchDate-$matchCommitshort.zip"
+        "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-$version/yuzu-windows-msvc-$matchDate-$matchCommitshort.zip"
     }
 }
