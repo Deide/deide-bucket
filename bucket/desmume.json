@@ -1,11 +1,11 @@
 {
     "homepage": "https://desmume.org",
-    "version": "0.0.0.634",
+    "version": "0.0.0.635",
     "description": "Nintendo DS Emulator",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/2numn9d1vfqyb8k1/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe",
-            "hash": "539f6d0be72220bbe28450e674fa0867f55512efa63212ada48d063760ba1681",
+            "url": "https://ci.appveyor.com/api/buildjobs/sps52o2ulby3gpuw/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe",
+            "hash": "b3130382102217080b18fb501f10dc82e266ab8cfc2309e952440c061d093da2",
             "bin": [
                 [
                     "DeSmuME-VS2015-x64-Release.exe",
@@ -20,8 +20,8 @@
             ]
         },
         "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/h4gdbwh7r9ig32dy/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe",
-            "hash": "4939bd3cd98f0e89ba7721b54b7de96fc33f8c51ef977568ed3cfb5a7ed49aa7",
+            "url": "https://ci.appveyor.com/api/buildjobs/droy263uf8x7ta34/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe",
+            "hash": "60a97470969d0ad8263e02d13ecc95c1f778b6616109f74a981d15c049fa183e",
             "bin": [
                 [
                     "DeSmuME-VS2015-Release.exe",
