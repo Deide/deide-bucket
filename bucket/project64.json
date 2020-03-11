@@ -1,0 +1,27 @@
+{
+    "homepage": "https://www.pj64-emu.com",
+    "version": "2.4.0-1127",
+    "description": "Nintendo 64 Emulator",
+    "url": "https://www.pj64-emu.com/file/v2-4-0-1127-g185c658/#/Project64_v2.4.0-1127.zip",
+    "hash": "81DC858F938288B0612616C78E478C12623C2B4C0467486932E308BA00AF3AB5",
+    "bin": "Project64.exe",
+    "shortcuts": [
+        [
+            "Project64.exe",
+            "N64"
+        ]
+    ],
+    "persist": [
+        "Config",
+        "Save",
+        "Screenshots",
+        "Textures"
+    ],
+    "checkver": {
+        "url": "https://www.pj64-emu.com/nightly-builds",
+        "regex": "v(?<version>[\\d.]+\\-\\d+)-(?<commit>[a-z0-9]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.pj64-emu.com/file/v$dashVersion-$matchCommit/#/Project64_v$version.zip"
+    }
+}

@@ -6,7 +6,7 @@
         "identifier": "GPL-2.0-or-later",
         "url": "https://github.com/byuu/bsnes/blob/master/LICENSE.txt"
     },
-    "url": "https://api.cirrus-ci.com/v1/artifact/task/4584921180143616/bsnes-nightly/bsnes-nightly.zip#bsnes-115.zip",
+    "url": "https://api.cirrus-ci.com/v1/artifact/task/4584921180143616/bsnes-nightly/bsnes-nightly.zip#/bsnes-115.zip",
     "hash": "5AC99C49245E32D24E73F8C294C6E916C95C8E9F73EF4CDCE6D2760F86318265",
     "extract_dir": "bsnes-nightly",
     "bin": "bsnes.exe",
