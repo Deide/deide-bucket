@@ -16,13 +16,26 @@
         ]
     ],
     "persist": [
+        "dev_hdd0",
+        "dev_hdd1",
+        "cache",
         "config.yml",
         "config_input.yml",
         "games.yml",
-        "dev_hdd0",
-        "dev_flash",
-        "GuiConfigs"
+        "config",
+        "GuiConfigs/CurrentSettings.ini",
+        "InputConfigs"
     ],
+    "installer": {
+        "script": [
+            "$file = 'GuiConfigs\\CurrentSettings.ini'",
+            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+            "    Write-Host \"$file does not exists.\" -f Yellow",
+            "    $outfile = \"$dir\\$file\"",
+            "    New-Item $outFile -Type File -Force | Out-Null",
+            "}"
+        ]
+    },
     "checkver": {
         "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/latest",
         "regex": "\\/releases\\/tag\\/build-(?<commitlong>(?<commitshort>[a-z0-9]{8})[a-z0-9]+)\">(?<version>[\\d.]+\\-\\d+)<\\/a>"
