@@ -20,6 +20,17 @@
             "GBA"
         ]
     ],
+    "pre_install":[
+        "New-Item -ItemType Directory $dir\\saves",
+        "New-Item -ItemType Directory $dir\\savestates",
+        "New-Item -ItemType Directory $dir\\screenshots",
+        "Set-Content -Path $dir\\vbam.ini -Value \"[General]`nBatteryDir=$dir\\saves`nStateDir=$dir\\savestates`nScreenshotDir=$dir\\screenshots\""
+    ],
+    "persist":[
+        "saves",
+        "savestates",
+        "screenshots"
+    ],
     "checkver": {
         "github": "https://github.com/visualboyadvance-m/visualboyadvance-m"
     },
