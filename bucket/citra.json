@@ -1,13 +1,13 @@
 {
     "homepage": "https://citra-emu.org",
-    "version": "nightly-1457",
+    "version": "nightly-1465",
     "description": "3DS Emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/citra-emu/citra-nightly/blob/master/license.txt"
     },
-    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1457/citra-windows-mingw-20200328-a6ee1bf.7z",
-    "hash": "efa0576c5ceb1b61da08dd3eb9f64a8bb843009acb613c058523811ffe21be58",
+    "url": "https://github.com/citra-emu/citra-nightly/releases/download/nightly-1465/citra-windows-mingw-20200407-23921e3.7z",
+    "hash": "acab3aa8439f83d09bdc4452337d5c11c7d5b3b0162a490fbc699939c043906f",
     "extract_dir": "nightly-mingw",
     "pre_install": "mkdir $dir/user",
     "bin": [
