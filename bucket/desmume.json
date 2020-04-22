@@ -2,35 +2,21 @@
     "homepage": "https://desmume.org",
     "version": "0.0.0.635",
     "description": "Nintendo DS Emulator",
+    "pre_install": [
+        "Rename-Item $dir\\DeSmuME-VS2019-x64-Release.exe $dir\\desmume.exe"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://ci.appveyor.com/api/buildjobs/sps52o2ulby3gpuw/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe",
             "hash": "b3130382102217080b18fb501f10dc82e266ab8cfc2309e952440c061d093da2",
             "bin": [
                 [
-                    "DeSmuME-VS2015-x64-Release.exe",
-                    "desmume"
+                    "desmume.exe"
                 ]
             ],
             "shortcuts": [
                 [
-                    "DeSmuME-VS2015-x64-Release.exe",
-                    "NDS"
-                ]
-            ]
-        },
-        "32bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/droy263uf8x7ta34/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe",
-            "hash": "60a97470969d0ad8263e02d13ecc95c1f778b6616109f74a981d15c049fa183e",
-            "bin": [
-                [
-                    "DeSmuME-VS2015-Release.exe",
-                    "desmume"
-                ]
-            ],
-            "shortcuts": [
-                [
-                    "DeSmuME-VS2015-Release.exe",
+                    "desmumme.exe",
                     "NDS"
                 ]
             ]
@@ -47,17 +33,13 @@
         "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
         "jp": {
             "version": "$.build.version",
-            "jobid32": "$.build.jobs[0].jobId",
-            "jobid64": "$.build.jobs[1].jobId"
+            "jobid": "$.build.jobs[0].jobId"
         }
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid64/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-x64-Release.exe"
-            },
-            "32bit": {
-                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid32/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2015-Release.exe"
+                "url": "https://ci.appveyor.com/api/buildjobs/$matchJobid/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2019-x64-Release.exe"
             }
         }
     }
