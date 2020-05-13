@@ -1,15 +1,14 @@
 {
     "homepage": "https://getwacup.com/",
-    "version": "1.0.8.4346",
+    "version": "1.0.12.5500",
     "description": "The WinAmp Community Update Project (WACUP) is designed to work only with the patched Winamp 5.666 release to provide bug fixes, updates of existing features and most importantly new features with the goal to eventually become it's own highly Winamp compatible media player.",
-    "url": [
-        "https://getwacup.com/preview/WACUP_Preview_Portable_v1_0_8_4346.exe"
-    ],
-    "hash": [
-        "12CF8C778F368593E163165A80E02328EC5C3AB9605ED95E0EFE9635B6AFD5F9"
-    ],
+    "url": "https://getwacup.com/preview/WACUP_Preview_Portable_v1_0_12_5500.exe",
+    "hash": "8253c5439eb4655abd9a454511f0dc46f93adbab6e9e23afe81ddf35a37c3c4d",
     "installer": {
-        "args": ["/S", "/D=$dir"]
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
     },
     "post_install": [
         "Write-Host 'Renaming the persistent directory to Profile from Settings'",
@@ -17,8 +16,13 @@
         "$text -Replace 'Settings','Profile' | Set-Content $dir\\paths.ini"
     ],
     "bin": "winamp.exe",
-    "shortcuts": [["winamp.exe", "Winamp"]],
-    "persist": ["Profile"],
+    "shortcuts": [
+        [
+            "winamp.exe",
+            "Winamp"
+        ]
+    ],
+    "persist": "Profile",
     "checkver": {
         "regex": "Preview v(?<version>[\\d.]+)"
     },
