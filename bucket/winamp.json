@@ -18,5 +18,11 @@
     ],
     "bin": "winamp.exe",
     "shortcuts": [["winamp.exe", "Winamp"]],
-    "persist": ["Profile"]
+    "persist": ["Profile"],
+    "checkver": {
+        "regex": "Preview v(?<version>[\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://getwacup.com/preview/WACUP_Preview_Portable_v$underscoreVersion.exe"
+    }
 }
