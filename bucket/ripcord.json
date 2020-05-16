@@ -4,7 +4,13 @@
     "version": "0.4.24",
     "url": "https://cancel.fm/dl/Ripcord_Win_0.4.24.zip",
     "hash": "a3de729a925ec28ac73a0fb38b52a24cabf0804a5f1b9affcc034ef8a3032aa7",
-    "pre_install": ["New-Item -ItemType Directory -Path $dir\\portable_data"],
+    "pre_install": [
+        "$path = \"$dir\\portable_data\"",
+        "if (-not (Test-Path \"$path\")) {",
+        "  New-Item -ItemType Directory -Path $path",
+        "  Write-Output \"Creating portable_data directory...\"",
+        "}"
+    ],
     "bin": "Ripcord.exe",
     "shortcuts": [["Ripcord.exe", "Ripcord"]],
     "persist":[
