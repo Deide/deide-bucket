@@ -1,9 +1,9 @@
 {
     "homepage": "https://getwacup.com/",
-    "version": "1.0.12.5500",
+    "version": "1.0.12.5586",
     "description": "The WinAmp Community Update Project (WACUP) is designed to work only with the patched Winamp 5.666 release to provide bug fixes, updates of existing features and most importantly new features with the goal to eventually become it's own highly Winamp compatible media player.",
-    "url": "https://getwacup.com/preview/WACUP_Preview_Portable_v1_0_12_5500.exe",
-    "hash": "8253c5439eb4655abd9a454511f0dc46f93adbab6e9e23afe81ddf35a37c3c4d",
+    "url": "https://getwacup.com/preview/WACUP_Preview_Portable_v1_0_12_5586.exe",
+    "hash": "a7efeda313b8d2c30e1c567baf13b8b7b5693a1aaaa728a2bc730fb5b2c73f03",
     "installer": {
         "args": [
             "/S",
