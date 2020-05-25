@@ -1,9 +1,9 @@
 {
     "homepage": "https://cancel.fm/ripcord/",
     "description": "Ripcord is a desktop chat client for group-centric services like Slack and Discord. It provides a traditional compact desktop interface designed for power users. It's not built on top of web browser technology: it has a small resource footprint, responds quickly to input, and gets out of your way.",
-    "version": "0.4.24",
-    "url": "https://cancel.fm/dl/Ripcord_Win_0.4.24.zip",
-    "hash": "a3de729a925ec28ac73a0fb38b52a24cabf0804a5f1b9affcc034ef8a3032aa7",
+    "version": "0.4.25",
+    "url": "https://cancel.fm/dl/Ripcord_Win_0.4.25.zip",
+    "hash": "6b3420dd1066105e3cecb9c5427d36bb76605a8720519755f941826849caa16b",
     "pre_install": [
         "$path = \"$dir\\portable_data\"",
         "if (-not (Test-Path \"$path\")) {",
@@ -12,10 +12,13 @@
         "}"
     ],
     "bin": "Ripcord.exe",
-    "shortcuts": [["Ripcord.exe", "Ripcord"]],
-    "persist":[
-        "portable_data"
+    "shortcuts": [
+        [
+            "Ripcord.exe",
+            "Ripcord"
+        ]
     ],
+    "persist": "portable_data",
     "checkver": {
         "re": "Ripcord Windows ([\\d.]+) \\(\\.zip\\)"
     },
