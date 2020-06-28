@@ -1,12 +1,12 @@
 {
     "homepage": "https://desmume.org",
-    "version": "0.0.0.653",
+    "version": "0.0.0.664",
     "description": "Nintendo DS Emulator",
     "pre_install": "Rename-Item $dir\\DeSmuME-VS2019-x64-Release.exe $dir\\desmume.exe",
     "architecture": {
         "64bit": {
-            "url": "https://ci.appveyor.com/api/buildjobs/krquegqe7mpgi367/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2019-x64-Release.exe",
-            "hash": "e48d66e81db6e4d73c2fe4fa7fb873c80319cde5b58d218d523516852c75cf62",
+            "url": "https://ci.appveyor.com/api/buildjobs/29quch0o5strkan2/artifacts/desmume/src/frontend/windows/__bins/DeSmuME-VS2019-x64-Release.exe",
+            "hash": "af6273dac64b1593f87191eda07cc2476a7dd2101296e4e3a626e76140715e10",
             "bin": [
                 [
                     "desmume.exe"
