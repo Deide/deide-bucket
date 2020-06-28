@@ -23,6 +23,7 @@
         "url": "https://www.freepascal.org/download.html",
         "regex": "The latest release is\\s\\<b\\>([\\d.]+)"
     },
+    "bin": ["bin/fpc.exe", "bin/ptop.exe"],
     "autoupdate": {
         "architecture": {
             "64bit": {
