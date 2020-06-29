@@ -2,8 +2,8 @@
 {
     "json.schemas": [
         {
-            "url": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
-            "fileMatch": ["bucket/*.json"]
+            "url": "https://raw.githubusercontent.com/deide/scoop/deide-fork/schema.json",
+            "fileMatch": ["/bucket/*.json"]
         }
     ],
     "files.exclude": {
