@@ -1,9 +1,9 @@
 {
     "homepage": "https://www.pj64-emu.com",
-    "version": "2.4.0-1296",
+    "version": "2.4.0-1318",
     "description": "Nintendo 64 Emulator",
-    "url": "https://www.pj64-emu.com/file/v2-4-0-1296-g05dd64b/#/Project64_v2.4.0-1296.zip",
-    "hash": "dc1ba8c8192d637fb7624627a47d189138abfd4305ca833ac6dbb7d2ff2220b8",
+    "url": "https://www.pj64-emu.com/file/v2-4-0-1318-g931289a/#/Project64_v2.4.0-1318.zip",
+    "hash": "af7631404de560238c983de3c847209b984618664d4d6651bb02d0b80c213b1c",
     "bin": "Project64.exe",
     "shortcuts": [
         [
