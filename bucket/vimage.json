@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/Torrunt/vimage",
-    "version": "15",
+    "version": "16",
     "description": "A simplistic image viewer for Windows, inspired by vjpeg.",
-    "url": "https://github.com/Torrunt/vimage/releases/download/v15/vimage_version15.zip",
-    "hash": "b54e093fcdfc5cf2bf7a880abaaad8bce98d589e24736883544776c8d3c22dac",
+    "url": "https://github.com/Torrunt/vimage/releases/download/v16/vimage_version16.zip",
+    "hash": "f89dabca0cb774583afdbaba921cf71bd08e4f8e03db4c45023943a8b7ea66d8",
     "extract_dir": "vimage",
     "bin": "vimage.exe",
     "checkver": "github",
