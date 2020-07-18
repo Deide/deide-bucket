@@ -5,9 +5,6 @@
     "url": "http://cemu.info/releases/cemu_1.20.0.zip",
     "hash": "4693549CCA3846C4D8504608FB615337F5C45BF91F10B5617349897E8CB3E739",
     "extract_dir": "cemu_1.20.0",
-    "pre_install": [
-        "Start-Process Cemu.exe; Start-Sleep -Seconds 1; Stop-Process -Name Cemu"
-    ],
     "bin": ["Cemu.exe"],
     "shortcuts": [["Cemu.exe", "Wii U"]],
     "persist": [
@@ -18,6 +15,11 @@
         "mlc01",
         "settings.xml"
     ],
+    "installer": {
+        "script": [
+            "Start-Process Cemu.exe; Start-Sleep -Seconds 1; Stop-Process -Name Cemu"
+        ]
+    },
     "checkver": {
         "url": "https://github.com/citra-emu/citra-nightly/releases/latest",
         "regex": "Cemu ([\\d.]+)"
