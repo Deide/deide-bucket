@@ -17,7 +17,9 @@
     ],
     "installer": {
         "script": [
-            "Start-Process $dir\\Cemu.exe; Start-Sleep -Seconds 1; Stop-Process -Name Cemu"
+            "if (-not (Test-Path $dir\\settings.xml)) {",
+            "  Start-Process $dir\\Cemu.exe; Start-Sleep -Seconds 1; Stop-Process -Name Cemu",
+            "}"
         ]
     },
     "checkver": {
