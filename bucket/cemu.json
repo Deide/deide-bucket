@@ -23,7 +23,6 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/citra-emu/citra-nightly/releases/latest",
         "regex": "Cemu ([\\d.]+)"
     },
     "autoupdate": {
