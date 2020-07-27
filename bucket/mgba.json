@@ -1,0 +1,59 @@
+{
+    "homepage": "https://mgba.io/",
+    "description": "A fast, accurate, and portable GBA emulator",
+    "license": "MPL-2.0",
+    "version": "0.8.2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.8.2/mGBA-0.8.2-win64.7z",
+            "hash": "a8a60190d7661f67566ed983aa7ab17b7afa7bb2e5a45adca852886120360e54",
+            "extract_dir": "mGBA-0.8.2-win64"
+        },
+        "32bit": {
+            "url": "https://github.com/mgba-emu/mgba/releases/download/0.8.2/mGBA-0.8.2-win32.7z",
+            "hash": "8ba94723cbbd5ae59e621f43e343f2e2fde75949ebf730cb86aa02d057a4aac7",
+            "extract_dir": "mGBA-0.8.2-win32"
+        }
+    },
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\qt.ini\")) {",
+            "   New-Item \"$dir\\qt.ini\" -ItemType \"file\" | Out-Null ",
+            "}",
+            "if (!(Test-Path \"$persist_dir\\config.ini\")) {",
+            "   Set-Content \"$dir\\config.ini\" '[ports.qt]'",
+            "   'cheats', 'patch', 'savegame', 'savestate', 'screenshot' | ForEach-Object {",
+            "       Add-Content -Path \"$dir\\config.ini\" -Value $_`Path`=$persist_dir\\$_ }",
+            "}"
+        ]
+    },
+    "bin": [["mGBA.exe", "mgba-sdl.exe"]],
+    "shortcuts": [["mGBA.exe", "mGBA"]],
+    "persist": [
+        "cheats",
+        "patch",
+        "savegame",
+        "savestate",
+        "screenshot",
+        "shaders",
+        "qt.ini",
+        "config.ini"
+    ],
+    "checkver": {
+        "github": "https://github.com/mgba-emu/mgba",
+        "regex": "mGBA-(?<ver>[\\d.]+)((?<beta>-b1)?)",
+        "replace": "${2}${1}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mgba-emu/mgba/releases/download/$matchVer$matchBeta/mGBA-$matchVer$matchBeta-win64.7z",
+                "extract_dir": "mGBA-$matchVer$matchBeta-win64"
+            },
+            "32bit": {
+                "url": "https://github.com/mgba-emu/mgba/releases/download/$matchVer$matchBeta/mGBA-$matchVer$matchBeta-win32.7z",
+                "extract_dir": "mGBA-$matchVer$matchBeta-win32"
+            }
+        }
+    }
+}
