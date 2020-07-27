@@ -30,8 +30,8 @@
     "autoupdate": {
         "url": "https://getwacup.com/preview/WACUP_Preview_Portable_v$underscoreVersion.exe",
         "hash": {
-            "url": "https://getwacup.com/preview/",
-            "regex": "portable[\\s\\S]+($sha256)"
+            "url": "https://getwacup.com/preview/WACUP_Portable_SHA.256",
+            "regex": "$sha256"
         }
     }
 }
