@@ -27,6 +27,9 @@
         "regex": "Preview v(?<version>[\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://getwacup.com/preview/WACUP_Preview_Portable_v$underscoreVersion.exe"
+        "url": "https://getwacup.com/preview/WACUP_Preview_Portable_v$underscoreVersion.exe",
+        "hash": {
+            "regex": "portable[\\s\\S]+($sha256)"
+        }
     }
 }
