@@ -27,7 +27,7 @@
             "}"
         ]
     },
-    "bin": [["mGBA.exe", "mgba-sdl.exe"]],
+    "bin": ["mGBA.exe", "mgba-sdl.exe"],
     "shortcuts": [["mGBA.exe", "mGBA"]],
     "persist": [
         "cheats",
