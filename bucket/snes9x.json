@@ -17,6 +17,13 @@
             "shortcuts": [["snes9x-x64.exe", "SNES"]]
         }
     },
+    "persist": [
+        "snes9x.conf",
+        "Screenshots",
+        "Patches",
+        "Saves",
+        "Cheats"
+    ],
     "checkver": {
         "url": "http://www.s9x-w32.de/dl/",
         "regex": "Snes9x ([\\d]+[\\.][\\d]+) Windows Version"
