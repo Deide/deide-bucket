@@ -27,6 +27,7 @@
         "Set-Content -Path $dir\\vbam.ini -Value \"[General]`nBatteryDir=$dir\\saves`nStateDir=$dir\\savestates`nScreenshotDir=$dir\\screenshots\""
     ],
     "persist":[
+        "vbam.ini",
         "saves",
         "savestates",
         "screenshots"
