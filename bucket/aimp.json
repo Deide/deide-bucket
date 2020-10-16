@@ -1,9 +1,9 @@
 {
     "homepage": "http://aimp.ru",
-    "version": "4.70.2224",
+    "version": "4.70.2233",
     "description": "AIMP is a music player and library manager",
-    "url": "https://www.aimp.ru/?do=download.file&id=8#/aimp_4.70.2224_no-installer.zip",
-    "hash": "a43b72c082d8eb57b8df8233da22bac5749e446c49fd260e60956711bd3b56ba",
+    "url": "https://www.aimp.ru/?do=download.file&id=8#/aimp_4.70.2233_no-installer.zip",
+    "hash": "fa562cbaa04a6ccb0c2daaaa6d300db2d50eec34952650817cfee2b954234afc",
     "extract_dir": "AIMP",
     "persist": "Profile",
     "bin": [
