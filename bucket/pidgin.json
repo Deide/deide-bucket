@@ -33,6 +33,6 @@
     "persist": [".purple", "client/spellcheck/share"],
     "checkver": {
         "url": "https://pidgin.im/install/",
-        "regex": "download is for the source code of Pidgin ([\\d.]+)."
+        "regex": "download is for the source code of Pidgin ([\\d.]+\\d)."
     }
 }
