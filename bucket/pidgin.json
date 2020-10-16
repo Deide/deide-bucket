@@ -32,7 +32,7 @@
     "shortcuts": [["client/pidgin-portable.exe", "Pidgin"]],
     "persist": [".purple", "client/spellcheck/share"],
     "checkver": {
-        "url": "https://pidgin.im/",
+        "url": "https://pidgin.im/install/",
         "regex": "download is for the source code of Pidgin ([\\d.]+)."
     }
 }
