@@ -4,7 +4,7 @@
     "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously.",
     "url": "https://kumisystems.dl.sourceforge.net/project/pidgin/Pidgin/2.14.1/pidgin-2.14.1-win32-bin.zip",
     "hash": "FB9F21E39C78ACA6D84527BB230E1D364AC35497E0A9A165F03DC1046B751D63",
-    "depends": ["gtk-runtime", "sudo"],
+    "depends": ["gtk-runtime", "gsudo"],
     "installer": {
         "script": [
             "[void](Rename-Item $dir\\pidgin-$version-win32bin $dir\\client)",
