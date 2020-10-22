@@ -8,8 +8,8 @@
     "installer": {
         "script": [
             "[void](Rename-Item $dir\\pidgin-$version-win32bin $dir\\client)",
-            "$spellcheckDir = $dir\\client\\spellcheck\\share\\enchant\\myspell",
-            "$purpleDir = $dir\\.purple",
+            "$spellcheckDir = \"$dir\\client\\spellcheck\\share\\enchant\\myspell\"",
+            "$purpleDir = \"$dir\\.purple\"",
             "[void](New-Item -Type Directory $spellcheckDir)",
             "[void](New-Item -Type Directory $purpleDir)",
             "[void](sudo New-Item -Type SymbolicLink -Path $dir\\GTK -Target $env:SCOOP\\apps\\gtk-runtime\\current)",
