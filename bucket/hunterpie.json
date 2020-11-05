@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/Haato3o/HunterPie",
-    "version": "1.0.3.97",
+    "version": "1.0.3.98",
     "description": "HunterPie is a modern and simple to use overlay with support for Discord Rich Presence for Monster Hunter: World.",
-    "url": "https://github.com/Haato3o/HunterPie/releases/download/v1.0.3.97/HunterPie.zip",
-    "hash": "0d0d030a50576706581a2fb9064aa06a6e96f903cacee8c5a93935dd561f0565",
+    "url": "https://github.com/Haato3o/HunterPie/releases/download/v1.0.3.98/HunterPie.zip",
+    "hash": "4a719faf7f3ee092c091fca5f7ccff2265ea74c77b163b9b967cb059b2944b98",
     "extract_dir": "HunterPie",
     "bin": "HunterPie.exe",
     "shortcuts": [
