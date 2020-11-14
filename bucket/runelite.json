@@ -26,7 +26,10 @@
             "icon.png"
         ]
     ],
-    "hash": "93908714e7b3eee8af3ea2db27f04545429eebcb6731259b34e8eec05a08a07c",
+    "hash": [
+        "93908714e7b3eee8af3ea2db27f04545429eebcb6731259b34e8eec05a08a07c",
+        "57AF236659C56FEAE8B23F1272F3592735E087D52BD90A92E10B7319574D0800"
+    ],
     "notes": "Java 8 or 11 is recommended",
     "suggest": {
         "JRE8": [
