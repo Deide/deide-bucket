@@ -27,11 +27,14 @@
         ]
     ],
     "hash": "93908714e7b3eee8af3ea2db27f04545429eebcb6731259b34e8eec05a08a07c",
-    "notes": "Java 8 is recommended",
+    "notes": "Java 8 or 11 is recommended",
     "suggest": {
         "JRE8": [
             "java/oraclejre8",
             "java/openjdk8"
+        ],
+        "JRE11":[
+            "java/openjdk11"
         ]
     },
     "checkver": "github",
