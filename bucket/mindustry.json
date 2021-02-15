@@ -1,13 +1,13 @@
 {
     "homepage": "https://github.com/Anuken/Mindustry",
-    "version": "123.1",
+    "version": "124.1",
     "description": "A sandbox tower defense game.",
     "license": {
         "identifier": "GPL-3.0-only",
         "url": "https://github.com/Anuken/Mindustry/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/Anuken/Mindustry/releases/download/v123.1/Mindustry.jar",
+        "https://github.com/Anuken/Mindustry/releases/download/v124.1/Mindustry.jar",
         "https://github.com/Anuken/Mindustry/releases/download/v100/server-release.jar",
         "https://i.imgur.com/Y4Q1ECd.png"
     ],
@@ -25,7 +25,7 @@
         ]
     ],
     "hash": [
-        "7b176abc92495884408c8c021ec65216326070354c1bece88245431ef77a9b2c",
+        "41ea7afcc03a39dff2a1b372ad16347180d9a30859313d9897f7baca9fea7a2c",
         "D18F636069364C0786E7D4253F89A2D68230489302DAE4DCBA40130F2E97C0F8",
         "c5cdeb2e27cb2d9cc88ebeaab4c374bd68b21daa620f791f68c4a8a9184e9dbb"
     ],
