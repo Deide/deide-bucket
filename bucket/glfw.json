@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/glfw/glfw",
-    "version": "3.3.2",
+    "version": "3.3.3",
     "description": "GLFW is an Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development.",
     "license": {
         "identifier": "ZLib",
@@ -8,14 +8,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/glfw/glfw/releases/download/3.3.2/glfw-3.3.2.bin.WIN64.zip",
-            "hash": "aa291d8dce27d9e6cd567dc56e3768dcefceb3ddb7a65fb4cc3ef35be2a7548c",
-            "extract_dir": "glfw-3.3.2.bin.WIN64"
+            "url": "https://github.com/glfw/glfw/releases/download/3.3.3/glfw-3.3.3.bin.WIN64.zip",
+            "hash": "a6b21e5585a9d03df2a551cf9537d262bb88c6c0697353492ccfdcfafa8e8999",
+            "extract_dir": "glfw-3.3.3.bin.WIN64"
         },
         "32bit": {
-            "url": "https://github.com/glfw/glfw/releases/download/3.3.2/glfw-3.3.2.bin.WIN32.zip",
-            "hash": "a2a5f93884f728dfc1bcb090fbdbb1015f1c1898b35a50fa17c7ade6761102b1",
-            "extract_dir": "glfw-3.3.2.bin.WIN32"
+            "url": "https://github.com/glfw/glfw/releases/download/3.3.3/glfw-3.3.3.bin.WIN32.zip",
+            "hash": "d6e41c8bf8b345f1e083d0c82af036609e805bb09cf3afc8c854ce1cda4d9e74",
+            "extract_dir": "glfw-3.3.3.bin.WIN32"
         }
     },
     "notes": "DLLs are installed",
