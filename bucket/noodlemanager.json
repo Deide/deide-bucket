@@ -5,6 +5,7 @@
     "version": "1.4.1",
     "url": "https://github.com/tommaier123/NoodleManager/releases/download/V1.4.1/NoodleManager.zip",
     "hash": "26DAA7E8D02028A7E6A792BE6AB7957665B7BC879AEF2A338388E4AF81D68393",
+    "extract_dir": "NoodleManagerRelease",
     "bin": "NoodleManager.exe",
     "shortcuts": [["NoodleManager.exe", "SynthRiderz Manager"]],
     "checkver": "github",
