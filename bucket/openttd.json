@@ -1,15 +1,15 @@
 {
     "homepage": "https://www.openttd.org",
-    "version": "1.10.3",
+    "version": "1.11.0",
     "description": "OpenTTD is an open source simulation game based upon Transport Tycoon Deluxe.",
     "architecture": {
         "64bit": {
-            "url": "https://proxy.binaries.openttd.org/openttd-releases/1.10.3/openttd-1.10.3-windows-win64.zip",
-            "hash": "2c603771356203240697720f3661dd43e0c3391847ebaaf019a52f8d03129b91"
+            "url": "https://proxy.binaries.openttd.org/openttd-releases/1.11.0/openttd-1.11.0-windows-win64.zip",
+            "hash": "5ad2efded690ded3a2b8a796067c77ffa1967a5d2f156e00985dbdbee6729183"
         },
         "32bit": {
-            "url": "https://proxy.binaries.openttd.org/openttd-releases/1.10.3/openttd-1.10.3-windows-win32.zip",
-            "hash": "0fee15cecd0798e9d6e87a7975f2a6c09d042906401309147f3ad38894d52340"
+            "url": "https://proxy.binaries.openttd.org/openttd-releases/1.11.0/openttd-1.11.0-windows-win32.zip",
+            "hash": "162c8a71cc2b83a6c39c113da566f93a75ab8f35f24b408757ab895929e65673"
         }
     },
     "bin": "openttd.exe",
