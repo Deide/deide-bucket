@@ -1,10 +1,13 @@
 {
     "homepage": "https://pidgin.im/",
-    "version": "2.14.1",
+    "version": "2.14.3",
     "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously.",
-    "url": "https://kumisystems.dl.sourceforge.net/project/pidgin/Pidgin/2.14.1/pidgin-2.14.1-win32-bin.zip",
-    "hash": "FB9F21E39C78ACA6D84527BB230E1D364AC35497E0A9A165F03DC1046B751D63",
-    "depends": ["gtk-runtime", "gsudo"],
+    "url": "https://kumisystems.dl.sourceforge.net/project/pidgin/Pidgin/2.14.3/pidgin-2.14.3-win32-bin.zip",
+    "hash": "sha1:a246d196d50910fca70bfffea14c7f346e311f6a",
+    "depends": [
+        "gtk-runtime",
+        "gsudo"
+    ],
     "installer": {
         "script": [
             "[void](Rename-Item $dir\\pidgin-$version-win32bin $dir\\client)",
@@ -28,11 +31,22 @@
         "or download English dictionaries straight from https://sourceforge.net/projects/aoo-extensions/files/17102/50/dict-en-20200101.oxt",
         "then exctract the dic and aff files to $env:SCOOP/apps/pidgin/current/client/spellcheck/share/enchant/myspell/"
     ],
-    "bin": ["client/pidgin-portable.exe"],
-    "shortcuts": [["client/pidgin-portable.exe", "Pidgin"]],
-    "persist": [".purple", "client/spellcheck/share"],
+    "bin": "client/pidgin-portable.exe",
+    "shortcuts": [
+        [
+            "client/pidgin-portable.exe",
+            "Pidgin"
+        ]
+    ],
+    "persist": [
+        ".purple",
+        "client/spellcheck/share"
+    ],
     "checkver": {
         "url": "https://pidgin.im/install/",
         "regex": "download is for the source code of Pidgin ([\\d.]+\\d)."
+    },
+    "autoupdate": {
+        "url": "https://kumisystems.dl.sourceforge.net/project/pidgin/Pidgin/$version/pidgin-$version-win32-bin.zip"
     }
 }
