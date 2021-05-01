@@ -1,9 +1,9 @@
 {
     "homepage": "https://pidgin.im/",
-    "version": "2.14.3",
+    "version": "2.14.4",
     "description": "Pidgin is a chat program which lets you log into accounts on multiple chat networks simultaneously.",
-    "url": "https://kumisystems.dl.sourceforge.net/project/pidgin/Pidgin/2.14.3/pidgin-2.14.3-win32-bin.zip",
-    "hash": "sha1:a246d196d50910fca70bfffea14c7f346e311f6a",
+    "url": "https://kumisystems.dl.sourceforge.net/project/pidgin/Pidgin/2.14.4/pidgin-2.14.4-win32-bin.zip",
+    "hash": "sha1:5b9409255c8edc2192290e61fd5682fdf5b2b607",
     "depends": [
         "gtk-runtime",
         "gsudo"
