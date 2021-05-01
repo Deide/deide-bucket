@@ -1,8 +1,8 @@
 {
     "homepage": "https://github.com/yakyak/yakyak",
-    "version": "1.5.11.3",
+    "version": "1.5.11.4",
     "description": "YakYak is a 3rd party Hangouts client for the desktop.",
-    "url": "https://github.com/yakyak/yakyak/releases/download/v1.5.11.3/yakyak-1.5.11.3-win32-x64.zip",
+    "url": "https://github.com/yakyak/yakyak/releases/download/v1.5.11.4/yakyak-1.5.11.4-win32-x64.zip",
     "extract_dir": "yakyak-win32-x64",
     "bin": "yakyak.exe",
     "shortcuts": [
@@ -16,5 +16,5 @@
         "url": "https://github.com/yakyak/yakyak/releases/download/v$version/yakyak-$version-win32-x64.zip",
         "extract_dir": "yakyak-win32-x64"
     },
-    "hash": "043ae2f62cecbc3d7ded341859430a9e7796163ebe8b1928dd9e8512454914e9"
+    "hash": "6188d1f6ab95b063348c1cf8509d8976f484b7e2ae5cd4dd741984f1de59f1d8"
 }
