@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/libretro/ludo",
-    "version": "0.12.6",
+    "version": "0.12.8",
     "description": "Ludo is a work in progress libretro frontend written in go.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/libretro/ludo/releases/download/v0.12.6/Ludo-Windows-x86_64-0.12.6.zip",
-            "hash": "d2a456415d0853cadc34d98ec38411eb9a268b4ab1f268be0a980ac4dc2b2d39",
-            "extract_dir": "Ludo-Windows-x86_64-0.12.6"
+            "url": "https://github.com/libretro/ludo/releases/download/v0.12.8/Ludo-Windows-x86_64-0.12.8.zip",
+            "hash": "4f86c2313a4c234738b6134fc2ae7c50bb64b82b64d2d91ed24f3b1ca796f536",
+            "extract_dir": "Ludo-Windows-x86_64-0.12.8"
         }
     },
     "shortcuts": [
