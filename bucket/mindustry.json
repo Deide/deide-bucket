@@ -8,7 +8,7 @@
     },
     "url": [
         "https://github.com/Anuken/Mindustry/releases/download/v126.2/Mindustry.jar",
-        "https://github.com/Anuken/Mindustry/releases/download/v100/server-release.jar",
+        "https://github.com/Anuken/Mindustry/releases/download/v126.2/server-release.jar",
         "https://i.imgur.com/Y4Q1ECd.png"
     ],
     "pre_install": "Rename-Item -Path $dir\\Y4Q1ECd.png -NewName icon.png",
