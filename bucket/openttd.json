@@ -5,11 +5,13 @@
     "architecture": {
         "64bit": {
             "url": "https://proxy.binaries.openttd.org/openttd-releases/1.11.2/openttd-1.11.2-windows-win64.zip",
-            "hash": "dcb3df1833cfb5d9caac99d09c08c0cb7f16aa5ffede8e2d129e93b4dc2a0721"
+            "hash": "dcb3df1833cfb5d9caac99d09c08c0cb7f16aa5ffede8e2d129e93b4dc2a0721",
+            "extract_dir": "openttd-1.11.2-windows-win64"
         },
         "32bit": {
             "url": "https://proxy.binaries.openttd.org/openttd-releases/1.11.2/openttd-1.11.2-windows-win32.zip",
-            "hash": "864e52ab099593a684876af05bf860421f760a7031a5cd665fa65102d0c69f87"
+            "hash": "864e52ab099593a684876af05bf860421f760a7031a5cd665fa65102d0c69f87",
+            "extract_dir": "openttd-1.11.2-windows-win32"
         }
     },
     "bin": "openttd.exe",
@@ -39,14 +41,16 @@
                 "hash": {
                     "url": "https://www.openttd.org/downloads/openttd-releases/latest.html",
                     "regex": "checksum-openttd-$version-windows-win64\\.zip\"[\\s\\w=\":;><&\\/]+  sha256sum: ([a-zA-Z0-9]{64})"
-                }
+                },
+                "extract_dir": "openttd-$version-windows-win64"
             },
             "32bit": {
                 "url": "https://proxy.binaries.openttd.org/openttd-releases/$version/openttd-$version-windows-win32.zip",
                 "hash": {
                     "url": "https://www.openttd.org/downloads/openttd-releases/latest.html",
                     "regex": "checksum-openttd-$version-windows-win32\\.zip\"[\\s\\w=\":;><&\\/]+  sha256sum: ([a-zA-Z0-9]{64})"
-                }
+                },
+                "extract_dir": "openttd-$version-windows-win632"
             }
         }
     }
