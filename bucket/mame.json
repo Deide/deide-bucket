@@ -1,12 +1,12 @@
 {
     "homepage": "http://mamedev.org",
     "description": "Arcade machine emulator and tools",
-    "version": "0.233",
+    "version": "0.234",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mamedev/mame/releases/download/mame0233/mame0233b_64bit.exe#/dl.7z",
-            "hash": "af41c1fda20d9286f2a76fea63b0f827926ac46c1b8c4356c6fb968df12aa1e4",
+            "url": "https://github.com/mamedev/mame/releases/download/mame0234/mame0234b_64bit.exe#/dl.7z",
+            "hash": "8a73162a5553f9aeb951e737501f2c8b8695e2d84a3459e917a9a9ee9e653bad",
             "pre_install": [
                 "if(!(Test-Path \"$persist_dir\\mame.ini\")) {",
                 "   Start-Process \"$dir\\mame.exe\" -WorkingDirectory \"$dir\" -ArgumentList \"-createconfig\"",
@@ -26,7 +26,7 @@
         },
         "32bit": {
             "url": "https://github.com/mamedev/mame/releases/download/mame0217/mame0217b_32bit.exe#/dl.7z",
-            "hash": "aa20e971f6a0a7c482f3ed70cc6edc115eb577f987322ba42e5c3869e1d714d1",
+            "hash": "f763580223a35eaa9283b567a3652cf49154e6181bd78122ed993edfa90b8eef",
             "pre_install": [
                 "Write-Host -ForegroundColor Yellow \"WARN: MAME no longer provides up to date 32bit binaries\"",
                 "Write-Host -ForegroundColor Yellow \"Continue installing latest 32bit release (0.217)? \"",
