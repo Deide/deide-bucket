@@ -16,7 +16,12 @@
     "bin": [
         "Dune2000.exe",
         "RedAlert.exe",
-        "TiberianDawn.exe"
+        "TiberianDawn.exe",
+        "OpenRA.Utility.exe",
+        "OpenRA.Server.exe"
+    ],
+    "persist":[
+        "Support"
     ],
     "shortcuts": [
         [
@@ -34,15 +39,15 @@
     ],
     "checkver": {
         "url": "https://github.com/OpenRA/OpenRA/releases",
-        "regex": "Release ([\\d]{8})</a>"
+        "regex": "release-([\\d]{8})</a>"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/OpenRA/OpenRA/releases/download/release-$version/OpenRA-release-$version-x64.exe#/OpenRA.7z"
+                "url": "https://github.com/OpenRA/OpenRA/releases/download/release-$version/OpenRA-release-$version-x64-winportable.zip"
             },
             "32bit": {
-                "url": "https://github.com/OpenRA/OpenRA/releases/download/release-$version/OpenRA-release-$version-x86.exe#/OpenRA.7z"
+                "url": "https://github.com/OpenRA/OpenRA/releases/download/release-$version/OpenRA-release-$version-x86-winportable.zip"
             }
         }
     }
