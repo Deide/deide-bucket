@@ -1,13 +1,13 @@
 {
-    "version": "3.1.17",
+    "version": "3.1.19",
     "description": "A simple and easy to use mod manager for several Unity games using Thunderstore ",
     "homepage": "https://github.com/ebkr/r2modmanPlus",
     "license": "MIT",
-    "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.17/r2modman-3.1.17.exe#/dl.7z",
-    "hash": "19E0BB7495EDE441A1D14CEB670F3C5321BEA45CBC6CA93DBE5B2CAE0B90AD84",
+    "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.19/r2modman-3.1.19.exe",
+    "hash": "25a4c978a441c83df663dfd911196d38567007f25ea2ffef61b168ef83354f08",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
-        "script":[
+        "script": [
             "Remove-Item \"$dir\\System.dll\" | Out-Null",
             "Remove-Item \"$dir\\StdUtils.dll\" | Out-Null",
             "Remove-Item \"$dir\\nsis7z.dll\" | Out-Null",
@@ -15,9 +15,14 @@
             "Remove-Item \"$dir\\app-64.7z\" | Out-Null"
         ]
     },
-    "bin": ["r2modman.exe"],
-    "shortcuts": [["r2modman.exe", "r2modman"]],
-    "persist": ["r2modman-local"],
+    "bin": "r2modman.exe",
+    "shortcuts": [
+        [
+            "r2modman.exe",
+            "r2modman"
+        ]
+    ],
+    "persist": "r2modman-local",
     "checkver": {
         "github": "https://github.com/ebkr/r2modmanPlus"
     },
