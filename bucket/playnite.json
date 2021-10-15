@@ -1,30 +1,22 @@
 {
-    "version": "8.15",
-    "description": "Video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Origin, Battle.net, ...",
+    "version": "9.3",
+    "description": "Video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Epic, Origin, Ubisoft Connect, and more!",
     "homepage": "https://playnite.link",
     "license": "MIT",
-    "url": "https://playnite.link/update/stable/8.15/Playnite815.zip",
-    "hash": "6c3645bd3c405f16235c43a3e6f91d69b2a272ce77d5c39e4e51ab4de55ce269",
+    "url": "https://github.com/JosefNemec/Playnite/releases/download/9.3/Playnite93.zip",
+    "hash": "4E2777A160D15367940DC47D90EC540BB2C6619CA8336AC70B8C50FA38073D7F",
     "pre_install": "Copy-Item \"$persist_dir\\config.json\" \"$dir\" -ErrorAction SilentlyContinue",
     "uninstaller": {
         "script": "Copy-Item \"$dir\\config.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
     },
-    "bin": [
-        [
-            "Playnite.DesktopApp.exe",
-            "Playnite"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "Playnite.DesktopApp.exe",
-            "Playnite"
-        ]
-    ],
+    "bin": [["Playnite.DesktopApp.exe", "Playnite"]],
+    "shortcuts": [["Playnite.DesktopApp.exe", "Playnite"]],
     "persist": [
         "browsercache",
         "cache",
+        "Extensions",
         "ExtensionsData",
+        "Themes",
         "library"
     ],
     "checkver": {
@@ -34,6 +26,6 @@
         }
     },
     "autoupdate": {
-        "url": "https://playnite.link/update/stable/$version/Playnite$cleanVersion.zip"
+        "url": "https://github.com/JosefNemec/Playnite/releases/download/$version/Playnite$cleanVersion.zip"
     }
 }
