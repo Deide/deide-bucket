@@ -1,16 +1,26 @@
 {
-    "version": "9.3",
+    "version": "9.4",
     "description": "Video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Epic, Origin, Ubisoft Connect, and more!",
     "homepage": "https://playnite.link",
     "license": "MIT",
-    "url": "https://github.com/JosefNemec/Playnite/releases/download/9.3/Playnite93.zip",
-    "hash": "4E2777A160D15367940DC47D90EC540BB2C6619CA8336AC70B8C50FA38073D7F",
+    "url": "https://github.com/JosefNemec/Playnite/releases/download/9.4/Playnite94.zip",
+    "hash": "092c507541fcc444d7e46ffaa16df36e9ef0149fc9366a1febaeff4a824cdd68",
     "pre_install": "Copy-Item \"$persist_dir\\config.json\" \"$dir\" -ErrorAction SilentlyContinue",
     "uninstaller": {
         "script": "Copy-Item \"$dir\\config.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
     },
-    "bin": [["Playnite.DesktopApp.exe", "Playnite"]],
-    "shortcuts": [["Playnite.DesktopApp.exe", "Playnite"]],
+    "bin": [
+        [
+            "Playnite.DesktopApp.exe",
+            "Playnite"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Playnite.DesktopApp.exe",
+            "Playnite"
+        ]
+    ],
     "persist": [
         "browsercache",
         "cache",
