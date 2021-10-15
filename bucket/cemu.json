@@ -1,10 +1,10 @@
 {
     "homepage": "https://cemu.info",
-    "version": "1.25.5",
+    "version": "1.25.6",
     "description": "Wii U emulator",
-    "url": "http://cemu.info/releases/cemu_1.25.5.zip",
-    "hash": "1e2b33fe85f2c35ac971a7169508d9e47cd70589af99dca9a5000dec65f53b44",
-    "extract_dir": "cemu_1.25.5",
+    "url": "http://cemu.info/releases/cemu_1.25.6.zip",
+    "hash": "46a7188e7b5b98ec608481ca3b9d9543dedd429ecf5e54ad30d19af26310412f",
+    "extract_dir": "cemu_1.25.6",
     "bin": "Cemu.exe",
     "shortcuts": [
         [
