@@ -6,7 +6,14 @@
     "extract_dir": "Soldat",
     "bin": "soldat.exe",
     "shortcuts": [["soldat.exe", "Soldat"]],
-    "persist": ["soldat.ini", "taunts.txt"],
+    "persist": [
+        "soldat.ini",
+        "taunts.txt",
+        "screens",
+        "maps",
+        "scenery-gfx",
+        "demos"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/Deide/portable-soldat/releases/download/$version/soldat_$version.zip",
