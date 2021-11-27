@@ -1,10 +1,10 @@
 {
-    "version": "9.6",
+    "version": "9.7",
     "description": "Video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Epic, Origin, Ubisoft Connect, and more!",
     "homepage": "https://playnite.link",
     "license": "MIT",
-    "url": "https://github.com/JosefNemec/Playnite/releases/download/9.6/Playnite96.zip",
-    "hash": "5986a89fc3d7d64c69b51b9886651a34a092f7cecf99801d912e1e09a25e41fc",
+    "url": "https://github.com/JosefNemec/Playnite/releases/download/9.7/Playnite97.zip",
+    "hash": "9a381478b9999af3c90719de9770aaf3f80dfd5801123d3be38f85cd6aefa1ce",
     "pre_install": "Copy-Item \"$persist_dir\\config.json\" \"$dir\" -ErrorAction SilentlyContinue",
     "uninstaller": {
         "script": "Copy-Item \"$dir\\config.json\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
