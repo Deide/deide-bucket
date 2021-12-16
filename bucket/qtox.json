@@ -18,13 +18,13 @@
     "shortcuts": [
         [
             "qtox.exe",
-            "qTox",
-            "qtox.ini"
+            "qTox"
         ]
     ],
     "persist":[
         "avatars",
-        "emoticons"
+        "emoticons",
+        "qtox.ini"
     ],
     "checkver": {
         "github": "https://github.com/qTox/qTox"
