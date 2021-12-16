@@ -13,6 +13,13 @@
             "hash": "f8ae0cae5a6285639282b81456affe36f3ea2223dbe14ea3e98761bb28d8e855"
         }
     },
+    "installer": {
+        "script": [
+            "if (-not (Test-Path $dir\\qtox.ini)) {",
+            "  Start-Process $dir\\qtox.exe; Start-Sleep -Seconds 3; Stop-Process -Name qtox",
+            "}"
+        ]
+    },
     "extract_dir": "bin",
     "bin": "qtox.exe",
     "shortcuts": [
@@ -24,7 +31,11 @@
     "persist":[
         "avatars",
         "emoticons",
+        "downloads",
         "qtox.ini"
+    ],
+    "notes":[
+        "Set qtox to portable mode from the settings"
     ],
     "checkver": {
         "github": "https://github.com/qTox/qTox"
