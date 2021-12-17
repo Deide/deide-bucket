@@ -41,13 +41,12 @@
         "url": "https://update.rpcs3.net/?api=v2&c=0",
         "jsonpath": {
             "version": "$.latest_build.version",
-            "download": "$.latest_build.windows.download"
+            "download": "$.latest_build.windows.download",
+            "hash": "$.latest_build.windows.checksum"
         }
     },
     "autoupdate": {
         "url": "$matchDownload",
-        "hash": {
-            "jsonpath": "$.latest_build.windows.checksum"
-        }
+        "hash": "$matchHash"
     }
 }
