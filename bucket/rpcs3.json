@@ -47,6 +47,8 @@
     },
     "autoupdate": {
         "url": "$matchDownload",
-        "hash": "$matchHash"
+        "hash": {
+            "url": "$url.sha256"
+        }
     }
 }
