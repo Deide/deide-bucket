@@ -23,8 +23,8 @@
         "   Write-Host 'Installing pip...'",
         "   Invoke-WebRequest -Uri $url -OutFile $getPip | Out-Null",
         "   & $python $getPip",
-        "   Rename-Item $p python._pth.bak",
-        "} else { Write-Host 'pip already installed' }"
+        "} else { Write-Host 'pip already installed' }",
+        "Rename-Item $p python._pth.bak"
     ],
     "env_set": {
         "PY_PIP": "$dir\\Scripts",
@@ -32,8 +32,8 @@
     },
     "bin": [
         "python.exe",
-        "Scripts/pip.exe",
-        "Scripts/wheel.exe"
+        ["python.exe", "pip", "-m pip"],
+        ["python.exe", "wheel", "-m wheel"]
     ],
     "persist": [
         "Lib",
