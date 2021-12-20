@@ -1,0 +1,60 @@
+{
+    "homepage": "https://www.python.org/",
+    "version": "3.10.1",
+    "description": "A programming language that lets you work quickly and integrate systems more effectively.",
+    "architecture": {
+        "32bit": {
+            "url": "https://www.python.org/ftp/python/3.10.1/python-3.10.1-embed-win32.zip",
+            "hash": "md5:4f4d7a8f2118f62e17a4ebdf5fe0aee5"
+        },
+        "64bit": {
+            "url": "https://www.python.org/ftp/python/3.10.1/python-3.10.1-embed-amd64.zip",
+            "hash": "md5:864dcff204ba8b257809cc3f20beb1b9"
+        }
+    },
+    "pre_install":[
+        "$scripts = \"$persist_dir\\Scripts\"",
+        "$pip = \"$persist_dir\\Scripts\\pip.exe\"",
+        "$python = \"$dir\\python.exe\"",
+        "$p = \"$dir\\python*._pth\"",
+        "$getPip = \"$dir\\get-pip.py\"",
+        "$url = \"https://bootstrap.pypa.io/get-pip.py\"",
+        "if (-not ((Test-Path $scripts) -and (Test-Path $pip))) {",
+        "   Write-Host 'Installing pip...'",
+        "   Invoke-WebRequest -Uri $url -OutFile $getPip | Out-Null",
+        "   & $python $getPip",
+        "   Rename-Item $p python._pth.bak",
+        "} else { Write-Host 'pip already installed' }"
+    ],
+    "env_set": {
+        "PY_PIP": "$dir\\Scripts",
+        "PY_LIBS": "$dir\\Lib;$dir\\Lib\\site-packages"
+    },
+    "bin": [
+        "python.exe",
+        "Scripts/pip.exe",
+        "Scripts/wheel.exe"
+    ],
+    "persist": [
+        "Lib",
+        "Scripts"
+    ],
+    "checkver": {
+        "url": "https://www.python.org/downloads/windows/",
+        "regex": "Latest Python 3 Release - Python ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://www.python.org/ftp/python/$version/python-$version-embed-win32.zip"
+            },
+            "64bit": {
+                "url": "https://www.python.org/ftp/python/$version/python-$version-embed-amd64.zip"
+            }
+        },
+        "hash": {
+            "url": "https://www.python.org/downloads/release/python-$cleanVersion/",
+            "regex": "(?sm)$basename.*?$md5"
+        }
+    }
+}
