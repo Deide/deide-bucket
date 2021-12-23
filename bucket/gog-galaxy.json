@@ -1,5 +1,5 @@
 {
-    "version": "2.0.44.218",
+    "version": "2.0.45.61",
     "description": "GOG Galaxy 2.0. Gaming Client designed for a convenient purchasing, playing and updating of mostly DRM-free games",
     "homepage": "https://www.gog.com/galaxy",
     "license": {
@@ -10,8 +10,8 @@
     "suggest": {
         "Microsoft Visual C++ Runtime 2015": "extras/vcredist2015"
     },
-    "url": "https://cdn.gog.com/open/galaxy/client/setup_galaxy_2.0.44.218.exe",
-    "hash": "md5:ac40c8bb5169bce28e1bdb7027911269",
+    "url": "https://cdn.gog.com/open/galaxy/client/setup_galaxy_2.0.45.61.exe",
+    "hash": "md5:5d2ae5367f72b3a23728bb8732e6df4e",
     "installer": {
         "script": [
             "$file = \"$dir\\$fname\"",
