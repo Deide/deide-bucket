@@ -3,6 +3,7 @@
     "version": "0.6.13",
     "description": "MultiMC is a Qt Minecraft launcher",
     "url": "https://github.com/MultiMC/MultiMC5/releases/download/0.6.13/mmc-stable-win32.zip",
+    "hash": "27573d52e735ec1030a35a723eacb211513757930a99f8178a65d38407008a33",
     "extract_dir": "MultiMC",
     "bin": "MultiMC.exe",
     "shortcuts": [
@@ -15,14 +16,27 @@
         "multimc.cfg",
         "accounts.json",
         "accounts",
+        "instances",
         "mods",
-        "versions",
-        "instances"
+        "icons",
+        "versions"
+    ],
+    "pre_install":[
+        "if (-not (Test-Path \"$persist_dir\\multimc.cfg\")) {",
+        "   Write-Host 'Generating multimc.cfg...'",
+        "   New-Item \"$dir\\multimc.cfg\" -Value 'AutoUpdate=false' | Out-Null",
+        "}",
+        "if (-not (Test-Path \"$persist_dir\\accounts.json\")) {",
+        "   Write-Host 'Generating accounts.json...'",
+        "   New-Item \"$dir\\accounts.json\" -Value '{}' | Out-Null",
+        "}"
+    ],
+    "notes":[
+        "Increase minimum and maximum memory allocation to avoid stuttering."
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/MultiMC/MultiMC5/releases/download/$version/mmc-stable-win32.zip",
+        "url": "https://files.multimc.org/downloads/mmc-stable-win32.zip",
         "extract_dir": "MultiMC"
-    },
-    "hash": "27573d52e735ec1030a35a723eacb211513757930a99f8178a65d38407008a33"
+    }
 }
