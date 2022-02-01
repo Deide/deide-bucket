@@ -1,13 +1,13 @@
 {
     "homepage": "https://github.com/runelite/launcher",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "description": "Launcher for the RuneLite Client - a free, open source OldSchool RuneScape client.",
     "license": {
         "identifier": "BSD-2-Clause",
         "url": "https://github.com/runelite/launcher/blob/master/LICENSE"
     },
     "url": [
-        "https://github.com/runelite/launcher/releases/download/2.2.0/RuneLite.jar",
+        "https://github.com/runelite/launcher/releases/download/2.3.0/RuneLite.jar",
         "https://i.imgur.com/Ozfabsa.png"
     ],
     "pre_install": "Rename-Item -Path $dir\\Ozfabsa.png -NewName icon.png",
@@ -27,7 +27,7 @@
         ]
     ],
     "hash": [
-        "e14e9d0f265b17d711370f0d4749adb6401a39a269a9531349edfd431a8f138f",
+        "758e71ef44e67f09b143af953f1cf2a38578a9ec181ed8de52c4a6a5d32ebde8",
         "57AF236659C56FEAE8B23F1272F3592735E087D52BD90A92E10B7319574D0800"
     ],
     "notes": "Java 8 or 11 is recommended",
