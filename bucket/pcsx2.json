@@ -1,10 +1,10 @@
 {
     "homepage": "https://pcsx2.net",
-    "version": "1.7.2303",
+    "version": "1.7.2357",
     "description": "Playstation 2 Emulator",
-    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.2303&platform=windows-x86#/pcsx2-1.7.2303.7z",
-    "hash": "df4df586e44f3bf87a315f81d0f7097907cc9d8d5fef436d57303ca61d2fa38e",
-    "extract_dir": "pcsx2-v1.7.2303-windows-x86",
+    "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.2357&platform=windows-x86#/pcsx2-1.7.2357.7z",
+    "hash": "daf83eab3dbbc7c2c5d98951c0e7749afaa0decf307caca8e6605c1688df5813",
+    "extract_dir": "pcsx2-v1.7.2357-windows-x86",
     "bin": "pcsx2.exe",
     "shortcuts": [
         [
