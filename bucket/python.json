@@ -26,6 +26,9 @@
         "} else { Write-Host 'pip already installed' }",
         "Rename-Item $p python._pth.bak"
     ],
+    "env_add_path":[
+        "$dir\\Scripts"
+    ],
     "env_set": {
         "PY_PIP": "$dir\\Scripts",
         "PY_LIBS": "$dir\\Lib;$dir\\Lib\\site-packages"
