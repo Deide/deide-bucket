@@ -5,11 +5,15 @@
     "url": "https://buildbot.orphis.net/pcsx2/index.php?m=dl&rev=v1.7.2647&platform=windows-x86#/pcsx2-1.7.2647.7z",
     "hash": "2584d925ebe3902831f3808f92ab62d61ab6792f306c9d2d441d4105b44c1c4d",
     "extract_dir": "pcsx2-v1.7.2647-windows-x86",
-    "bin": "pcsx2.exe",
+    "bin": ["pcsx2x64.exe", "pcsx2x64-avx2.exe"],
     "shortcuts": [
         [
-            "pcsx2.exe",
+            "pcsx2x64.exe",
             "PS2"
+        ],
+        [
+            "pcsx2x64-avx2.exe",
+            "PS2 (AVX2)"
         ]
     ],
     "persist": [
