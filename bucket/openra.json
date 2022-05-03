@@ -37,7 +37,7 @@
     ],
     "checkver": {
         "url": "https://github.com/OpenRA/OpenRA/releases",
-        "regex": "release-([\\d]{8})</a>"
+        "regex": "release-([\\d]{8})"
     },
     "autoupdate": {
         "architecture": {
