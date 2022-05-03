@@ -28,7 +28,7 @@
     ],
     "checkver": {
         "url": "http://www.freeciv.org/download.html",
-        "regex": "Freeciv-msys2-([\\d.]+)-win64"
+        "regex": "Freeciv-([\\d.]+)-msys2-win64-sdl2"
     },
     "autoupdate": {
         "url": "http://files.freeciv.org/packages/windows/Freeciv-$version-msys2-win64-sdl2-setup.exe#/Freeciv-x64-sdl2-$version.7z"
