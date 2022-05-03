@@ -1,0 +1,48 @@
+{
+    "homepage": "https://www.duckstation.org/",
+    "version": "nightly",
+    "description": "Sony Playstation emulator",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/stenzek/duckstation/blob/master/LICENSE"
+    },
+    "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
+    "hash": "1a7cc0bf4d85e0de13fd29dd6e5adab7736c949cb1cf2a95bdcc63cd7c49901e",
+    "pre_install": [
+        "$settings = \"$dir\\settings.ini\"",
+        "$portable = \"$dir\\portable.txt\"",
+        "if (-not (Test-Path \"$settings\")) {",
+        "  New-Item $settings",
+        "  Write-Output \"Creating settings.ini...\"",
+        "}",
+        "if (-not (Test-Path \"$portable\")) {",
+        "  New-Item $portable",
+        "  Write-Output \"Creating portable.txt...\"",
+        "}"
+    ],
+    "bin": [
+        ["duckstation-nogui-x64-ReleaseLTCG.exe", "duckstation-nogui.exe"],
+        ["duckstation-qt-x64-ReleaseLTCG.exe", "duckstation-qt.exe"]
+    ],
+    "shortcuts": [
+        [
+            "duckstation-qt-x64-ReleaseLTCG.exe",
+            "Playstation"
+        ]
+    ],
+    "persist": [
+        "portable.txt",
+        "bios",
+        "cache",
+        "cheats",
+        "covers",
+        "dump",
+        "inputprofiles",
+        "memcards",
+        "savestates",
+        "screenshots",
+        "shaders",
+        "textures",
+        "settings.ini"
+    ]
+}
