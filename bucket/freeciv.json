@@ -6,17 +6,19 @@
     "url": "https://downloads.sourceforge.net/project/freeciv/Freeciv%202.6/2.6.6/Freeciv-2.6.6-win32-gtk3-setup.exe#/Freeciv-2.6.6.7z",
     "hash": "sha1:a657ba3f5db05f005f6716015bfa6802c5f7d198",
     "bin": [
+        "freeciv-sdl2.exe",
+        "freeciv-mp-sdl2.exe",
         "freeciv-gtk3.exe",
         "freeciv-mp-gtk3.exe",
         "freeciv-server.exe"
     ],
     "shortcuts": [
         [
-            "freeciv-gtk3.exe",
+            "freeciv-sdl2.exe",
             "Freeciv"
         ],
         [
-            "freeciv-mp-gtk3.exe",
+            "freeciv-mp-sdl2.exe",
             "Freeciv Modpack Installer"
         ],
         [
@@ -26,9 +28,9 @@
     ],
     "checkver": {
         "url": "http://www.freeciv.org/download.html",
-        "regex": "Freeciv-([\\d.]+)-win32"
+        "regex": "Freeciv-msys2-([\\d.]+)-win64"
     },
     "autoupdate": {
-        "url": "https://downloads.sourceforge.net/project/freeciv/Freeciv%20$majorVersion.$minorVersion/$version/Freeciv-$version-win32-gtk3-setup.exe#/Freeciv-$version.7z"
+        "url": "http://files.freeciv.org/packages/windows/Freeciv-$version-msys2-win64-sdl2-setup.exe#/Freeciv-x64-sdl2-$version.7z"
     }
 }
