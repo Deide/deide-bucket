@@ -21,8 +21,8 @@
         "}"
     ],
     "bin": [
-        ["duckstation-nogui-x64-ReleaseLTCG.exe", "duckstation-nogui.exe"],
-        ["duckstation-qt-x64-ReleaseLTCG.exe", "duckstation-qt.exe"]
+        ["duckstation-nogui-x64-ReleaseLTCG.exe", "duckstation-nogui"],
+        ["duckstation-qt-x64-ReleaseLTCG.exe", "duckstation-qt"]
     ],
     "shortcuts": [
         [
