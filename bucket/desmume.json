@@ -1,6 +1,6 @@
 {
     "homepage": "https://desmume.org",
-    "version": "0.0.0.1034",
+    "version": "0.0.0.1038",
     "description": "Nintendo DS Emulator",
     "pre_install": [
         "$ini = $dir\\desmume.ini",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip#/desmume-x64-0.9.12-0.0.0.1034.zip",
-            "hash": "13b08cfff95a624a6d0234af7516d5891ce918a2bba81654ceaf80079961f52c",
+            "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip#/desmume-x64-0.9.12-0.0.0.1038.zip",
+            "hash": "6c284d7315a7a1d8d78b42fcb9e20cc9aebea247b6e1ff6c3d2b83fcadaa6d54",
             "bin": "desmume.exe",
             "shortcuts": [
                 [
