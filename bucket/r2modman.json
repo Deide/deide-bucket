@@ -1,10 +1,10 @@
 {
-    "version": "3.1.28",
+    "version": "3.1.31",
     "description": "A simple and easy to use mod manager for several Unity games using Thunderstore ",
     "homepage": "https://github.com/ebkr/r2modmanPlus",
     "license": "MIT",
-    "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.28/r2modman-3.1.28.exe",
-    "hash": "39c29dbbcc340c94ff531f8d83349fa63eb0ecd304994034f954b7f56b11cbbf",
+    "url": "https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.31/r2modman-3.1.31.exe",
+    "hash": "4578ee9fe1a743e8883cb8070246e99bb948a3f98f5fc8ef260cfe7fd3b668b4",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
         "script": [
