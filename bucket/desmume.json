@@ -32,16 +32,17 @@
         "desmume.ini"
     ],
     "checkver": {
-        "url": "https://ci.appveyor.com/api/projects/zeromus/desmume",
+        "url": "https://api.github.com/repos/TASEmulators/desmume/commits/master",
         "jsonpath": {
-            "version": "$.build.version",
-            "jobid": "$.build.jobs[0].jobId"
-        }
+            "version": "$.commit.author.date"
+        },
+        "regex": "(\\d+)\\/(\\d+)\\/(\\d+)",
+        "replace": "nightly-${3}-${2}-${1}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip#/desmume-x64-0.9.12-$version.zip"
+                "url": "https://nightly.link/TASEmulators/desmume/workflows/build_win/master/desmume-win-x64.zip#/desmume-x64-0.9.13-$version.zip"
             }
         }
     }
