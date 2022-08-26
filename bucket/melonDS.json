@@ -1,0 +1,50 @@
+{
+    "homepage": "https://melonds.kuribo64.net",
+    "version": "0.9.4",
+    "description": "Nintendo DS Emulator",
+    "pre_install": [
+        "function create($path, $type, $content) {",
+        "   if (-not (Test-Path \"$path\")) {",
+        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "   }",
+        "}",
+        "$ini = \"$dir\\melonds.ini\"",
+        "$saves = \"$dir\\Saves\"",
+        "$savestates = \"$dir\\SaveStates\"",
+        "$cheats = \"$dir\\Cheats\"",
+        "create $ini File \"SaveFilePath=./Saves/`nSavestatePath=./SaveStates/`nCheatFilePath=./Cheats/`n\"",
+        "create $saves Directory",
+        "create $savestates Directory",
+        "create $cheats Directory"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://melonds.kuribo64.net/downloads/melonDS_0.9.4_win_x64.7z",
+            "hash": "8df7ae6293e358dcc4ff9728c72d02886893b89422171f04bb663355fa7faa07",
+            "bin": "melonDS.exe",
+            "shortcuts": [
+                [
+                    "melonDS.exe",
+                    "NDS"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "Saves",
+        "SaveStates",
+        "Cheats",
+        "melonds.ini"
+    ],
+    "checkver": {
+        "url": "https://melonds.kuribo64.net/downloads.php",
+        "regex": "melonDS (\\d.\\d.\\d)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://melonds.kuribo64.net/downloads/melonDS_$version_win_x64.7z"
+            }
+        }
+    }
+}
