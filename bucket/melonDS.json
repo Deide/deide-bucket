@@ -12,7 +12,7 @@
         "$saves = \"$dir\\Saves\"",
         "$savestates = \"$dir\\SaveStates\"",
         "$cheats = \"$dir\\Cheats\"",
-        "create $ini File \"SaveFilePath=./Saves/`nSavestatePath=./SaveStates/`nCheatFilePath=./Cheats/`n\"",
+        "create $ini File \"SaveFilePath=$dir/Saves/`nSavestatePath=$dir/SaveStates/`nCheatFilePath=$dir/Cheats/`n\"",
         "create $saves Directory",
         "create $savestates Directory",
         "create $cheats Directory"
