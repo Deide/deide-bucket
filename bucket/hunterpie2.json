@@ -5,13 +5,9 @@
     "url": "https://github.com/Haato3o/HunterPie-v2/releases/download/2.3.0/v2.3.0.133.zip",
     "hash": "5f62036302bd4478f12414085b58109fe18ae47075c949754ef4e76ccb6b3b8b",
     "pre_install": [
-        "function create($path, $type, $content) {",
-        "   if (-not (Test-Path \"$path\")) {",
-        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
-        "   }",
-        "}",
-        "$config = \"$dir\\config.json\"",
-        "create $config File"
+        "Start-Process $dir\\hunterpie.exe",
+        "Start-Sleep -Seconds 2",
+        "Stop-Process hunterpie"
     ],
     "bin": "HunterPie.exe",
     "shortcuts": [
