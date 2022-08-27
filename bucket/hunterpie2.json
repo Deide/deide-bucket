@@ -8,7 +8,7 @@
         "Write-Output \"Generating config...\"",
         "Start-Process \"$dir\\hunterpie.exe\"",
         "Start-Sleep -Seconds 4",
-        "Stop-Process hunterpie"
+        "Stop-Process -Name hunterpie"
     ],
     "bin": "HunterPie.exe",
     "shortcuts": [
