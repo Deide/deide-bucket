@@ -1,37 +1,42 @@
 {
     "homepage": "https://www.duckstation.org/",
-    "version": "nightly",
+    "version": "nightly-2022-05-03",
     "description": "Sony Playstation emulator",
     "license": {
         "identifier": "GPL-3.0-only",
         "url": "https://github.com/stenzek/duckstation/blob/master/LICENSE"
     },
-    "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
-    "hash": "1a7cc0bf4d85e0de13fd29dd6e5adab7736c949cb1cf2a95bdcc63cd7c49901e",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
+            "hash": "1a7cc0bf4d85e0de13fd29dd6e5adab7736c949cb1cf2a95bdcc63cd7c49901e",
+            "bin": [
+                ["duckstation-nogui-x64-ReleaseLTCG.exe", "duckstation-nogui"],
+                ["duckstation-qt-x64-ReleaseLTCG.exe", "duckstation-qt"]
+            ],
+            "shortcuts": [
+                [
+                    "duckstation-qt-x64-ReleaseLTCG.exe",
+                    "Playstation"
+                ]
+            ]
+        }
+    },
     "pre_install": [
+        "function create($path, $type, $content) {",
+        "   if (-not (Test-Path \"$path\")) {",
+        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "       Write-Output \"Creating $path...\"",
+        "   }",
+        "}",
         "$settings = \"$dir\\settings.ini\"",
         "$portable = \"$dir\\portable.txt\"",
-        "if (-not (Test-Path \"$settings\")) {",
-        "  New-Item $settings | Out-Null",
-        "  Write-Output \"Creating settings.ini...\"",
-        "}",
-        "if (-not (Test-Path \"$portable\")) {",
-        "  New-Item $portable | Out-Null",
-        "  Write-Output \"Creating portable.txt...\"",
-        "}"
-    ],
-    "bin": [
-        ["duckstation-nogui-x64-ReleaseLTCG.exe", "duckstation-nogui"],
-        ["duckstation-qt-x64-ReleaseLTCG.exe", "duckstation-qt"]
-    ],
-    "shortcuts": [
-        [
-            "duckstation-qt-x64-ReleaseLTCG.exe",
-            "Playstation"
-        ]
+        "create $settings File",
+        "create $portable File"
     ],
     "persist": [
         "portable.txt",
+        "settings.ini",
         "bios",
         "cache",
         "cheats",
@@ -43,7 +48,21 @@
         "savestates",
         "screenshots",
         "shaders",
-        "textures",
-        "settings.ini"
-    ]
+        "textures"
+    ],
+    "checkver":{
+        "url": "https://api.github.com/repos/stenzek/duckstation/commits/master",
+        "jsonpath": {
+            "version": "$.commit.author.date"
+        },
+        "regex": "(\\d+)\\/(\\d+)\\/(\\d+)",
+        "replace": "nightly-${3}-${2}-${1}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip#/duckstation-x64-$version.zip"
+            }
+        }
+    }
 }
