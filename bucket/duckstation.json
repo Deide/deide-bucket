@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.duckstation.org/",
-    "version": "nightly-2022-05-03",
+    "version": "nightly-2022-09-03",
     "description": "Sony Playstation emulator",
     "license": {
         "identifier": "GPL-3.0-only",
@@ -8,11 +8,17 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip",
-            "hash": "1a7cc0bf4d85e0de13fd29dd6e5adab7736c949cb1cf2a95bdcc63cd7c49901e",
+            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip#/duckstation-x64-nightly-2022-09-03.zip",
+            "hash": "1f55268112380dff0937855c6c2a8a7a3dec05cdb2e666c1c11f9b0cb6f4d26e",
             "bin": [
-                ["duckstation-nogui-x64-ReleaseLTCG.exe", "duckstation-nogui"],
-                ["duckstation-qt-x64-ReleaseLTCG.exe", "duckstation-qt"]
+                [
+                    "duckstation-nogui-x64-ReleaseLTCG.exe",
+                    "duckstation-nogui"
+                ],
+                [
+                    "duckstation-qt-x64-ReleaseLTCG.exe",
+                    "duckstation-qt"
+                ]
             ],
             "shortcuts": [
                 [
@@ -50,7 +56,7 @@
         "shaders",
         "textures"
     ],
-    "checkver":{
+    "checkver": {
         "url": "https://api.github.com/repos/stenzek/duckstation/commits/master",
         "jsonpath": {
             "version": "$.commit.author.date"
