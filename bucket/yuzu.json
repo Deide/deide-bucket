@@ -6,6 +6,9 @@
         "identifier": "GPL-2.0",
         "url": "https://github.com/yuzu-emu/yuzu-mainline/blob/master/license.txt"
     },
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
+    },
     "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-1162/yuzu-windows-msvc-20220910-14162aff4.zip",
     "hash": "b184261855904817ac76de47ee85acaf7a979fec8f77cd7a76d50c8e8a989e0a",
     "extract_dir": "yuzu-windows-msvc",
@@ -22,11 +25,10 @@
         "url": "https://api.github.com/repos/yuzu-emu/yuzu-mainline/releases",
         "jsonpath": {
             "version": "$.[0].name",
-            "downloadUrl": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed')].browser_download_url"
-        },
-        "regex": "yuzu (\\d+)"
+            "download": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed')].browser_download_url"
+        }
     },
     "autoupdate": {
-        "url": "$downloadUrl"
+        "url": "$matchDownload"
     }
 }
