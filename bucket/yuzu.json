@@ -19,10 +19,14 @@
     ],
     "persist": "user",
     "checkver": {
-        "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/latest",
-        "regex": "href=\"\\/yuzu-emu\\/yuzu-mainline\\/releases\\/download\\/mainline\\-0\\-(?<version>\\d+)\\/yuzu\\-windows\\-msvc\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{9})\\.zip\""
+        "url": "https://api.github.com/repos/yuzu-emu/yuzu-mainline/releases",
+        "jsonpath": {
+            "version": "$.[0].name",
+            "downloadUrl": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed')].browser_download_url"
+        },
+        "regex": "yuzu (\\d+)"
     },
     "autoupdate": {
-        "url": "https://github.com/yuzu-emu/yuzu-mainline/releases/download/mainline-0-$version/yuzu-windows-msvc-$matchDate-$matchCommitshort.zip"
+        "url": "$downloadUrl"
     }
 }
