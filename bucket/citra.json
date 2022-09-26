@@ -23,10 +23,13 @@
     ],
     "persist": "user",
     "checkver": {
-        "url": "https://github.com/citra-emu/citra-nightly/releases/latest",
-        "regex": "<a href=\"\\/citra-emu\\/citra-nightly\\/releases\\/download\\/(?<version>nightly\\-[0-9]+)\\/citra\\-windows\\-mingw\\-(?<date>[0-9]{8})\\-(?<commitshort>[a-z0-9]{7})\\.7z\""
+        "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases",
+        "jsonpath": {
+            "version": "$.[0].name",
+            "download": "$.[0].assets[?(@.name contains 'citra-windows-mingw' && @.name contains '.7z')].browser_download_url"
+        }
     },
     "autoupdate": {
-        "url": "https://github.com/citra-emu/citra-nightly/releases/download/$version/citra-windows-mingw-$matchDate-$matchCommitshort.7z"
+        "url": "$matchDownload"
     }
 }
