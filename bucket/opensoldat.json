@@ -1,0 +1,23 @@
+{
+    "homepage": "https://opensoldat.github.io/",
+    "version": "1.8.0",
+    "description": "OpenSoldat is a free, open source frenetic 2D shooting game with online multiplayer",
+    "url": "https://github.com/opensoldat/opensoldat/releases/download/continuous/OpenSoldat-win32-x64-1.8.0.zip",
+    "hash": "9960ca930a4207b11c0a0a06fbb1dd096bb3d08f976584086bee97d2f295655e",
+    "bin": "OpenSoldat.exe",
+    "shortcuts": [["OpenSoldat.exe", "Soldat"]],
+    "persist": [
+        "resources/opensoldat/configs"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/opensoldat/opensoldat/releases",
+        "jsonpath": {
+            "version": "$.[0].assets[?(@.name =~ /OpenSoldat-win32-x64-\\d\\.\\d\\.\\d\\.zip/i)].name",
+            "download": "$.[0].assets[?(@.name =~ /OpenSoldat-win32-x64-\\d\\.\\d\\.\\d\\.zip/i)].browser_download_url"
+        },
+        "regex": "OpenSoldat-win32-x64-(\\d\\.\\d\\.\\d)\\.zip"
+    },
+    "autoupdate": {
+        "url": "$matchDownload"
+    }
+}
