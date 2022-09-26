@@ -48,19 +48,22 @@
         "config.ini"
     ],
     "checkver": {
-        "github": "https://github.com/mgba-emu/mgba",
-        "regex": "mGBA-(?<ver>[\\d.]+)((?<beta>-b1)?)",
-        "replace": "${2}${1}"
+        "url": "https://api.github.com/repos/mgba-emu/mgba/releases",
+        "jsonpath": {
+            "version": "$.[0].tag_name",
+            "download32": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed' && @.name contains 'win32')].browser_download_url",
+            "download64": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed' && @.name contains 'win64')].browser_download_url"
+        }
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mgba-emu/mgba/releases/download/$matchVer$matchBeta/mGBA-$matchVer$matchBeta-win64.7z",
-                "extract_dir": "mGBA-$matchVer$matchBeta-win64"
+                "url": "$matchDownload64",
+                "extract_dir": "mGBA-$version-win64"
             },
             "32bit": {
-                "url": "https://github.com/mgba-emu/mgba/releases/download/$matchVer$matchBeta/mGBA-$matchVer$matchBeta-win32.7z",
-                "extract_dir": "mGBA-$matchVer$matchBeta-win32"
+                "url": "$matchDownload32",
+                "extract_dir": "mGBA-$version-win32"
             }
         }
     }
