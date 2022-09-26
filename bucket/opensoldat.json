@@ -7,7 +7,12 @@
     "bin": "OpenSoldat.exe",
     "shortcuts": [["OpenSoldat.exe", "Soldat"]],
     "persist": [
-        "resources/opensoldat/configs"
+        "resources/opensoldat/configs",
+        "resources/opensoldat/demos",
+        "resources/opensoldat/logs",
+        "resources/opensoldat/maps",
+        "resources/opensoldat/screens",
+        "resources/opensoldat/scripts"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/opensoldat/opensoldat/releases",
