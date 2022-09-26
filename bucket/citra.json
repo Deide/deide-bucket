@@ -26,7 +26,7 @@
         "url": "https://api.github.com/repos/citra-emu/citra-nightly/releases",
         "jsonpath": {
             "version": "$.[0].name",
-            "download": "$.[0].assets[?(@.name contains 'citra-windows-mingw' && @.name contains '.7z')].browser_download_url"
+            "download": "$.[0].assets[?(@.name =~ /citra-windows-mingw-\\d{8}-[\\w\\d]{7}\\.7z/i)].browser_download_url"
         }
     },
     "autoupdate": {
