@@ -1,6 +1,6 @@
 {
     "homepage": "https://yuzu-emu.org/",
-    "version": "yuzu 1181",
+    "version": "1181",
     "description": "Nintendo Switch Emulator",
     "license": {
         "identifier": "GPL-2.0",
@@ -26,7 +26,8 @@
         "jsonpath": {
             "version": "$.[0].name",
             "download": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed')].browser_download_url"
-        }
+        },
+        "regex": "yuzu (\\d+)"
     },
     "autoupdate": {
         "url": "$matchDownload"
