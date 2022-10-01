@@ -3,7 +3,7 @@
     "version": "1.8.0",
     "description": "OpenSoldat is a free, open source frenetic 2D shooting game with online multiplayer",
     "url": "https://github.com/opensoldat/opensoldat/releases/download/continuous/OpenSoldat-win32-x64-1.8.0.zip",
-    "hash": "9960ca930a4207b11c0a0a06fbb1dd096bb3d08f976584086bee97d2f295655e",
+    "hash": "146b26e4ce98580ba120a20309e0bcaf1bfa4434ed982ec9867c80c8b6ffcd8c",
     "bin": "OpenSoldat.exe",
     "shortcuts": [["OpenSoldat.exe", "Soldat"]],
     "persist": [
