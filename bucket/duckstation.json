@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.duckstation.org/",
-    "version": "nightly-2022-10-01",
+    "version": "nightly-2022-10-14",
     "description": "Sony Playstation emulator",
     "license": {
         "identifier": "GPL-3.0-only",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip#/duckstation-x64-nightly-2022-10-01.zip",
-            "hash": "7bf03ed49b930406802530be38233365efc1d95dda0d8c693c7ef13aa002c63e",
+            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip#/duckstation-x64-nightly-2022-10-14.zip",
+            "hash": "e5e6bcdd17dd73f9daad5b4213e13fa3bb81afd24c444c3d8c00e6904a6f2ff5",
             "bin": [
                 [
                     "duckstation-nogui-x64-ReleaseLTCG.exe",
