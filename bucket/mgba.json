@@ -51,18 +51,18 @@
         "url": "https://api.github.com/repos/mgba-emu/mgba/releases",
         "jsonpath": {
             "version": "$.[0].tag_name",
-            "download32": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed' && @.name =~ '.*win32\\.7z')].browser_download_url",
-            "download64": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed' && @.name =~ '.*win64\\.7z')].browser_download_url"
+            "downloadtt": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed' && @.name =~ '.*win32\\.7z')].browser_download_url",
+            "downloadsf": "$.[0].assets[?(@.content_type == 'application/x-7z-compressed' && @.name =~ '.*win64\\.7z')].browser_download_url"
         }
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "$matchDownload64",
+                "url": "$matchDownloadsf",
                 "extract_dir": "mGBA-$version-win64"
             },
             "32bit": {
-                "url": "$matchDownload32",
+                "url": "$matchDownloadtt",
                 "extract_dir": "mGBA-$version-win32"
             }
         }
