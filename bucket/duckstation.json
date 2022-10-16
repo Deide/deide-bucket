@@ -12,12 +12,8 @@
             "hash": "e5e6bcdd17dd73f9daad5b4213e13fa3bb81afd24c444c3d8c00e6904a6f2ff5",
             "bin": [
                 [
-                    "duckstation-nogui-x64-ReleaseLTCG.exe",
-                    "duckstation-nogui"
-                ],
-                [
                     "duckstation-qt-x64-ReleaseLTCG.exe",
-                    "duckstation-qt"
+                    "duckstation"
                 ]
             ],
             "shortcuts": [
