@@ -43,7 +43,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://melonds.kuribo64.net/downloads/melonDS_$version_win_x64.7z"
+                "url": "https://melonds.kuribo64.net/downloads/melonDS_$version_win_x64.zip"
             }
         }
     }
