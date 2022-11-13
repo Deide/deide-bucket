@@ -11,7 +11,16 @@
         "https://github.com/Anuken/Mindustry/releases/download/v126.2/server-release.jar",
         "https://i.imgur.com/Y4Q1ECd.png"
     ],
-    "pre_install": "Rename-Item -Path $dir\\Y4Q1ECd.png -NewName icon.png; mkdir config",
+    "pre_install": [
+        "function create($path, $type, $content) {",
+        "   if (-not (Test-Path \"$path\")) {",
+        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "   }",
+        "}",
+        "$config = \"$dir\\config\"",
+        "create $config Directory",
+        "Rename-Item -Path $dir\\Y4Q1ECd.png -NewName icon.png"
+    ],
     "persist": "config",
     "bin": [
         [
