@@ -20,9 +20,9 @@
     ],
     "shortcuts": [
         [
-            "java.exe",
+            "$shim_dir\\runelite.exe",
             "Runescape",
-            "-jar runelite.jar",
+            "",
             "icon.png"
         ]
     ],
