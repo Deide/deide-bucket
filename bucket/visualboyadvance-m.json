@@ -21,10 +21,16 @@
         ]
     ],
     "pre_install": [
-        "New-Item -ItemType Directory $dir\\saves",
-        "New-Item -ItemType Directory $dir\\savestates",
-        "New-Item -ItemType Directory $dir\\screenshots",
-        "Set-Content -Path $dir\\vbam.ini -Value \"[General]`nBatteryDir=$dir\\saves`nStateDir=$dir\\savestates`nScreenshotDir=$dir\\screenshots\""
+        "function create($path, $type, $content) {",
+        "   if (-not (Test-Path \"$path\")) {",
+        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "       Write-Output \"Creating $path...\"",
+        "   }",
+        "}",
+        "create $dir\\saves Directory",
+        "create $dir\\savestates Directory",
+        "create $dir\\screenshots Directory",
+        "create $dir\\vbam.ini File \"[General]`nBatteryDir=$dir\\saves`nStateDir=$dir\\savestates`nScreenshotDir=$dir\\screenshots\""
     ],
     "persist": [
         "vbam.ini",
