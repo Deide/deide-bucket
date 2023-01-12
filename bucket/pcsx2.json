@@ -4,7 +4,6 @@
     "description": "Playstation 2 Emulator",
     "url": "https://github.com/PCSX2/pcsx2/releases/download/v1.7.3888/pcsx2-v1.7.3888-windows-64bit-AVX2-Qt.7z",
     "hash": "8b7d3075b026fe8fd470d450687657d30b87aecf35df00053e91d66e49f984e9",
-    "extract_dir": "pcsx2-v1.7.3519-windows-x86",
     "bin": "pcsx2-qtx64-avx2.exe",
     "shortcuts": [
         [
