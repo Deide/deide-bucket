@@ -20,7 +20,7 @@
     ],
     "shortcuts": [
         [
-            "$shim_dir\\runelite.exe",
+            "$env:SCOOP\\shims\\runelite.exe",
             "Runescape",
             "",
             "icon.png"
