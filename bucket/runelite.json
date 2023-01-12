@@ -20,9 +20,9 @@
     ],
     "shortcuts": [
         [
-            "$scoopdir\\shims\\runelite.exe",
+            "java.exe",
             "Runescape",
-            "",
+            "-jar runelite.jar",
             "icon.png"
         ]
     ],
