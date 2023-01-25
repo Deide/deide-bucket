@@ -39,7 +39,7 @@
     },
     "persist": "memstick",
     "checkver": {
-        "url": "https://www.ppsspp.org/downloads.html",
+        "url": "https://www.ppsspp.org/download",
         "re": "Download (\\d+\\.\\d+\\.\\d+) zip"
     },
     "autoupdate": {
