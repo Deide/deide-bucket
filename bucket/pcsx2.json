@@ -17,7 +17,12 @@
         "snaps",
         "sstates",
         "bios",
-        "inis"
+        "inis",
+        "gamesettings",
+        "inputprofiles",
+        "cheats",
+        "textures",
+        "videos"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/PCSX2/pcsx2/releases",
