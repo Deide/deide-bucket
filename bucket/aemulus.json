@@ -1,7 +1,7 @@
 {
     "version": "6.4.1",
     "description": "Package Manager for Persona and SMT mods",
-    "homepage": "https://github.com/tge-was-taken/Mod-Compendium",
+    "homepage": "https://github.com/TekkaGB/AemulusModManager",
     "license": {
         "identifier": "GPL-3.0-only",
         "url": "https://github.com/TekkaGB/AemulusModManager/blob/master/LICENSE"
