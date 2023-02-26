@@ -41,9 +41,10 @@
     ],
     "notes": "Java 16-17 is recommended",
     "suggest": {
-        "JRE8": [
-            "java/oraclejre8",
-            "java/openjdk8"
+        "JRE17": [
+            "java/openjdk16",
+            "java/openjdk17",
+            "java/oraclejdk-lts"
         ]
     },
     "checkver": "github",
