@@ -1,5 +1,5 @@
 {
-    "homepage": "https://github.com/Haato3o/HunterPie-v2/",
+    "homepage": "https://github.com/HunterPie/HunterPie/",
     "version": "2.3.0",
     "description": "HunterPie is a modern and simple to use overlay with support for Discord Rich Presence for Monster Hunter: World and Rise",
     "url": "https://github.com/Haato3o/HunterPie-v2/releases/download/2.3.0/v2.3.0.133.zip",
@@ -24,9 +24,9 @@
         "DataExport/"
     ],
     "checkver": {
-        "github": "https://github.com/Haato3o/HunterPie-v2"
+        "github": "https://github.com/HunterPie/HunterPie"
     },
     "autoupdate": {
-        "url": "https://github.com/Haato3o/HunterPie-v2/releases/download/$version/v$version.80.zip"
+        "url": "https://github.com/HunterPie/HunterPie/releases/download/$version/v$version.80.zip"
     }
 }
