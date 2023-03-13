@@ -27,6 +27,6 @@
         "github": "https://github.com/Haato3o/HunterPie-v2"
     },
     "autoupdate": {
-        "url": "https://github.com/Haato3o/HunterPie-v2/releases/download/$version/v$version.133.zip"
+        "url": "https://github.com/Haato3o/HunterPie-v2/releases/download/$version/v$version.80.zip"
     }
 }
