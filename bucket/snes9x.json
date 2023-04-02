@@ -2,7 +2,10 @@
     "homepage": "http://www.snes9x.com/",
     "description": "SNES (Super Nintendo Entertainment System) emulator",
     "version": "1.60",
-    "license": "Freeware",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/snes9xgit/snes9x/blob/master/LICENSE"
+    },
     "architecture": {
         "32bit": {
             "url": "http://www.s9x-w32.de/dl/snes9x-1.60-win32.zip",
@@ -25,16 +28,15 @@
         "Cheats"
     ],
     "checkver": {
-        "url": "http://www.s9x-w32.de/dl/",
-        "regex": "Snes9x ([\\d]+[\\.][\\d]+) Windows Version"
+        "github": "https://github.com/snes9xgit/snes9x"
     },
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "http://www.s9x-w32.de/dl/snes9x-$version-win32.zip"
+                "url": "https://github.com/snes9xgit/snes9x/releases/download/$version/snes9x-$version-win32.zip"
             },
             "64bit": {
-                "url": "http://www.s9x-w32.de/dl/snes9x-$version-win32-x64.zip"
+                "url": "https://github.com/snes9xgit/snes9x/releases/download/$version/snes9x-$version-win32-x64.zip"
             }
         }
     }
