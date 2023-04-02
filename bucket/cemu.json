@@ -22,7 +22,7 @@
     ],
     "installer": {
         "script": [
-            "if (-not (Test-Path $dir\\settings.xml)) {",
+            "if (-not (Test-Path $persist_dir\\settings.xml)) {",
             "  Start-Process $dir\\Cemu.exe; Start-Sleep -Seconds 1; Stop-Process -Name Cemu",
             "}"
         ]
