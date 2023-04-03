@@ -19,7 +19,7 @@
         "   }",
         "}",
         "create $dir/polymc.cfg File",
-        "create $dir/accounts.json File '{}'"
+        "create $dir/accounts.json File '{\"accounts\":{}, \"formatVersion\": 3}'"
     ],
     "persist": [
         "polymc.cfg",
@@ -30,7 +30,7 @@
         "libraries",
         "assets"
     ],
-    "notes": "Increase minimum and maximum memory allocation to avoid stuttering.",
+    "notes": "Increase minimum and maximum memory allocation to avoid stuttering. Changes to the config are destructive!",
     "checkver": {
         "github": "https://github.com/PolyMC/PolyMC"
     },
