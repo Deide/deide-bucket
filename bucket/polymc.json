@@ -11,15 +11,6 @@
             "PolyMC"
         ]
     ],
-    "persist": [
-        "polymc.cfg",
-        "accounts.json",
-        "accounts",
-        "instances",
-        "mods",
-        "icons",
-        "versions"
-    ],
     "pre_install": [
         "function create($path, $type, $content) {",
         "   if (-not (Test-Path \"$path\")) {",
@@ -27,8 +18,17 @@
         "       Write-Output \"Creating $path...\"",
         "   }",
         "}",
-        "create $dir/polymc.json File 'AutoUpdate=false'",
+        "create $dir/polymc.cfg File",
         "create $dir/accounts.json File '{}'"
+    ],
+    "persist": [
+        "polymc.cfg",
+        "accounts.json",
+        "instances",
+        "mods",
+        "icons",
+        "libraries",
+        "assets"
     ],
     "notes": "Increase minimum and maximum memory allocation to avoid stuttering.",
     "checkver": {
