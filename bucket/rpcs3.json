@@ -38,8 +38,8 @@
             "       Write-Output \"Creating $path...\"",
             "   }",
             "}",
-            "$conf = '$persist_dir\\config.yml'",
-            "$games = '$persist_dir\\games.yml'",
+            "$conf = \"$persist_dir\\config.yml\"",
+            "$games = \"$persist_dir\\games.yml\"",
             "create $conf File",
             "create $games File"
         ]
