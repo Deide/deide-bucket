@@ -16,25 +16,32 @@
         ]
     ],
     "persist": [
+        "dev_flash",
+        "dev_flash2",
+        "dev_flash3",
         "dev_hdd0",
         "dev_hdd1",
         "cache",
-        "config.yml",
-        "config_input.yml",
-        "games.yml",
         "config",
-        "GuiConfigs/CurrentSettings.ini",
-        "InputConfigs",
-        "patches"
+        "patches",
+        "captures",
+        "recordings",
+        "savestates",
+        "config.yml",
+        "games.yml"
     ],
     "installer": {
         "script": [
-            "$file = 'GuiConfigs\\CurrentSettings.ini'",
-            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host \"$file does not exists.\" -f Yellow",
-            "    $outfile = \"$dir\\$file\"",
-            "    New-Item $outFile -Type File -Force | Out-Null",
-            "}"
+            "function create($path, $type, $content) {",
+            "   if (-not (Test-Path \"$path\")) {",
+            "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+            "       Write-Output \"Creating $path...\"",
+            "   }",
+            "}",
+            "$conf = '$persist_dir\\config.yml'",
+            "$games = '$persist_dir\\games.yml'",
+            "create $conf File",
+            "create $games File"
         ]
     },
     "checkver": {
