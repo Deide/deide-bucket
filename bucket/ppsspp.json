@@ -1,12 +1,12 @@
 {
-    "version": "1.15.2",
+    "version": "1.15.3",
     "license": "GPL-2.0-only",
     "homepage": "https://www.ppsspp.org",
     "description": "PSP Emulator",
     "architecture": {
         "64bit": {
-            "url": "https://www.ppsspp.org/files/1_15_2/ppsspp_win.zip",
-            "hash": "c7add10f556162da4cd56f038051d0151a3c90ed5717266b3f08a8af61ec8435",
+            "url": "https://www.ppsspp.org/files/1_15_3/ppsspp_win.zip",
+            "hash": "3dab4dc1c0522292a34e838697b8d82e5f15b4c383828030eef790822e5a47cb",
             "bin": [
                 [
                     "PPSSPPWindows64.exe",
@@ -21,8 +21,8 @@
             ]
         },
         "32bit": {
-            "url": "https://www.ppsspp.org/files/1_15_2/ppsspp_win.zip",
-            "hash": "c7add10f556162da4cd56f038051d0151a3c90ed5717266b3f08a8af61ec8435",
+            "url": "https://www.ppsspp.org/files/1_15_3/ppsspp_win.zip",
+            "hash": "3dab4dc1c0522292a34e838697b8d82e5f15b4c383828030eef790822e5a47cb",
             "bin": [
                 [
                     "PPSSPPWindows.exe",
