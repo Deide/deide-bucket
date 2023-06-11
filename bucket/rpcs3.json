@@ -1,13 +1,13 @@
 {
     "homepage": "https://rpcs3.net/",
-    "version": "0.0.28-15112",
+    "version": "0.0.28-15171",
     "description": "Playstation 3 Emulator",
     "license": {
         "identifier": "GPL-2.0",
         "url": "https://github.com/RPCS3/rpcs3/blob/master/LICENSE"
     },
-    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-33558d14e539da95c13ba43b3ba5428b3d04c54a/rpcs3-v0.0.28-15112-33558d14_win64.7z",
-    "hash": "8728221582edfc75519b42f0f29ada741bd6d6641134691bd01cd0b9c3ad1b97",
+    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-c0e97b4e962196b5d937cfe423b31b14a1f9ed90/rpcs3-v0.0.28-15171-c0e97b4e_win64.7z",
+    "hash": "c0e17c441d9f3ed3aeec45e2df8637ee394cca0fd4a278bb51938f2af6d1cc6b",
     "bin": "rpcs3.exe",
     "shortcuts": [
         [
