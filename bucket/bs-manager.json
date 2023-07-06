@@ -6,8 +6,12 @@
         "identifier": "LGPL-3.0-or-later",
         "url": "https://github.com/Zagrios/bs-manager/blob/master/LICENSE"
     },
-    "url": "https://github.com/Zagrios/bs-manager/releases/download/v1.2.0/bs-manager-1.2.0-x64.nsis.7z",
-    "hash": "73af39b212cbdbe9b34c18325ac482488d50580ec4b87e7fe7ac38a4d2a57b48",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Zagrios/bs-manager/releases/download/v1.2.0/bs-manager-1.2.0-x64.nsis.7z",
+            "hash": "73af39b212cbdbe9b34c18325ac482488d50580ec4b87e7fe7ac38a4d2a57b48"
+        }
+    },
     "bin": "BSManager.exe",
     "shortcuts": [
         [
@@ -18,5 +22,12 @@
     "persist": [
         "data"
     ],
-    "checkver": "github"
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Zagrios/bs-manager/releases/download/v$version/bs-manager-$version-x64.nsis.7z"
+            }
+        }
+    }
 }
