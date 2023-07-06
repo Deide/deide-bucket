@@ -15,5 +15,8 @@
             "BeatSaber Manager"
         ]
     ],
+    "persist": [
+        "data"
+    ],
     "checkver": "github"
 }
