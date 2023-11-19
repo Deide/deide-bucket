@@ -1,10 +1,10 @@
 {
     "homepage": "http://www.freeciv.org/",
     "description": "Empire-building strategy game",
-    "version": "3.0.8",
+    "version": "3.0.9",
     "license": "GPL-2.0-or-later",
-    "url": "http://files.freeciv.org/packages/windows/Freeciv-3.0.8-msys2-win64-sdl2-setup.exe#/Freeciv-x64-sdl2-3.0.8.7z",
-    "hash": "723f4c7d25ebdb12b521ffd01f8a116b30b0b39dc1cefe74f98c2bd1ea1e88a9",
+    "url": "http://files.freeciv.org/packages/windows/Freeciv-3.0.9-msys2-win64-sdl2-setup.exe#/Freeciv-x64-sdl2-3.0.9.7z",
+    "hash": "88d9040f32632c216a548bd86a79fa148ead3e8d5d026ab8e61998a99cd50a9c",
     "bin": [
         "freeciv-sdl2.exe",
         "freeciv-mp-sdl2.exe",
