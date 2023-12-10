@@ -2,9 +2,9 @@
     "homepage": "https://github.com/derrod/legendary",
     "description": "Legendary is an open-source cli game launcher that can download and install games from the Epic Games platform",
     "license": "GPL-3.0-or-later",
-    "version": "0.20.33",
-    "url": "https://github.com/derrod/legendary/releases/download/0.20.33/legendary.exe",
-    "hash": "a64ba3d2a8b71ac8fc396320e7514e3b526e930bc2cc26c05967c3e31c46b130",
+    "version": "0.20.34",
+    "url": "https://github.com/derrod/legendary/releases/download/0.20.34/legendary.exe",
+    "hash": "01ea22ea51749f46a0019657f64fc0d34429fb7cbf9b590c0848c0e0bd9c1f07",
     "bin": "legendary.exe",
     "checkver": "github",
     "autoupdate": {
