@@ -27,6 +27,6 @@
         "github": "https://github.com/HunterPie/HunterPie"
     },
     "autoupdate": {
-        "url": "https://github.com/HunterPie/HunterPie/releases/download/$version/$version.80.zip"
+        "url": "https://github.com/HunterPie/HunterPie/releases/download/$version/$version.zip"
     }
 }
