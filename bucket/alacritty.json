@@ -14,7 +14,8 @@
     "shortcuts": [
         [
             "alacritty.exe",
-            "Alacritty"
+            "Alacritty",
+            "--config-file=$dir/config.toml"
         ]
     ],
     "pre_install": [
