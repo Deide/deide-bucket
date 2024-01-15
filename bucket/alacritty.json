@@ -17,6 +17,15 @@
             "Alacritty"
         ]
     ],
+    "pre_install": [
+        "function create($path, $type, $content) {",
+        "   if (-not (Test-Path \"$path\")) {",
+        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "       Write-Output \"Creating $path...\"",
+        "   }",
+        "}",
+        "create $dir/config.toml File"
+    ],
     "persist": [
         "config.toml"
     ],
