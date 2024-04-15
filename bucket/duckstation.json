@@ -1,6 +1,6 @@
 {
     "homepage": "https://www.duckstation.org/",
-    "version": "nightly-2024-04-15",
+    "version": "0.1-6461",
     "description": "Sony Playstation emulator",
     "license": {
         "identifier": "GPL-3.0-only",
@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip#/duckstation-x64-nightly-2024-04-15.zip",
+            "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip#/duckstation-x64-v0.1-6461.zip",
             "hash": "95bc59f84efe653a7ea76c81294f5a09c9532e64d3c15bf9165808fa03dbf392",
             "bin": [
                 [
@@ -53,17 +53,17 @@
         "textures"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/stenzek/duckstation/commits/master",
+        "url": "https://api.github.com/repos/stenzek/duckstation/releases",
         "jsonpath": {
-            "version": "$.commit.author.date"
+            "version": "$.[2].name",
+            "download": "$.[0].assets[?(@.name == 'duckstation-windows-x64-release.zip')].browser_download_url"
         },
-        "regex": "(\\d+)\\/(\\d+)\\/(\\d+)",
-        "replace": "nightly-${3}-${2}-${1}"
+        "regex": "v(\\d+\\.+\\-\\d+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/stenzek/duckstation/releases/download/preview/duckstation-windows-x64-release.zip#/duckstation-x64-$version.zip"
+                "url": "$matchDownload"
             }
         }
     }
