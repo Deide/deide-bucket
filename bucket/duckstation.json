@@ -58,7 +58,7 @@
             "version": "$.[2].name",
             "download": "$.[0].assets[?(@.name == 'duckstation-windows-x64-release.zip')].browser_download_url"
         },
-        "regex": "v(\\d+\\.+\\-\\d+)"
+        "regex": "v([\\d\\.]+\\-\\d+)"
     },
     "autoupdate": {
         "architecture": {
