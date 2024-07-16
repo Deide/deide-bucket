@@ -34,6 +34,6 @@
         "regex": "https:\\/\\/dl\\.dolphin-emu\\.org\\/releases\\/(?<version>\\d+)\\/dolphin-\\d+-x64\\.7z"
     },
     "autoupdate": {
-        "url": "https://dl.dolphin-emu.org/builds/$matchToken/dolphin-master-$version-x64.7z"
+        "url": "https://dl.dolphin-emu.org/releases/$version/dolphin-$version-x64.7z"
     }
 }
