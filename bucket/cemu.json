@@ -13,20 +13,17 @@
         ]
     ],
     "persist": [
-        "gameProfiles",
-        "controllerProfiles",
-        "graphicPacks",
-        "shaderCache/transferable",
-        "mlc01",
-        "settings.xml"
+        "portable"
     ],
-    "installer": {
-        "script": [
-            "if (-not (Test-Path $persist_dir\\settings.xml)) {",
-            "  Start-Process $dir\\Cemu.exe; Start-Sleep -Seconds 1; Stop-Process -Name Cemu",
-            "}"
-        ]
-    },
+    "pre_install": [
+        "function create($path, $type, $content) {",
+        "   if (-not (Test-Path \"$path\")) {",
+        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "       Write-Output \"Creating $path...\"",
+        "   }",
+        "}",
+        "create $dir/portable Directory"
+    ],
     "checkver": {
         "github": "https://github.com/cemu-project/Cemu"
     },
