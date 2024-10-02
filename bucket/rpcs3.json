@@ -45,7 +45,7 @@
         ]
     },
     "checkver": {
-        "url": "https://update.rpcs3.net/?api=v2&c=0",
+        "url": "https://update.rpcs3.net/?api",
         "jsonpath": {
             "version": "$.latest_build.version",
             "download": "$.latest_build.windows.download",
