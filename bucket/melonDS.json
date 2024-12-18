@@ -37,13 +37,12 @@
         "melonds.ini"
     ],
     "checkver": {
-        "url": "https://melonds.kuribo64.net/downloads.php",
-        "regex": "melonDS (\\d.\\d.\\d)"
+        "github": "https://github.com/melonDS-emu/melonDS"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://melonds.kuribo64.net/downloads/melonDS_$version_win_x64.zip"
+                "url": "https://github.com/melonDS-emu/melonDS/releases/download/$version/melonDS-windows-x86_64.zip"
             }
         }
     }
