@@ -37,14 +37,16 @@
                 "url": "$matchDownload64",
                 "hash": {
                     "url": "https://api.github.com/repos/OpenRCT2/OpenRCT2/releases",
-                    "jsonpath": "$.[0].assets[?(@.name =~ /OpenRCT2-v[\\d\\.]+-windows-portable-x64\\.zip/i)].digest"
+                    "jsonpath": "$.[0].assets[?(@.name =~ /OpenRCT2-v[\\d\\.]+-windows-portable-x64\\.zip/i)].digest",
+                    "regex": "sha256:([\\w\\d]+)"
                 }
             },
             "32bit": {
                 "url": "$matchDownload32",
                 "hash": {
                     "url": "https://api.github.com/repos/OpenRCT2/OpenRCT2/releases",
-                    "jsonpath": "$.[0].assets[?(@.name =~ /OpenRCT2-v[\\d\\.]+-windows-portable-win32\\.zip/i)].digest"
+                    "jsonpath": "$.[0].assets[?(@.name =~ /OpenRCT2-v[\\d\\.]+-windows-portable-win32\\.zip/i)].digest",
+                    "regex": "sha256:([\\w\\d]+)"
                 }
             }
         }
