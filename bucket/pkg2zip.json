@@ -10,8 +10,7 @@
         },
         "64bit": {
             "url": "https://github.com/lusid1/pkg2zip/releases/download/2.3/pkg2zip_64bit.zip",
-            "hash": "53e470ab90e1f81bfc10a43808fb3f8a55114ccf7d43d274d1e6506141684f67",
-            "extract_dir": "pkg2zip_64bit"
+            "hash": "53e470ab90e1f81bfc10a43808fb3f8a55114ccf7d43d274d1e6506141684f67"
         }
     },
     "bin": "pkg2zip.exe",
@@ -19,10 +18,11 @@
     "autoupdate": {
         "architecture": {
             "32bit": {
-                "url": "https://github.com/lusid1/pkg2zip/releases/download/$version/pkg2zip_32bit.zip"
+                "url": "https://github.com/lusid1/pkg2zip/releases/download/2.3/pkg2zip_32bit.zip",
+                "extract_dir": "pkg2zip_32bit"
             },
             "64bit": {
-                "url": "https://github.com/lusid1/pkg2zip/releases/download/$version/pkg2zip_64bit.zip"
+                "url": "https://github.com/lusid1/pkg2zip/releases/download/$version/pkg2zip.zip"
             }
         }
     }
