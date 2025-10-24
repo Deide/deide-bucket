@@ -29,10 +29,10 @@
             "/D=$dir"
         ]
     },
-    "bin": "winamp.exe",
+    "bin": "wacup.exe",
     "shortcuts": [
         [
-            "winamp.exe",
+            "wacup.exe",
             "Winamp"
         ]
     ],
