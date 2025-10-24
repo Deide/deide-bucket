@@ -2,8 +2,12 @@
     "homepage": "https://getwacup.com/",
     "version": "1.99.16.19516",
     "description": "The WinAmp Community Update Project (WACUP) is designed to work only with the patched Winamp 5.666 release to provide bug fixes, updates of existing features and most importantly new features with the goal to eventually become it's own highly Winamp compatible media player.",
-    "url": "https://getwacup.com/preview/WACUP_Preview_v1_99_16_19516.exe#/wacup_v1_99_16_19516.7z",
-    "hash": "5ea583a670d2cb1dd5d8a304b0d0764f08c378c155b02b92a221c6046147144e",
+    "architecture": {
+        "32bit": {
+            "url": "https://getwacup.com/preview/WACUP_Preview_v1_99_16_19516.exe",
+            "hash": "5ea583a670d2cb1dd5d8a304b0d0764f08c378c155b02b92a221c6046147144e"
+        }
+    },
     "pre_install": [
         "function create($path, $type, $content) {",
         "   if (-not (Test-Path \"$path\")) {",
@@ -14,6 +18,13 @@
         "create $dir/Profile Directory",
         "create $dir/paths.ini File \"[Winamp]`ninidir=.\\Profile`nportable=1\""
     ],
+    "installer": {
+        "args": [
+            "/S",
+            "/PORTABLE",
+            "/D=$dir"
+        ]
+    },
     "bin": "winamp.exe",
     "shortcuts": [
         [
@@ -23,13 +34,25 @@
     ],
     "persist": "Profile",
     "checkver": {
+        "url": "https://getwacup.com/",
         "regex": "Preview v(?<version>[\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://getwacup.com/preview/WACUP_Preview_v$underscoreVersion.exe#/wacup_v$underscoreVersion.7z",
-        "hash": {
-            "url": "https://getwacup.com/preview/WACUP_Preview_v$underscoreVersion.exe.sha256",
-            "regex": "$sha256"
+        "architecture": {
+            "32bit": {
+                "url": "https://getwacup.com/preview/WACUP_Preview_v$underscoreVersion_x86.exe",
+                "hash": {
+                    "url": "https://getwacup.com/preview/WACUP_Preview_v$underscoreVersion_x86.exe.sha256",
+                    "regex": "$sha256"
+                }
+            },
+            "64bit": {
+                "url": "https://getwacup.com/preview_x64/WACUP_Preview_v$underscoreVersion_x64.exe",
+                "hash": {
+                    "url": "https://getwacup.com/preview_x64/WACUP_Preview_v$underscoreVersion_x64.exe.sha256",
+                    "regex": "$sha256"
+                }
+            }
         }
     }
 }
