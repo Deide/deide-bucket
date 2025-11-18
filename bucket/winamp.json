@@ -20,7 +20,7 @@
         "   }",
         "}",
         "create $dir/Profile Directory",
-        "create $dir/paths.ini File \"[Winamp]`ninidir=.\\Profile`nportable=1\""
+        "create $dir/paths.ini File \"[WACUP]`ninidir=.\\Profile`nportable=1\""
     ],
     "installer": {
         "script": [
