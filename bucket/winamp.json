@@ -24,8 +24,9 @@
     ],
     "installer": {
         "script": [
-            "cd $dir",
-            "sudo $fname /S /PORTABLE /D=$dir"
+            "push-location $dir",
+            "sudo ./$fname /S /PORTABLE /D=$dir",
+            "pop-location"
         ]
     },
     "bin": "wacup.exe",
