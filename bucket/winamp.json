@@ -27,11 +27,12 @@
             "push-location $dir",
             "sudo ./$fname /S /PORTABLE /D=$dir",
             "$processName = \"wacup\"",
-            "Stop-Process -Name $processName",
+            "Stop-Process -Name $processName -ErrorAction SilentlyContinue",
             "do {",
             "    $process = Get-Process $processName -ErrorAction SilentlyContinue",
             "    Start-Sleep 1",
             "} until ($process -ne $Null)",
+            "$process | Stop-Process -ErrorAction SilentlyContinue",
             "pop-location"
         ]
     },
