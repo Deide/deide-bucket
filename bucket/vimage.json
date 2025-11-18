@@ -1,9 +1,17 @@
 {
     "homepage": "https://github.com/Torrunt/vimage",
-    "version": "18",
+    "version": "19",
     "description": "A simplistic image viewer for Windows, inspired by vjpeg.",
-    "url": "https://github.com/Torrunt/vimage/releases/download/v18/vimage_version18.zip",
-    "hash": "ba18ac23e12b4f9df7e8e16d33c8477bf75ff89a1c06d8d0650042ff84648279",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/Torrunt/vimage/releases/download/v19/vimage_version19_x86.zip",
+            "hash": "d948bb7bbf04a99d285a0eab2537b2229a16d8bfc25d5d7ca55493e7d04e4562"
+        },
+        "64bit": {
+            "url": "https://github.com/Torrunt/vimage/releases/download/v19/vimage_version19_x64.zip",
+            "hash": "cdd51516449a16acbe3fbceafc496f4dd2b77b2d7f324a67ba2da1d73240655e"
+        }
+    },
     "extract_dir": "vimage",
     "bin": "vimage.exe",
     "checkver": "github",
