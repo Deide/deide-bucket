@@ -23,10 +23,9 @@
         "create $dir/paths.ini File \"[Winamp]`ninidir=.\\Profile`nportable=1\""
     ],
     "installer": {
-        "args": [
-            "/S",
-            "/PORTABLE",
-            "/D=$dir"
+        "script": [
+            "cd $dir",
+            "sudo $fname /S /PORTABLE /D=$dir"
         ]
     },
     "bin": "wacup.exe",
@@ -37,6 +36,10 @@
         ]
     ],
     "persist": "Profile",
+    "depends": [
+        "gsudo"
+    ],
+    "notes": "Requires elevation for now",
     "checkver": {
         "url": "https://getwacup.com/",
         "regex": "Preview v(?<version>[\\d.]+)"
