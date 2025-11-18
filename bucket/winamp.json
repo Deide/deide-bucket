@@ -26,6 +26,12 @@
         "script": [
             "push-location $dir",
             "sudo ./$fname /S /PORTABLE /D=$dir",
+            "$processName = \"wacup\"",
+            "Stop-Process -Name $processName",
+            "do {",
+            "    $process = Get-Process $processName -ErrorAction SilentlyContinue",
+            "    Start-Sleep 1",
+            "} until ($process -ne $Null)",
             "pop-location"
         ]
     },
