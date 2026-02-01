@@ -33,7 +33,7 @@
         "url": "$matchDownload",
         "hash": {
             "url": "https://api.github.com/repos/eden-emulator/Releases/releases",
-            "jsonpath": "$.[0].assets[?(@.name =~ /Windows.+am64-msvc/i)].digest"
+            "jsonpath": "$.[0].assets[?(@.name =~ /Windows.+amd64-msvc/i)].digest"
         }
     }
 }
