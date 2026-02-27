@@ -17,16 +17,14 @@
         "url": "https://api.github.com/repos/JerwuQu/wlines/releases",
         "jsonpath": {
             "version": "$.[0].updated_at",
-            "download": "$.[0].assets[0].browser_download_url"
+            "download": "$.[0].assets[0].browser_download_url",
+            "hash": "$.[0].assets[0].digest"
         },
         "regex": "([\\d-]+)T",
         "replace": "$1"
     },
     "autoupdate": {
         "url": "$matchDownload",
-        "hash": {
-            "url": "https://api.github.com/repos/JerwuQu/wlines/releases",
-            "jsonpath": "$.[0].assets[0].digest"
-        }
+        "hash": "$matchHash"
     }
 }
