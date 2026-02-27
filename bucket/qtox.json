@@ -47,15 +47,15 @@
         "directory before starting. These can only be gotten from a previous installation of qtox."
     ],
     "checkver": {
-        "github": "https://github.com/qTox/qTox"
+        "github": "https://github.com/TokTok/qTox"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/qTox/qTox/releases/download/v$version/setup-qtox-x86_64-release.exe#/dl.7z"
+                "url": "https://github.com/TokTok/qTox/releases/download/v$version/setup-qtox-x86_64-release.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://github.com/qTox/qTox/releases/download/v$version/setup-qtox-i686-release.exe#/dl.7z"
+                "url": "https://github.com/TokTok/qTox/releases/download/v$version/setup-qtox-i686-release.exe#/dl.7z"
             }
         }
     }
