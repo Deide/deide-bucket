@@ -36,7 +36,7 @@
         "jsonpath": {
             "version": "$.commit.author.date"
         },
-        "regex": "(\\d+)\\/(\\d+)\\/(\\d+)",
+        "regex": "(\\d+)-(\\d+)-(\\d+)",
         "replace": "nightly-${3}-${2}-${1}"
     },
     "autoupdate": {
