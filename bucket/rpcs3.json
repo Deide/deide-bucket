@@ -50,7 +50,7 @@
             "create $conf -Type File",
             "create $games -Type File",
             "create $settings -Type File -Content ('[Meta]', 'checkUpdateStart=false', '`n[main_window]', 'infoBoxEnabledWelcome=false')",
-            "Copy-Item \"$dir/GuiConfigs/*\" -Exclude 'CurrentSettings.ini' -Destination \"$persist_dir/GuiConfigs/\" -Recurse"
+            "Copy-Item \"$dir/GuiConfigs/**\" -Exclude 'CurrentSettings.ini' -Destination \"$persist_dir/GuiConfigs/\" -Recurse -Force"
         ]
     },
     "checkver": {
