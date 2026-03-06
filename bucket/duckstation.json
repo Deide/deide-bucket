@@ -25,16 +25,16 @@
         }
     },
     "pre_install": [
-        "function create($path, $type, $content) {",
+        "function create($Path, $Type, $Content) {",
         "   if (-not (Test-Path \"$path\")) {",
-        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "       New-Item \"$path\" -ItemType $type -Value ($content -join \"`n\") -Force | Out-Null",
         "       Write-Output \"Creating $path...\"",
         "   }",
         "}",
-        "$settings = \"$dir\\settings.ini\"",
-        "$portable = \"$dir\\portable.txt\"",
-        "create $settings File",
-        "create $portable File"
+        "$settings = \"$persis_dir\\settings.ini\"",
+        "$portable = \"$persist_dir\\portable.txt\"",
+        "create $settings -Type File -Content ('[AutoUpdater]', 'CheckAtStartup = false')",
+        "create $portable -Type File"
     ],
     "persist": [
         "portable.txt",
@@ -43,14 +43,18 @@
         "cache",
         "cheats",
         "covers",
-        "dump",
+        "gameicons",
         "gamesettings",
         "inputprofiles",
         "memcards",
+        "patches",
+        "resources",
         "savestates",
         "screenshots",
         "shaders",
-        "textures"
+        "subchannels",
+        "textures",
+        "videos"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/stenzek/duckstation/releases",
