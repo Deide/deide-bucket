@@ -21,7 +21,7 @@
     ],
     "persist": "user",
     "checkver": {
-        "url": "hhttps://git.eden-emu.dev/api/v1/repos/eden-emu/eden/releases",
+        "url": "https://git.eden-emu.dev/api/v1/repos/eden-emu/eden/releases",
         "jsonpath": {
             "version": "$.[0].name",
             "download": "$.[0].assets[?(@.name =~ /Windows.+amd64-msvc/i)].browser_download_url"
