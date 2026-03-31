@@ -5,7 +5,7 @@
     "license": {
         "identifier": "GPL-2.0-only",
         "url": "https://github.com/azahar-emu/azahar/blob/master/license.txt"
-    }
+    },
     "pre_install": [
         "function create($path, $type, $content) {",
         "   if (-not (Test-Path \"$path\")) {",
