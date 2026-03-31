@@ -30,7 +30,7 @@
         }
     },
     "checkver": {
-        "github": "https://github.com/Lime3DS/Lime3DS/"
+        "github": "https://github.com/azahar-emu/azahar"
     },
     "autoupdate": {
         "architecture": {
