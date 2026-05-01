@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\&Terminal]
+@="&Terminal"
+"Icon"="$weztermPath"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\&Terminal\command]
+@="\"$weztermPath\" start --cwd \"%v\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\&Terminal]
+@="&Terminal"
+"Icon"="$weztermPath"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\&Terminal\command]
+@="\"$weztermPath\" start --cwd \"%v\""
