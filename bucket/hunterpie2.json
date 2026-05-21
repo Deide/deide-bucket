@@ -24,9 +24,20 @@
         "DataExport/"
     ],
     "checkver": {
-        "github": "https://github.com/HunterPie/HunterPie"
+        "url": "https://api.github.com/repos/HunterPie/HunterPie/releases/latest",
+        "jsonpath": {
+            "version": "$.tag_name",
+            "download": "$.assets[0].browser_download_url",
+            "hash": "$.assets[0].digest"
+        },
+        "regex": "v([\\d\\.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/HunterPie/HunterPie/releases/download/v$version/$version.zip"
+        "architecture": {
+            "64bit": {
+                "url": "$matchDownload",
+                "hash": "$matchHash"
+            }
+        }
     }
 }
