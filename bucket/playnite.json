@@ -35,8 +35,7 @@
             "version": "$.[0].name",
             "download": "$.[0].assets[?(@.name =~ /\\.7z/i)].browser_download_url",
             "hash": "$.[0].assets[?(@.name =~ /\\.7z/i)].digest"
-        },
-        "regex": "([\\d\\.]+)\\.7z"
+        }
     },
     "autoupdate": {
         "url": "$matchDownload",
