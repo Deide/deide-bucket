@@ -34,11 +34,11 @@
         }
     },
     "checkver": {
-        "url": "https://api.github.com/repos/azahar-emu/azahar/releases",
+        "url": "https://api.github.com/repos/azahar-emu/azahar/releases/latest",
         "jsonpath": {
-            "version": "$.[0].name",
-            "download": "$.[0].assets[?(@.name =~ /azahar-windows-msvc/i)].browser_download_url",
-            "hash": "$.[0].assets[?(@.name =~ /azahar-windows-msvc/i)].digest"
+            "version": "$.tag_name",
+            "download": "$.assets[?(@.name =~ /azahar-windows-msvc/i)].browser_download_url",
+            "hash": "$.assets[?(@.name =~ /azahar-windows-msvc/i)].digest"
         }
     },
     "autoupdate": {
