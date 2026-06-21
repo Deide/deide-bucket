@@ -14,7 +14,7 @@
     },
     "post_install": [
         "Move-Item \"$dir\\share\\hunspell.original\\**\" -Include '*_US*', '*_DE*', '*fr*'  -Destination \"$dir\\share\\hunspell\" -Force",
-        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -ErrorAction SilentlyContinue"
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse -Force -ErrorAction SilentlyContinue"
     ],
     "persist": [
         "UserData",
