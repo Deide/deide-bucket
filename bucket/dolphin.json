@@ -30,8 +30,8 @@
         "User"
     ],
     "checkver": {
-        "url": "https://dolphin-emu.org/download/",
-        "regex": "https:\\/\\/dl\\.dolphin-emu\\.org\\/releases\\/(?<version>\\d+)\\/dolphin-\\d+-x64\\.7z"
+        "url": "https://dolphin-emu.org/update/check/v1/beta/d8558142ead21b3fa39809c4aedb982fbfc85feb/win",
+        "jsonpath": "$.new.name"
     },
     "autoupdate": {
         "url": "https://dl.dolphin-emu.org/releases/$version/dolphin-$version-x64.7z"
