@@ -27,7 +27,6 @@
         "MISE_DATA_DIR": "$dir\\data",
         "MISE_GLOBAL_CONFIG_FILE": "$dir\\config.toml"
     },
-    "env_add_path": "data\\shims",
     "persist": [
         "data",
         "config.toml"
