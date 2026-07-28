@@ -54,11 +54,10 @@
         ]
     },
     "checkver": {
-        "url": "https://update.rpcs3.net/?api",
+        "url": "https://api.github.com/repos/RPCS3/rpcs3-binaries-win/releases/latest",
         "jsonpath": {
-            "version": "$.latest_build.version",
-            "download": "$.latest_build.windows.download",
-            "hash": "$.latest_build.windows.checksum"
+            "version": "$.name",
+            "download": "$.assets[?(@.name =~ /.*\\.7z^/)].browser_download_url"
         }
     },
     "autoupdate": {
