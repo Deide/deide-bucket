@@ -29,5 +29,23 @@
     "persist": [
         "data",
         "config"
-    ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/NiceneNerd/ukmm/releases/latest",
+        "jsonpath": {
+            "version": "$.tag_name",
+            "download": "$.assets[?(@.name.endsWith('msvc.zip'))].browser_download_url"
+        },
+        "regex": "v([\\d.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchDownload",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            }
+        }
+    }
 }
