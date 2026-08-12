@@ -1,25 +1,21 @@
 {
     "homepage": "https://github.com/Deide/Sundial",
     "description": "Automation based on sunrise and sunset for Windows 10+",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/Deide/Sundial/blob/master/LICENSE"
     },
-    "depends": [
-        "pwsh"
-    ],
+    "depends": "pwsh",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Deide/Sundial/archive/refs/tags/v1.0.0.zip",
-            "hash": "3ae90ca03252b827257a808c4bafd420cc17e2b0edcc72edd761172996a804ff",
-            "extract_dir": "Sundial-1.0.0"
+            "url": "https://github.com/Deide/Sundial/archive/refs/tags/v1.0.1.zip",
+            "hash": "f6dcd29e33f34d685e6d38faf7cd7bd6a2f062dee26fdce9375fab0c79a3b309",
+            "extract_dir": "Sundial-1.0.1"
         }
     },
     "installer": {
-        "script": [
-            "pwsh.exe"
-        ],
+        "script": "pwsh.exe",
         "args": [
             "-ExecutionPolicy Bypass",
             "-NoProfile",
@@ -29,9 +25,7 @@
         ]
     },
     "uninstaller": {
-        "script": [
-            "pwsh.exe"
-        ],
+        "script": "pwsh.exe",
         "args": [
             "-ExecutionPolicy Bypass",
             "-NoProfile",
@@ -40,9 +34,7 @@
             "-File $dir/Uninstall-SolarSwitch.ps1"
         ]
     },
-    "persist": [
-        "data"
-    ],
+    "persist": "data",
     "checkver": {
         "github": "https://github.com/Deide/Sundial"
     },
