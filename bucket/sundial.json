@@ -15,24 +15,10 @@
         }
     },
     "installer": {
-        "file": "pwsh.exe",
-        "args": [
-            "-ExecutionPolicy Bypass",
-            "-NoProfile",
-            "-NonInteractive",
-            "-WindowStyle Hidden",
-            "-File $dir/Install-SolarSwitch.ps1"
-        ]
+        "file": "Install-SolarSwitch.ps1"
     },
     "uninstaller": {
-        "file": "pwsh.exe",
-        "args": [
-            "-ExecutionPolicy Bypass",
-            "-NoProfile",
-            "-NonInteractive",
-            "-WindowStyle Hidden",
-            "-File $dir/Uninstall-SolarSwitch.ps1"
-        ]
+        "file": "Uninstall-SolarSwitch.ps1"
     },
     "persist": "data",
     "checkver": {
