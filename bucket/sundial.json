@@ -15,7 +15,7 @@
         }
     },
     "installer": {
-        "script": "pwsh.exe",
+        "file": "pwsh.exe",
         "args": [
             "-ExecutionPolicy Bypass",
             "-NoProfile",
@@ -25,7 +25,7 @@
         ]
     },
     "uninstaller": {
-        "script": "pwsh.exe",
+        "file": "pwsh.exe",
         "args": [
             "-ExecutionPolicy Bypass",
             "-NoProfile",
