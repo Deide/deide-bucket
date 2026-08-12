@@ -1,7 +1,7 @@
 {
     "homepage": "https://github.com/Deide/Sundial",
     "description": "Automation based on sunrise and sunset for Windows 10+",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/Deide/Sundial/blob/master/LICENSE"
@@ -9,9 +9,9 @@
     "depends": "pwsh",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Deide/Sundial/archive/refs/tags/v1.0.1.zip",
-            "hash": "f6dcd29e33f34d685e6d38faf7cd7bd6a2f062dee26fdce9375fab0c79a3b309",
-            "extract_dir": "Sundial-1.0.1"
+            "url": "https://github.com/Deide/Sundial/archive/refs/tags/v1.0.2.zip",
+            "hash": "f60ea7dd6129b4805826d5aea14e9499673a7275141a554e6d6e4c8d69342a4a",
+            "extract_dir": "Sundial-1.0.2"
         }
     },
     "installer": {
