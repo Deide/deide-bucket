@@ -20,6 +20,7 @@
     "uninstaller": {
         "file": "Uninstall-SolarSwitch.ps1"
     },
+    "notes": "Update $dir/data/config.json to change settings. See https://github.com/Deide/Sundial#configuration for more information. When config is changed, run 'Update-SolarSwitch.ps1' to apply changes.",
     "persist": "data",
     "checkver": {
         "github": "https://github.com/Deide/Sundial"
