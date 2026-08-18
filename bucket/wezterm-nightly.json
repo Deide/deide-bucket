@@ -12,18 +12,6 @@
             "url": "https://github.com/wez/wezterm/releases/download/nightly/WezTerm-windows-nightly.zip"
         }
     },
-    "pre_install": [
-        "function create($path, $type, $content) {",
-        "   if (-not (Test-Path \"$path\")) {",
-        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
-        "       Write-Host \"Creating $path...\"",
-        "   }",
-        "}",
-        "$bucketName = (scoop bucket list | Where-Object Source -Match 'deide-bucket').Name",
-        "create $dir/wezterm.lua File 'return require(\"user/main\")'",
-        "create $dir/user Directory",
-        "create $dir/user/main.lua File (Get-Content \"$bucketsdir\\$bucketName\\defaults\\$app\\main.lua\")"
-    ],
     "installer": {
         "script": [
             "$foldername = (Get-Item $dir\\WezTerm-windows-*).Name",
@@ -32,6 +20,19 @@
         ]
     },
     "post_install": [
+        "function create($path, $type, $content) {",
+        "   if (-not (Test-Path \"$path\")) {",
+        "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
+        "       Write-Host \"Creating $path...\"",
+        "   }",
+        "}",
+        "Write-Host '`nChecking defaults...'",
+        "$bucketName = (scoop bucket list | Where-Object Source -Match 'deide-bucket').Name",
+        "create $dir/wezterm.lua File 'return require(\"user/main\")'",
+        "create $dir/user Directory",
+        "$defaultConfig = Get-Content \"$bucketsdir\\$bucketName\\defaults\\$app\\main.lua\"",
+        "create $dir/user/main.lua File \"$defaultConfig\"",
+        "",
         "$weztermPath = \"$dir\\wezterm-gui.exe\".Replace('\\', '\\\\')",
         "$bucketName = (scoop bucket list | Where-Object Source -Match 'deide-bucket').Name",
         "'install-context', 'uninstall-context' | ForEach-Object {",
