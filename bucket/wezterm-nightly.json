@@ -16,10 +16,13 @@
         "function create($path, $type, $content) {",
         "   if (-not (Test-Path \"$path\")) {",
         "       New-Item \"$path\" -ItemType $type -Value $content | Out-Null",
-        "       Write-Output \"Creating $path...\"",
+        "       Write-Host \"Creating $path...\"",
         "   }",
         "}",
-        "create $dir/wezterm.lua File"
+        "$bucketName = (scoop bucket list | Where-Object Source -Match 'deide-bucket').Name",
+        "create $dir/wezterm.lua File 'return require(\"user/main\")'",
+        "create $dir/user Directory",
+        "create $dir/user/main.lua File (Get-Content \"$bucketsdir\\$bucketName\\defaults\\$app\\main.lua\")"
     ],
     "installer": {
         "script": [
