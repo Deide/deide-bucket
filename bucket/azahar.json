@@ -37,7 +37,7 @@
         "url": "https://api.github.com/repos/azahar-emu/azahar/releases/latest",
         "jsonpath": {
             "version": "$.tag_name",
-            "download": "$.assets[?(@.name =~ /azahar-windows-msvc/i)].browser_download_url",
+            "download": "$.assets[?(@.name =~ /azahar-windows-msvc.+\\.zip/i)].browser_download_url",
             "hash": "$.assets[?(@.name =~ /azahar-windows-msvc/i)].digest"
         }
     },
