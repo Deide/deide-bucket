@@ -38,7 +38,8 @@
             "version": "$.tag_name",
             "download": "$.assets[?(@.name =~ /soldatreloaded-windows.+\\.zip/i)].browser_download_url",
             "hash": "$.assets[?(@.name =~ /soldatreloaded-windows/i)].digest"
-        }
+        },
+        "regex": "v([\\d\\.]+)"
     },
     "autoupdate": {
         "architecture": {
