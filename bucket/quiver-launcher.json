@@ -13,8 +13,8 @@
         "       Write-Output \"Creating $path...\"",
         "   }",
         "}",
-        "create $dir/apps.json File",
-        "create $dir/settings.json File"
+        "create $dir/apps.json File '{\"apps\": []}'",
+        "create $dir/settings.json File '{}'"
     ],
     "persist": [
         "Backups",
