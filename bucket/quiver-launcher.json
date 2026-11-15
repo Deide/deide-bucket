@@ -1,6 +1,6 @@
 {
     "homepage": "https://github.com/tgeorgiadis/quiver-launcher",
-    "version": "0.30.2",
+    "version": "3.5.1",
     "description": "A modern launcher for downloading, installing, and running apps from GitHub and GitLab releases. With a personal library, community catalog subscriptions, and flexible filtering.",
     "license": {
         "identifier": "BSL-1.1",
@@ -40,10 +40,10 @@
         "url": "https://api.github.com/repos/tgeorgiadis/quiver-launcher/releases/latest",
         "jsonpath": {
             "version": "$.tag_name",
-            "download": "$.assets[?(@.name =~ /QuiverLauncher--win-Portable.+\\.zip/i)].browser_download_url",
-            "hash": "$.assets[?(@.name =~ /QuiverLauncher--win-Portable/i)].digest"
+            "download": "$.assets[?(@.name =~ /QuiverLauncher-win-Portable.+\\.zip/i)].browser_download_url",
+            "hash": "$.assets[?(@.name =~ /QuiverLauncher-win-Portable/i)].digest"
         },
-        "regex": "Quiver Launcher v([\\d\\.]+)"
+        "regex": "v([\\d\\.]+)"
     },
     "autoupdate": {
         "architecture": {
