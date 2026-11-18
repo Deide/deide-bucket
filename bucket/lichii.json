@@ -6,13 +6,12 @@
         "identifier": "BSL-1.1",
         "url": "https://github.com/tgeorgiadis/quiver-launcher/blob/main/LICENSE"
     },
-    "bin": "lichii.exe",
     "persist": "user",
     "architecture": {
         "64bit": {
             "url": "https://github.com/zortos293/Lichii/releases/download/build-341/lichii-windows-x86_64.zip",
             "hash": "9ade0d5c9a84b440674fe330f6d9f9a4a0fa3577068d561c6a7f730e585b9b8f",
-            "bin": "Lichii.exe",
+            "bin": "lichii.exe",
             "shortcuts": [
                 [
                     "Lichii.exe",
