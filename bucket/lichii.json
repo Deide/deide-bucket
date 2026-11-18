@@ -6,6 +6,7 @@
         "identifier": "BSL-1.1",
         "url": "https://github.com/tgeorgiadis/quiver-launcher/blob/main/LICENSE"
     },
+    "bin": "lichii.exe",
     "persist": "user",
     "architecture": {
         "64bit": {
